@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pascucci</title>
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <header>
+        <div class="muiBtn" title="openSNB">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <h1>
+            <a href="index.html" class="defaultBlock">
+                <img src="images/hedaer_logo.png" alt="red color pascucci logo">
+            </a>
+        </h1>
+        <nav>
+            <ul>
+                <li>
+                    <span class="tw6_14 defaultBlock">
+                        CAFFE PASCUCCI
+                    </span>
+                    <ol class="tw4_12">
+                        <li>
+                            <a href="brandIntroduction.html" class="defaultBlock">Brand Introduction</a>
+                        </li>
+                        <li>
+                            <a href="brandIntroduction.html" class="defaultBlock">Tradition Meets Tradition</a>
+                        </li>
+                        <li>
+                            <a href="koreaPascucci.html" class="defaultBlock">Korea Pascucci</a>
+                        </li>
+                        <li>
+                            <a href="italianPascucci.html" class="defaultBlock">Italian Pascucci</a>
+                        </li>
+                    </ol>
+                </li>
+                <li>
+                    <span class="tw6_14 defaultBlock">
+                        MENU
+                    </span>
+                    <ol class="tw4_12">
+                        <li>
+                            <a href="listMenu01.html" class="defaultBlock">Coffee</a>
+                        </li>
+                        <li>
+                            <a href="listMenu05.html" class="defaultBlock">Beverage</a>
+                        </li>
+                        <li>
+                            <a href="listMenu10.html" class="defaultBlock">Food</a>
+                        </li>
+                        <li>
+                            <a href="listMenu15.html" class="defaultBlock">MD</a>
+                        </li>
+                    </ol>
+                </li>
+                <li>
+                    <span class="tw6_14 defaultBlock">
+                        NEWS
+                    </span>
+                    <ol class="tw4_12">
+                        <li>
+                            <a href="notice.html" class="defaultBlock">Notice</a>
+                        </li>
+                        <li>
+                            <a href="event.html" class="defaultBlock">event</a>
+                        </li>
+                        <li>
+                            <a href="pascucciTalk.html" class="defaultBlock">Pascucci Talk</a>
+                        </li>
+                        <li>
+                            <a href="prCenter.html" class="defaultBlock">PR Center</a>
+                        </li>
+                    </ol>
+                </li>
+                <li>
+                    <span class="tw6_14 defaultBlock">
+                        STORE
+                    </span>
+                    <ol class="tw4_12">
+                        <li>
+                            <a href="storeInformation.html" class="defaultBlock">Store Information</a>
+                        </li>
+                    </ol>
+                </li>
+                <li>
+                    <span class="tw6_14 defaultBlock">
+                        CUSTOMER
+                    </span>
+                    <ol class="tw4_12">
+                        <li>
+                            <a href="partnershipinformation.html" class="defaultBlock">Partnership Information</a>
+                        </li>
+                        <li>
+                            <a href="frequentlyAskedQuestions.html" class="defaultBlock">Frequently Asked Questions</a>
+                        </li>
+                        <li>
+                            <a href="inquiry.html" class="defaultBlock">1:1 Inquiry</a>
+                        </li>
+                    </ol>
+                </li>
+            </ul>
+        </nav>
+        <!-- ? global nav Fin -->
+        <aside>
+            <input type="button" value="BOOK&#10;MARK" id="addBookMark" class="rw3_12">
+            <input type="button" value="arrow">
+            <ul>
+                <li class="rw5_12">
+                    <a href="login.html">SIGN IN</a>
+                </li>
+                <li class="rw5_12">
+                    <a href="mypage.html">MYPAGE</a>
+                </li>
+                <li class="rw7_11">
+                    <a href="shoppingBag.html" class="defaultBlock">shoppingBag</a>
+                    <span>+99</span>
+                </li>
+                <li>
+                    <input type="search" id="searchPanel" placeholder="search" title="Please enter a search term" class="rw4_16 boxSizing">
+                    <input type="button" value="searchButton" id="searchFieldToggle">
+                </li>
+            </ul>
+            <div class="asidePager"></div>
+            <a href="#" class="rw3_14 topBtn textCenter boxSizing">top</a>
+            <!-- !Top -->
+        </aside>
+        <!-- ? global Rnav Fin -->
+    </header>
+    <!-- todo header Fin -->
+    <section class="mypaymentContainer">
+        <h2 class="rw3_30">make a payment</h2>
+        <form action="orderCompleted.html">
+            <div>
+                <h3 class="rw4_18">Order customer information <span class="rw4_16">oh-young-woong/010-3071-5422</span></h3>
+                <ul class="rw4_16 noneBlock">
+                    <li>
+                        <label for="userName">name</label>
+                        <input type="text" id="userName" placeholder="your Name">
+                    </li>
+                    <li>
+                        <label for="userEmail">e-mail</label>
+                        <input type="email" id="userEmail" placeholder="Please enter your email address">
+                    </li>
+                    <li>
+                        <label for="phoneNmb">Cell Phone</label>
+                        <input type="tel" id="phoneNmb" placeholder="Please enter your cell phone number">
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="rw4_18">Shipping information <input type="button" value="Same as ordering" class="btn white"></h3>
+                <ul class="rw4_16">
+                    <li>
+                        <label for="useRname">name</label>
+                        <input type="text" id="useRname" placeholder="Please enter your email address">
+                    </li>
+                    <li>
+                        <label for="useRemail">e-mail</label>
+                        <input type="email" id="useRemail" placeholder="Please enter your email address">
+                    </li>
+                    <li>
+                        <label for="phonEnmb">Cell Phone</label>
+                        <input type="tel" id="phonEnmb" placeholder="Enter mobile phone number without ‘-‘">
+                    </li>
+                    <li>
+                        <label for="shippingAddress">address</label>
+                        <input type="text" id="shippingAddress" placeholder="99999" disabled>
+                        <input type="button" value="Find postal code" class="btn white">  
+                        <input type="text" title="Please enter your detailed address">
+                        <input type="text" placeholder="Enter detailed address" title="Enter detailed address">
+                    </li>
+                </ul>
+            </div>
+            <div class="rw4_16">
+                <label for="requestsText" class="widthBlock">Shipping Requests</label>
+                <input type="text" id="requestsText" title="Enter delivery request" placeholder="Enter delivery request" class="widthBlock">
+            </div>
+            <div class="rw4_16">
+                <h3 class="rw4_18">Shipping information</h3>
+                <p>General product (1 pieces)</p>
+                <ul>
+                    <li>
+                        <img src="images/listDetail15_11.png" alt="MORORA 34 BIO COFFEE BEANS 1000 G">
+                        <span>MORORA 34 BIO COFFEE BEANS 1000 G</span>
+                        <strong>KRW <span>999,999</span> / <span>999</span> piece</strong>
+                    </li>
+                </ul>
+            </div>
+            <div class="rw4_16">
+                <h3 class="rw4_18">coupon</h3>
+                <span class="defaultBlock">
+                    <label for="couponText" class="defaultBlock">coupon: <strong>2coupon</strong></label>
+                    <input type="text" id="couponText">
+                    <input type="button" value="Coupon Change" class="btn white">
+                </span>
+            </div>
+            <div>
+                <h3 class="rw4_18">Select payment method<strong class="rw4_14">Payment method</strong></h3>
+                <ul>
+                    <li class="textCenter"><img src="images/paymentToss.jpg" alt="paymentToss"></li>
+                    <li class="textCenter"><img src="images/paymentVisa.jpg" alt="paymentVisa"></li>
+                    <li class="textCenter"><img src="images/paymentNaver.jpg" alt="paymentNaver"></li>
+                    <li class="textCenter"><img src="images/paymentKakao.jpg" alt="paymentKakao"></li>
+                    <li class="textCenter"><img src="images/paymentPayco.jpg" alt="paymentPayco"></li>
+                    <li class="textCenter"><img src="images/paymentSamsung.jpg" alt="paymentSamsung"></li>
+                    <li class="textCenter"><img src="images/paymentLpoint.jpg" alt="paymentLpoint"></li>
+                    <li class="textCenter"><img src="images/paymentBank.jpg" alt="paymentBank"></li>
+                </ul>
+                <span class="rw4_16">
+                    <input type="checkbox" id="paymentChk" class="noneBlock">
+                    <label for="paymentChk" class="customChk">Use the selected payment method also for</label>
+                </span>
+            </div>
+            <div>
+                <div>
+                    <span class="rw4_16 defaultBlock">
+                        <input type="checkbox" id="agreeChk" class="noneBlock" required>
+                        <label for="agreeChk" class="customChk defaultBlock">I have clearly checked the terms of sale of the above product and agree to proceed with the purchase.<strong>(required)</strong> </label>
+                    </span>
+                </div>
+                <ol class="rw4_14">
+                    <li>
+                        Free shipping is applied if the total payment amount (excluding shipping costs and environmental charges for shopping bags) is KRW 30,000 or more after 
+                        applying the discount coupon. (However, the free shipping standards for T-ware vary by brand, so please check the shipping information in the product
+                        notice information.)
+                    </li>
+                    <li>
+                        If the delivery information (=recipient information) is the same, it may be automatically combined (one invoice number). (After receiving the product, please
+                        fill in the invoice number and request a refund of the shipping cost through the 1:1 consultation board.) (Ex)If the order for free shipping and the order for which you paid for shipping are combined among 2 orders, 1 shipping fee will be refunded
+                    </li>
+                    <li>
+                        f you pay the shipping fee instead of receiving a coupon discount for multiple orders, you may be excluded from the combined shipping refund.
+                        (Ex) If you pay the shipping fee for both orders, only 1 shipping fee will be refunde 
+                    </li>
+                    <li>
+                        However, it is not possible to apply for combined shipping individually.
+                    </li>
+                    <li>
+                        When using a discount coupon, a free gift for the total amount will be sent after the coupon is applied. (Packaging fee and shipping fee excluded)
+                    </li>
+                </ol>
+            </div>
+            <div class="rw4_18">
+                <h3>Payment information</h3>
+                <div>
+                    <strong>total product amount<span>KRW 999,999</span></strong>
+                    <strong>total discount<mark>KRW -999,999</mark></strong>
+                    <strong>final payment amount<span>KRW 999,999</span></strong>
+                </div>
+                <input type="submit" value="make a payment" class="rw5_24 btn red widthBlock">
+            </div>
+            <!-- ! 인헤릿 받아서 폰트사이즈가 적용 안됌-->
+        </form>
+    </section>
+    <!-- todo mainslider Fin -->
+    <footer class="boxSizing">
+        <div>
+            <h2>
+                <img src="images/footer_logo.png" alt="red color pascucci logo">
+            </h2>
+            <div>
+                <ul class="rw5_12">
+                    <li>
+                        <a href="https://www.happypointcard.com/page/main/index.spc" target="_blank">Happy point</a>
+                    </li>
+                    <li>
+                        <a href="privacypolicy.html">Privacy Policy</a>
+                    </li>
+                    <li>
+                        <a href="privacypolicy.html">Image information processing device operation and management policy</a>
+                    </li>
+                    <li>
+                        <a href="https://www.happypointcard.com/page/main/index.spc" target="_blank">Terms of service</a>
+                    </li>
+                    <li>
+                        <a href="https://www.spc.co.kr/share/right-mng/tip-off-intro/" target="_blank">Ethics Report Center</a>
+                    </li>
+                    <li>
+                        <a href="https://happy.spc.co.kr/indexframe.jsp" target="_blank">Pre-registration of desired transaction</a>
+                    </li>
+                </ul>
+                <address class="rw4_12">
+                    Paris CroissantBusiness registration number: 129-81-07244, <br>
+                    Sagimakgol-ro 31beon-gil, Jungwon-gu, Seongnam-si, Gyeonggi-doFAX. 0505-073-0210 Customer Service Center <a href="tel:+080-731-2027"> 080-731-2027</a>
+                    ALL RIGHTS RESERVED 2016 THE PASCUCCI, PARIS CROISSANT CO., LTD.
+                    <ul>
+                        <li>
+                            <a href="https://www.facebook.com/pascucci1883" target="_blank" class="defaultBlock">facebook</a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/pascucci_kr/" target="_blank" class="defaultBlock">instagram</a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/channel/UCHKRIWTWjq0uzJOAm6KFHOg" target="_blank" class="defaultBlock">youtube</a>
+                        </li>
+                        <li>
+                            <a href="https://blog.naver.com/pascucci1883" target="_blank" class="defaultBlock">blog</a>
+                        </li>
+                    </ul>
+                </address>
+            </div>
+        </div>
+    </footer>
+    <!-- todo footer Fin -->
+</body>
+</html>

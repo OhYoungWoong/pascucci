@@ -1,0 +1,736 @@
+
+/* 
+     class="boxSizing"
+*/
+.boxSizing,
+
+#addAddressPopup form fieldset div input:not(input[type='button']),
+#addAddressPopup form fieldset div:last-of-type input[type='button'],
+[class*='shoppingBag'] form ul li:first-of-type span:first-of-type .customChk,
+.myshoppingBagContainer form ul li:not(:first-of-type) .qtyComponent input[type='number'],
+.mypaymentContainer form div:first-of-type ul li input,
+.mypaymentContainer form div:nth-of-type(2) ul li:nth-of-type(1) input,
+.mypaymentContainer form div:nth-of-type(2) ul li:nth-of-type(2) input,
+.mypaymentContainer form div:nth-of-type(2) ul li:nth-of-type(3) input,
+.mypaymentContainer form div:nth-of-type(2) ul li:last-of-type input:nth-of-type(3),
+.mypaymentContainer form div:nth-of-type(2) ul li:last-of-type input:first-of-type,
+.mypaymentContainer form div:nth-of-type(2) ul li:last-of-type input:last-of-type,
+.mypaymentContainer form div:nth-of-type(3) input,
+.mypaymentContainer form div:nth-of-type(5) span input[type='text'],
+.mypaymentContainer form div:nth-of-type(6) ul li{
+    box-sizing: border-box;
+}
+
+
+:root{
+    /* color */
+--pcRed: #da0037; --prs1: #FF1535; --prs2: #ED1331; --prs3: #C9102A; --prs4: #A10D21; --prs5: #8C0B1D; --prs6: #6B0816; --prs7: #45060E; --prs8: #170205; --frs1: #FF0040; --frs2: #ED003C; --frs3: #C90033; --frs4: #A10029; --frs5: #8C0023; --frs6: #6B001B; --frs7: #450011; --frs8: #170006; --gs1: #ffffff; --gs2: #fcfdff; --gs3: #ededed; --gs4: #c8c9ca; --gs5: #a0a0a0; --gs6: #8c8c8c; --gs7: #6a6a6a; --gs8: #444444; --gs9: #171717; --gs10: #000000;
+}
+[class^='rw']{ font-family: 'Raleway';}
+[class^='tw']{ font-family: 'Titillium Web';}
+.rw1_80{ font-weight: 100;}
+.rw3_40{ font-weight: 300;}
+.rw4_35{ font-weight: 400;}
+.rw3_30{ font-weight: 300;}
+.rw5_24{ font-weight: 500;}
+.rw5_20{ font-weight: 500;}
+.rw4_20{ font-weight: 400;}
+.rw3_20{ font-weight: 300;}
+.rw6_18{ font-weight: 600;}
+.rw4_18{ font-weight: 400;}
+.rw5_16{ font-weight: 500;}
+.rw4_16{ font-weight: 400;}
+.rw3_16{ font-weight: 300;}
+.rw6_14{ font-weight: 600;}
+.rw4_14{ font-weight: 400;}
+.rw3_14{ font-weight: 300;}
+.rw7_12{ font-weight: 700;}
+.rw5_12{ font-weight: 500;}
+.rw4_12{ font-weight: 400;}
+.rw3_12{ font-weight: 300;}
+.rw7_11{ font-weight: 700;}
+.tw6_14{ font-weight: 600;}
+.tw7_24{ font-weight: 700;}
+.tw7_12{ font-weight: 700;}
+.tw4_12{ font-weight: 400;}
+.btn{
+font-size: 16px; font-weight: 400; font-family: 'Raleway'; text-align: center;  display: inline-block; line-height: 40px; box-sizing: border-box; cursor: pointer; width: 15%; min-width: 200px;
+}
+.black{
+    color: var(--pcRed); border: 1px solid var(--pcRed); background-color: var(--gs10);
+}
+.black:hover{
+    color: var(--rs1); border: 1px solid var(--gs10); background-color: var(--pcRed);
+}
+.gray{
+    color: var(--gs4); border: 1px solid var(--gs4); background-color: var(--gs8);
+}
+.gray:hover{
+    color: var(--gs8); border:1px solid var(--gs8); background-color: var(--gs4);
+}
+.white{
+    color: var(--gs7); border:1px solid var(--gs4); background-color: var(--gs1);
+}
+.white:hover{
+    color: var(--gs1); border:1px solid var(--gs10); background-color: var(--pcRed);
+}
+.red{
+    color: var(--gs1); border:1px solid var(--gs10); background-color: var(--pcRed);
+}
+.popGray{
+    color: var(--gs4); border: 1px solid var(--gs4); background-color: var(--gs8);
+}
+.customChk,
+.customRdio{
+    cursor: pointer;
+}
+.defaultBlock{
+    display: block;
+}
+.textCenter{
+    text-align: center;
+}
+.widthBlock{
+    display: block; width: 100%;
+}
+.noneBlock{
+    display: none;
+}
+input:not([type="button"],[type='submit']){
+    font-family: inherit; font-weight: inherit; font-size: inherit;
+}
+mark{
+    background-color:transparent; font-style: normal;
+}
+a{text-decoration: none;}
+
+li:not(.myInquiryOrderContainer div:last-of-type ul li,.myConsultationContainer > ul li,.myPartnershipContainer div:last-of-type ul li){
+    list-style: none;
+}
+/* ? list style */
+header > aside ul li:nth-of-type(3) a,
+header > aside ul li:nth-of-type(4) input[type='button'],
+header > aside .asidePager,
+footer > div div address ul li,
+.newsTalkContainer > ul li,
+.newsTalkContainer > div > ul li figure figcaption a,
+.numberComponent input:nth-of-type(2),
+.numberComponent input:nth-of-type(3),
+.storeInformationContainer aside div form fieldset input[type='submit'],
+#pwChangePopup > input[type='button'],
+[class*='shoppingBag'] form ul li:first-of-type span:first-of-type,
+.myshoppingBagContainer form ul li:not(:first-of-type) span label,
+.myshoppingBagContainer form ul li:not(:first-of-type) .qtyComponent input[type='button'],
+.mypaymentContainer form div:nth-of-type(6) span label{
+    text-indent: -9999px;
+}
+/* ? 비둘기 */ 
+header > nav > ul li,
+footer > div::after,
+.mainSlider::after,
+.aboutBrandContainer::after,
+.aboutKoreaContainer ul > li:last-of-type::after,
+.listContainer ul::after,
+.detailDrinkContainer > div div:nth-of-type(2)::after,
+.detailMdContainer form > div div:nth-of-type(2)::after, 
+.newsTalkContainer > div ul::after,
+.myAskedContainer div:first-of-type ul::after,
+.myInquiryContainer ul li h3::after,
+.myPageContainer > div:first-of-type ul::after,
+.myPartnershipContainer > div:last-of-type::after,
+[class*='myInquiryOrder'] > ol::after,
+[class*='myInquiryOrder'] > ul li::after,
+[class*='shoppingBag'] form ul li::after,
+.myshoppingBagContainer form > div::after,
+.mypaymentContainer form div:nth-of-type(6) ul::after,
+.orderCompletedContainer > div:first-of-type ul li::after,
+.orderCompletedContainer div:nth-of-type(2) address::after{
+    content: ''; display: block; clear: both;
+}
+/* ? clear */
+header{
+    background-color: rgba(0, 0,0,0.8); position: fixed; z-index: 999; width: 100%;
+}
+header h1 a img{
+    width: 100%;
+}
+header > nav > ul li span{
+    color: var(--gs4); transition-duration: 0.75s; cursor: default;
+}
+header > nav > ul li span::after{
+    content: '+'; position: absolute; 
+}
+header > nav > ul li ol li a{
+    color: var(--gs6);
+}
+header > nav > ul li ol li:hover a{
+    color: var(--pcRed);
+}
+header > aside{
+    position: absolute; top: 0; right: 0; height: 100%;
+}
+header > aside ul li:first-of-type,
+header > aside ul li:nth-of-type(2){
+    transform: translate(0px,50px) rotate(90deg);
+}
+header > aside ul li:nth-of-type(2) a{
+    color: var(--gs6); text-shadow: 3px 0 1px rgba(0, 0,0,0.1);
+}
+header > aside ul li:first-of-type a:hover,
+header > aside ul li:nth-of-type(2) a:hover{
+    text-decoration: underline; font-weight: 700;
+}
+header > aside ul li:nth-of-type(3){
+    border-radius: 25px; margin-bottom: 20px; position: relative; background-color: var(--gs1); background-image: url('../images/icon_shoppingbag.svg'); background-repeat: no-repeat; background-position: center; box-shadow: 5px 5px 1px rgba(0, 0,0,0.2);
+}
+header > aside ul li:nth-of-type(3) span{
+    position: absolute; background-color: var(--gs10); color: var(--gs1); border-radius: 15px;
+}
+header > aside ul li:nth-of-type(4) input[type='search']{
+    border-radius: 25px 25px; border: none; transition-duration: 0.75s; box-shadow: 5px 5px 1px rgba(0, 0,0,0.2);
+}
+header > aside ul li:nth-of-type(4) input[type='button']{
+    border:none; border-radius: 25px; background-image: url('../images/icon_search.svg'); background-color: var(--gs1); background-repeat: no-repeat; background-position: center; cursor: pointer; box-shadow: 5px 5px 1px rgba(0, 0,0,0.2);
+}
+header > aside ul li:nth-of-type(4) input[type='search'].active{
+    padding-left: 20px; border: none; box-sizing: border-box;
+}
+header > aside > a{
+    position: absolute; display: inline-block; color: var(--gs1); transition-duration: 0.3s; text-transform: uppercase;
+}
+header > aside > a:hover{
+    background-color: var(--frs5);
+}
+/* todo header Fin */
+footer > div div > ul li{
+    display: inline-block; color: var(--gs6);
+}
+footer > div div > ul li a{
+    color: var(--gs6);
+}
+footer > div div > ul li a:hover{
+    color: var(--pcRed);
+}
+footer > div div address{
+    font-style: normal; color: var(--gs1); line-height: 18px;
+}
+footer > div div address a{
+    color: var(--gs1);
+}
+footer > div div address ul li{
+    display: inline-block; width: 14px; height: 14px;
+}
+footer > div div address ul li:nth-of-type(1){background: url('../images/footer_sns_01.png');}
+footer > div div address ul li:nth-of-type(2){background: url('../images/footer_sns_02.png');}
+footer > div div address ul li:nth-of-type(3){background: url('../images/footer_sns_03.png');}
+footer > div div address ul li:nth-of-type(4){background: url('../images/footer_sns_04.png');}
+/* todo footer Fin */
+.paging{
+    position: relative; border-radius: 15px; margin: 0 auto;
+}
+.paging > a{
+    position: absolute; top: 0; width: 16.66%; line-height: 70px; color: var(--gs8);
+}
+.paging > a:first-of-type{
+    left: 0;
+}
+.paging > a:last-of-type{
+    right: 0;
+}
+.paging ol{
+    padding: 20px 5%;
+}
+.paging ol li{
+    display: inline-block;
+}
+.paging ol li a{
+    width: 30px; line-height: 32px; border-radius: 25px; background-color: var(--gs3); color: var(--gs8);
+}
+.numberComponent input{
+    background-color: transparent; border: none; color: var(--gs1); line-height: 50px;
+}
+.numberComponent input:first-of-type{
+    margin-left:10%;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+}
+.numberComponent{
+    background-color: var(--gs8); color: var(--gs1); padding: 0 20px;
+}
+.numberComponent input:nth-of-type(1){
+    width:30%;
+}
+.numberComponent input:nth-of-type(2),
+.numberComponent input:nth-of-type(3){
+    position: absolute; line-height: 25px; right: 10%; width: 10%;
+}
+.numberComponent input:nth-of-type(2){
+    background: url('../images/icon_nmbArrowtop.svg') no-repeat center; top: 0; 
+}
+.numberComponent input:nth-of-type(3){
+    background: url('../images/icon_nmbArrowdown.svg') no-repeat center; bottom: 0;
+}
+.hitsSpace{
+    line-height: 55px; margin-bottom: 80px; position: relative;
+}
+.hitsSpace a:hover{
+    color: var(--frs2);
+}
+.hitsSpace a:first-of-type{
+    left: 0;
+}
+.hitsSpace a:last-of-type{
+    right: 0;
+}
+.hitsSpace > div span{
+    margin-left: 3%; padding-left: 3%;
+}
+@media screen and (max-width:767px){
+
+    [class*='Container']:not([class='aboutBrandContainer'], .storeInformationContainer, .newsTalkContainer, .myPartnershipContainer){
+        padding: 125px 3.5% 80px 3.5%;
+    }
+    /* ?가이드 */
+    header > aside > input:last-of-type{
+        text-indent: -9999px;
+    }
+    /* ?비둘기 */
+    [class*='80']{ font-size:40px;}
+    [class*='40']{ font-size:30px;}
+    [class*='35']{ font-size:24px;}
+    [class*='30']{ font-size:18px;}
+    [class*='24']{ font-size:20px;}
+    [class*='20']{ font-size:16px;}
+    [class*='18']{ font-size:16px;}
+    [class*='16']{ font-size:14px;}
+    [class*='14']{ font-size:12px;}
+    [class*='12']{ font-size:11px;}
+    [class*='11']{ font-size:11px;}
+    [class*='tw4_12']{font-size:14px; font-weight: 300;}
+    [class*='tw6_14']{font-size:14px; font-weight: 300;}
+    /*todo  global */
+    
+    header{
+        height: 40px;
+    }
+    header .muiBtn{
+        position: absolute; width: 24px; top: 10px; left: 10px;
+    }
+    header .muiBtn span:not(last-child){
+        margin-bottom: 5px;
+    }
+    header .muiBtn.active span:first-child{
+        transform: translateY(8px) rotate(320deg);
+    }
+    header .muiBtn.active span:last-child{
+        transform: translateY(-8px) rotate(-320deg);
+    }
+    /* ?translaterY 가 8px인 이유 margin+height값이 8이여서 */
+    header > h1{
+        max-width: 135px; margin: 10px auto;
+    }
+    header > nav{
+        height: 94vh; top: 40px;
+    }
+    header > nav > ul > li:not(:last-of-type){
+        margin-bottom: 50px;
+    }
+    header > nav > ul li ol{
+        line-height: 18px;
+    }
+    header > nav > ul > li.active ol li:not(:last-of-type){
+        margin-bottom: 50px;
+    }
+    header > aside{
+        max-width: 40px;
+    }
+    header > aside > input:first-of-type{
+        display: none;
+    }
+    header > aside > input:last-of-type{
+        background-color: var(--pcRed); border: none; width: 40px; height: 100%; color: var(--gs1); transition-duration: 0.45s; background: var(--pcRed) url('../images/icon_arrowTop.svg') center / cover; transform: rotate(90deg);
+    }
+    header > aside > input.active{
+        background: var(--frs4) url('../images/icon_arrowTop.svg') center / cover; transform: rotate(270deg);
+    }
+    header > aside ul{
+        transform: translateX(100px); transition: all 0.45s ease-in-out; height: 305px; margin-bottom: 0px;
+    }
+    header > aside ul.active{
+        transform: translateX(0px);
+    }
+    header > aside ul li:first-of-type{
+        margin-bottom: 60px;
+    }
+    header > aside ul li:not(:first-of-type){
+        margin-bottom: 100px;
+    }
+    header > aside ul li:first-of-type a{
+        color: var(--pcRed); display: block; min-width: 42px;
+    }
+    header > aside ul li:nth-of-type(3){
+        margin-bottom: 20px; right: -5px; width: 30px; line-height: 30px; background-size: 16px; 
+    }
+    header > aside ul li:nth-of-type(3) span{
+        top: -6px; right: -2px; width: 16px; line-height: 16px;
+    }
+    header > aside ul li:nth-of-type(4) input{
+        position: absolute; right: 4px;
+    }
+    header > aside ul li:nth-of-type(4) input[type='search']{
+        width: 30px; line-height: 30px;
+    }
+    header > aside ul li:nth-of-type(4) input[type='button']{
+        width: 30px; line-height: 30px; background-size: 16px;
+    }
+    header > aside ul li:nth-of-type(4) input[type='search'].active{
+        right: 4px; width: 180px; max-width: 180px; line-height: 30px;
+    }
+    header > aside > a{
+        top: 550px; width: 40px; line-height: 28px; padding-top: 12px; background: var(--pcRed) url('../images/icon_arrowTop.svg') no-repeat center top / 20px;
+    }
+    /* todo header Fin */
+    footer{
+        padding: 40px 10.7%; background-color: var(--gs9);
+    }
+    footer > div div > ul li{
+        line-height: 18px;
+    }
+    footer > div div > ul li:not(:last-of-type){
+        margin-bottom: 20px;
+    }
+    footer > div div address ul li:not(:first-of-type){
+        margin-left: 20%;
+    }
+    /* todo footer Fin */
+    .paging{
+        width:33%;
+    }
+    .hitsSpace{
+        border-bottom:1px solid var(--gs5);
+    }
+    .hitsSpace a{
+        position: absolute; padding: 0 4%; color: var(--gs10);
+    }
+    .hitsSpace > div{
+        position: absolute; bottom: 0; text-align: center; width: 100%;
+    }
+    .hitsSpace div span{
+        border-left:1px solid var(--gs5);
+    }
+}
+@media screen and (min-width: 768px){
+
+    [class*='newsPr'] > ul li figure::after,
+    [class*='myInquiry'] > div:first-of-type::after,
+    .myPageContainer > div:nth-of-type(2) ol::after,
+    .myPageContainer div:nth-of-type(3) ul::after,
+    .mypaymentContainer form div ul li::after,
+    .mypaymentContainer form div:nth-of-type(2) ul li::after,
+    .mypaymentContainer form div:nth-of-type(4) ul li::after,
+    .mypaymentContainer form div:nth-of-type(5) span::after,
+    .myCouponContainer > ul::after,
+    .myInquiryContainer > ul li h3::after{
+        content: ''; display: block; clear: both;
+    }
+    /* ? clear */
+    header{
+        height: 75px;
+    }
+    header > h1{
+        max-width: 235px; margin: 20px auto;
+    }
+    header > aside > input:first-of-type{
+        background-color: var(--pcRed); border: none; width: 75px; height: 100%; color: var(--gs1); margin-bottom: 20px; transition-duration: 0.45s;
+    }
+    header > aside > input:last-of-type{
+        display: none;
+    }
+    header > aside > input:hover{
+        background-color: var(--frs4);
+    }
+    header > aside ul{
+        height: 305px; margin-bottom: 120px;
+    }
+    header > aside ul li{
+        margin-bottom:80px;
+    }
+    header > aside ul li:first-of-type a{
+        color: var(--pcRed);
+    }
+    header > aside ul li:nth-of-type(3){
+        right: -12px; width: 50px; line-height: 50px; background-size: 25px;
+    }
+    header > aside ul li:nth-of-type(3) span{
+        top: -4px; right: -5px; width: 20px; line-height: 20px; 
+    }
+    header > aside ul li:nth-of-type(4) input{
+        position: absolute; right: 12px;
+    }
+    header > aside ul li:nth-of-type(4) input[type='search']{
+        width: 50px; padding-left: 20px; line-height: 50px;
+    }
+    header > aside ul li:nth-of-type(4) input[type='button']{
+        width: 50px; line-height: 50px; background-size: 30px;
+    }
+    header > aside ul li:nth-of-type(4) input[type='search'].active{
+        right: 12px; max-width: 600px; line-height: 50px;
+    }
+    header > aside > a{
+        top: 750px; width: 75px; line-height: 60px; padding-top: 15px; background: var(--pcRed) url('../images/icon_arrowTop.svg') no-repeat center 15px / 25px;
+    }
+    /* todo header Fin */
+    footer{
+        padding: 40px 0; background-color: var(--gs9); box-sizing: border-box;
+    }
+    footer > div div address ul li:not(:first-of-type){
+        margin-left: 13%;
+    }
+    /* todo footer Fin */
+    .hitsSpace{
+        border-width: 1px 0; border-style: solid; border-color: var(--gs5);
+    }   
+    .hitsSpace a{
+        position: absolute; padding: 0 2%; color: var(--gs10);
+    }
+    .hitsSpace a:first-of-type{
+        border-right: 1px solid var(--gs5);
+    }
+    .hitsSpace a:last-of-type,
+    .hitsSpace > div span{
+        border-left: 1px solid var(--gs5);
+    }
+    .hitsSpace > div{
+        padding: 0 10%; text-align: center;
+    }
+}
+@media screen and (max-width: 1279px){
+    header .muiBtn span{
+        background-color: var(--gs1); display: block; height: 3px; transition-duration: 0.55s;
+    }
+    header .muiBtn.active span:nth-child(2){
+        opacity: 0;
+    }
+    header > nav{
+        position: fixed; left: -9999px; width: 100%; background-color: var(--gs9); padding: 75px 10% 0 5%; box-sizing: border-box; transition: left 0.45s cubic-bezier(1, 0, 0, 1);
+    }
+    header > nav.active{
+        left: 0;
+    }
+    header > nav > ul > li{
+        position: relative; width: 50%;
+    }
+    header > nav > ul li span{
+        position: relative; 
+    }
+    header > nav > ul li span::after{
+        right: 0;
+    }
+    header > nav > ul li ol{
+        display: none; position: absolute; top: 0; right: 0; margin-left: 10%; width: 40%; transition-duration: 0.5s; 
+    }
+    header > nav > ul > li ol li:not(:last-of-type){
+        transition-duration: 2s; margin-bottom: 0;
+    }
+    header > nav > ul li.active{
+        width: 100%;
+    }
+    header > nav > ul li.active span{
+        color: var(--gs1); width:50%;
+    }
+    header > nav > ul li.active span::after{
+        content: '-';
+    }
+    header > nav > ul li.active:nth-child(1) ol,
+    header > nav > ul li.active:nth-child(2) ol,
+    header > nav > ul li.active:nth-child(3) ol{display: block;}
+    header > nav > ul li.active:nth-child(4) ol{display: block;}
+    header > nav > ul li.active:nth-child(5) ol{display: block;}
+    /* todo header Fin */
+
+    footer > div{
+        padding: 0 9%; box-sizing: border-box;
+    }
+    footer > div div{
+        text-align: center;
+    }
+    footer > div div > ul{
+        margin-bottom: 25px;
+    }
+    footer > div h2{
+        display: none;
+    }
+    footer > div div > ul li:not(:first-of-type){
+        margin-left: 2.8%;
+    }
+    footer > div div address ul{
+        margin: 30px auto 0;
+    }
+}
+@media screen and (min-width:768px) and (max-width:1279px){
+    [class*='Container']:not([class='aboutBrandContainer'],.storeInformationContainer , .newsTalkContainer, .myPartnershipContainer){
+        padding: 125px 9.8% 130px 9.8%;
+    }
+    footer > div,
+    .newsTalkContainer > div > *{
+        max-width: 618px; margin:0 auto;
+    }
+    /* ?클리어 */
+    [class*='80']{font-size: 40px;}
+    [class*='40']{font-size: 30px;}
+    [class*='35']{font-size: 24px;}
+    [class*='30']{font-size: 30px;}
+    [class*='24']{font-size: 24px;}
+    [class*='20']{font-size: 20px;}
+    [class*='18']{font-size: 18px;}
+    [class*='16']{font-size: 16px;}
+    [class*='14']{font-size: 14px;}
+    [class*='12']{font-size: 12px;}
+    [class*='11']{font-size: 11px;}
+    [class*='tw4_12']{font-size: 30px; font-weight: 300;}
+    [class*='tw6_14']{font-size: 30px; font-weight: 300;}
+    /*todo  global */
+    header .muiBtn{
+        position: absolute; width: 40px; top: 25px; left: 25px;
+    }
+    header .muiBtn span:not(last-child){
+        margin-bottom: 8px;
+    }
+    header .muiBtn.active span:first-child{
+        transform: translateY(11px) rotate(320deg);
+    }
+    header .muiBtn.active span:last-child{
+        transform: translateY(-11px) rotate(-320deg);
+    }
+    /* ?translaterY 가 8px인 이유 margin+height값이 8이여서 */
+    header > nav{
+        height: 92.68vh;
+    }
+    header > nav > ul > li{
+        position: relative; width: 50%;
+    }
+    header > nav > ul > li:not(:last-of-type){
+        margin-bottom: 90px;
+    }
+    header > nav > ul li ol{
+        line-height: 42px;
+    }
+    header > nav > ul > li.active ol li:not(:last-of-type){
+        margin-bottom: 40px;
+    }
+    header > aside ul li:nth-of-type(4) input[type='search'].active{
+        width: 400px;
+    }
+    /* todo header Fin */
+    footer > div div > ul li:not(:nth-of-type(4),:nth-of-type(5),:nth-of-type(6)){
+        margin-bottom: 30px;
+    }
+    footer > div div address ul{
+        width: 50%;
+    }
+    .paging{
+        width: 15%;
+    }
+}
+@media screen and (min-width:1280px){
+[class*='Container']:not([class='aboutBrandContainer'],[class*='detail'],.storeInformationContainer , .newsTalkContainer, .myPartnershipContainer){
+    padding: 155px 17.5% 0 17.5%;
+}
+footer > div,
+[class='aboutBrandContainer'] ul,
+.newsTalkContainer > div > *{
+    max-width: 1300px; margin: 0 auto;
+}
+[class*='Container']:not(.aboutBrandContainer,.storeInformationContainer ,.newsTalkContainer,.myAskedContainer){
+    padding-bottom: 161px;
+}
+/* ?가이드 */
+[class*=detail]::after,
+.beenInf > div::after,
+.newsEventContainer ul li figure::after,
+.myPartnershipContainer > div:nth-of-type(2) ul::after,
+.myPartnershipContainer > div:nth-of-type(3) ul::after{
+    content: ''; display: block; clear: both;
+}
+/* ?클리어 */
+[class*='80']{font-size: 80px;}
+[class*='40']{font-size: 40px;}
+[class*='35']{font-size: 35px;}
+[class*='30']{font-size: 30px;}
+[class*='24']{font-size: 24px;}
+[class*='20']{font-size: 20px;}
+[class*='18']{font-size: 18px;}
+[class*='16']{font-size: 16px;}
+[class*='14']{font-size: 14px;}
+[class*='12']{font-size: 12px;}
+[class*='11']{font-size: 11px;}
+/*todo  global */
+header .muiBtn{
+    display: none;
+}
+header > nav{
+    position: absolute; left: 1.041%; top: 154px; background-color: var(--gs10); padding: 0.8%; width: 9.63%; min-width: 185px; transition-duration: 0.75s;
+}
+header > nav > ul{
+    padding: 11%; border: 1px solid var(--pcRed); box-sizing: border-box;
+}
+header > nav > ul > li:not(:last-of-type){
+    margin-bottom: 20px;
+}
+header > nav > ul li span::after{
+    right: 12%;
+}
+header > nav > ul li ol{
+    transition-duration: 0.5s; height: 0; opacity: 0; overflow-y: hidden;
+}
+header > nav > ul > li ol li:not(:last-of-type){
+    margin-bottom: 20px;
+}
+header > nav > ul li:hover span{
+    color: var(--gs1); padding-bottom: 20px;
+}
+header > nav > ul li:hover span::after{
+    content: '-';
+}
+header > nav > ul li:hover:nth-child(1) ol,
+header > nav > ul li:hover:nth-child(2) ol,
+header > nav > ul li:hover:nth-child(3) ol{opacity: 1; height: 110px;}
+header > nav > ul li:hover:nth-child(4) ol{opacity: 1; height: 20px;}
+header > nav > ul li:hover:nth-child(5) ol{opacity: 1; height: 80px;}
+header > aside ul li:nth-of-type(4) input[type='search'].active{
+    width:600px;
+}
+/* todo header Fin */
+footer > div{
+    padding: 0 3.4%; box-sizing: border-box;
+}
+footer > div h2{
+    float: left;
+}
+footer > div h2 img{
+    width: 100%; max-width: 70px;
+}
+footer > div div{
+    margin-left: 8.547%;
+}
+footer > div div > ul{
+    margin-bottom: 15px;
+}
+footer > div div > ul li:not(:first-of-type){
+    margin-left: 1%;
+}
+footer > div div address{
+    position: relative; padding-right: 32%; box-sizing: border-box;
+}
+footer > div div address ul{
+    position: absolute; right: 0; top: 20px; width: 11%;
+}
+.paging{
+    width: 12%;
+}
+.hitsSpace > div span{
+    margin-left: 3%; padding-left: 3%;
+}
+}

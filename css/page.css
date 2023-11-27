@@ -1,0 +1,4247 @@
+html,.main,
+.main .bx-wrapper,
+.main .bx-wrapper .bx-viewport,
+.main .bx-wrapper .bx-viewport .mainSlider{
+    height: 100%;
+}
+.main .bx-wrapper{
+    box-shadow: none; border: none; background: transparent; position: relative; margin-bottom: 0; padding: 0; zoom: 1; -ms-touch-action: pan-y; touch-action: pan-y;
+}
+.bx-wrapper .bx-pager{
+    width: 22px; position: fixed;
+}
+.bx-wrapper .bx-pager.bx-default-pager a{
+    width: 8px; height: 8px; border-radius: 4px; background-color: var(--gs4); transition-duration: 0.5s; margin:0 auto 15px;
+}
+.bx-wrapper .bx-pager.bx-default-pager a:hover,
+.bx-wrapper .bx-pager.bx-default-pager a.active{
+    background-color: transparent; border: 2px solid var(--gs4); box-sizing: border-box; width: 20px; height: 20px; border-radius: 10px; box-shadow: 5px 3px 5px rgba(0, 0,0,0.2);
+}
+.mainSlider li{
+    position: relative;  height: 100%;
+}
+.mainSlider li > img{
+    width: 100%;
+}
+.mainSlider .slider01{background-image: url('../images/mainBg_01.png');}
+.mainSlider .slider02{background-image: url('../images/mainBg_02.png');}
+.mainSlider .slider03{background-image: url('../images/mainBg_03.png');}
+.mainSlider .slider04{background-image: url('../images/mainBg_04.png');}
+.mainSlider [class*='slider']{
+    background-repeat: no-repeat; background-position: center; background-size: cover;
+}
+.mainSlider{
+    color: var(--gs3);
+}
+.mainSlider [class*='slider']:not(.slider04) div{
+    position: absolute; bottom: 110px; left: 5.2%;
+}
+.mainSlider .slider02 > div p mark{
+    color: var(--pcRed); font-size: 1.8vw;
+}
+.mainSlider .slider04 figure img{
+    width: 100%;
+}
+.mainSlider .slider04 figure figcaption{
+    background-color: var(--gs8); min-height: 200px; padding: 0 1.6%;
+}
+.mainSlider .slider04 figure figcaption dl{
+    display: flex; flex-direction: column-reverse; justify-content: center; line-height: 22px;
+}
+.mainSlider .slider04 figure figcaption dl dd{
+    margin-bottom: 50px;
+}
+.mainSlider .slider04 figure figcaption a{
+    background-color: rgb(0,0,0,0.8); transition-duration: 0.4s; opacity: 0; color: var(--gs1); display: flex; flex-direction: column; justify-content: center; position: absolute; width: 100%; height: 100%; top: 0; left: 0;
+}
+.mainSlider .slider04 figure:hover figcaption a{
+    opacity: 1;
+}
+/* todo main */
+
+.aboutBrandContainer ul li:first-of-type{
+    margin-bottom: 135px;
+}
+.aboutBrandContainer ul li:nth-of-type(2){
+    background-image:url('../images/BG_brand03.png'); background-repeat:no-repeat;
+}
+.aboutBrandContainer ul li:not(:nth-of-type(1),:nth-of-type(2)){
+    background-attachment: fixed; background-repeat: no-repeat;
+}
+.aboutBrandContainer ul li:not(:nth-of-type(1),:nth-of-type(2)){
+    background-image: url('../images/BG_brand04.jpg');
+}
+.aboutBrandContainer ul li:nth-of-type(6){
+    background-position: center bottom;
+}
+.aboutBrandContainer ul li p b{
+    color: var(--gs10); margin-bottom: 40px;
+}
+.aboutBrandContainer > div{
+    padding: 40px 2.1%; color: var(--gs1); background-repeat: no-repeat; background-position: center; background-size: cover;
+}
+.aboutBrandContainer div:first-of-type{
+    background-image:url('../images/BG_brand05.png');
+}
+.aboutBrandContainer div:last-of-type{
+    background-image:url('../images/BG_brand06.png');
+}
+/* todo brand store */
+
+[class^='about']:not([class*='Brand'])::after{
+    content: ''; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-repeat: no-repeat; background-position: top center; opacity: 0.5; mix-blend-mode: multiply;
+  }
+  .aboutKoreaContainer::after{
+    background-image: url('../images/BG_korea.jpg'); background-size: cover;
+}
+.aboutItalianContainer::after{
+    background-image: url('../images/BG_italian.jpg'); background-size: cover;
+}
+[class^='about']:not([class*='Brand']) ul > li div p:not(:last-of-type){
+    margin-bottom: 15px;
+}
+[class^='about']:not([class*='Brand']) ul > li div p b,
+.aboutKoreaContainer ul > li div:last-of-type > p{
+    margin-bottom: 40px;
+}
+[class^='about']:not([class*='Brand']) ul > li div p{
+    line-height: 24px;
+}
+/* todo it,kr store */
+.listContainer h2{
+    max-width: 90px; padding: 0 60px; margin: 0 auto; color: var(--gs1); margin-bottom: 40px; position: relative; line-height: 24px;
+}
+.listContainer h2::before,
+.listContainer h2::after{
+    content: ''; display: block; background-repeat: no-repeat; width: 60px; height: 20px; position: absolute; top: 0;
+}
+.listContainer h2::before{
+    background-image: url('../images/title_left.png'); left: 0;
+}
+.listContainer h2::after{
+    background-image: url('../images/title_right.png'); right: 0;
+}
+.listContainer ol li a{
+    color: var(--gs1);
+}
+.listContainer ol li:hover a,
+.listContainer ol li.active a{
+    color: var(--pcRed);
+}
+.listContainer ul li{
+    margin-bottom: 20px; color: var(--gs1); position: relative;
+}
+.listContainer ul li figure figcaption{
+    background-color: var(--gs8); width: 100%; min-height: 155px; padding: 25px 1.6%;
+}
+.listContainer ul li figure figcaption dl dt{
+    margin-bottom:25px;
+}
+.listContainer ul li figure figcaption dl dd{
+    line-height:16px;
+}
+.listContainer ul li figure figcaption > a{
+    background-color: rgb(0,0,0,0.8); opacity: 0; transition: 0.4s; color: var(--gs1); display: flex; flex-direction: column; justify-content: center; position: absolute; top: 0; right: 0; width: 100%; height: 100%;
+}
+.listContainer ul li:hover figure figcaption > a{
+    opacity:1;
+}
+/* todo list Fin */
+[class*='detail'] h2{
+    padding-bottom: 20px; margin-bottom: 45px; border-bottom:1px solid var(--gs4);
+}
+.detailDrinkContainer > div > *:not(h3,div:last-of-type),
+.detailMdContainer form > div:first-of-type *:not(h3,h3 strong,h3 strong output,div:last-of-type){
+    color: var(--gs7);
+}
+.detailDrinkContainer > div h3,
+.detailDrinkContainer > div div:last-of-type,
+.detailMdContainer form > div h3,
+.detailMdContainer form > div:first-of-type div:last-of-type strong:first-of-type,
+.detailMdContainer form > div:first-of-type div:last-of-type + strong{
+    color: var(--gs8);
+}
+.detailDrinkContainer > div > *:not(div:nth-of-type(2)){
+    padding: 0 3.1% 20px;
+}
+.detailDrinkContainer > div > *:not(div:first-of-type){
+    margin-bottom: 20px;
+}
+.detailDrinkContainer > div h3,
+.detailDrinkContainer > div div:last-of-type{
+    border-bottom: 1px solid var(--gs10);
+}
+.detailDrinkContainer > div p,
+.detailDrinkContainer > div p + div,
+.detailDrinkContainer > div div:nth-of-type(2){
+    border-bottom: 1px solid var(--gs8);
+}
+.detailDrinkContainer > div p + div,
+.detailDrinkContainer > div div:nth-of-type(2) ul li{
+    position:relative;
+}
+.detailDrinkContainer > div div:nth-of-type(2) ul li span:last-of-type{
+    right:0;
+}
+.detailDrinkContainer > div div:last-of-type strong:last-of-type{
+    color: var(--pcRed); margin-left: 2.1%;
+}
+.detailDrinkContainer > div p,
+.detailDrinkContainer > div p:last-of-type{
+    line-height: 24px;
+}
+.detailDrinkContainer > div p:last-of-type strong{
+    padding: 20px 0;
+}
+.detailMdContainer form > div div:nth-of-type(2) ul span:last-of-type{
+    position: absolute;
+}
+.detailMdContainer form > div:first-of-type > *:not(.detailMdContainer form > div:first-of-type h3,.detailMdContainer form > div div:nth-of-type(2)){
+    padding: 0 3.1% 20px;
+}
+.detailMdContainer form > div p{
+    margin-bottom: 20px; line-height: 24px;
+}
+.detailMdContainer form > div h3 strong{
+    color: var(--pcRed);
+}
+.detailMdContainer form > div h3,
+.detailMdContainer form > div p,
+.detailMdContainer form > div div:first-of-type{
+    padding-bottom: 20px;
+}
+.detailMdContainer form > div p,
+.detailMdContainer form > div div:first-of-type,
+.detailMdContainer form > div div:nth-of-type(2){
+    border-bottom: 1px solid var(--gs6);
+}
+.detailMdContainer form > div div:nth-of-type(2) ul li{
+    position: relative;
+}
+.detailMdContainer form > div div:nth-of-type(2) ul li span:last-of-type{
+    right: 0;
+}
+.detailMdContainer form > div div:nth-of-type(3),
+.detailMdContainer form > div h3{
+    border-bottom: 1px solid var(--gs10);
+}
+.detailMdContainer form > div div:nth-of-type(3){
+    margin-bottom: 20px;
+}
+.detailMdContainer form > div div:nth-of-type(3) strong:last-of-type{
+    color: var(--pcRed); margin-left: 20px;
+}
+.detailMdContainer form > div:last-of-type{
+    position: relative; clear: both;
+}
+.detailMdContainer form > div:last-of-type > input,
+.detailBeenContainer form > div:last-of-type > input{
+    position:absolute; right: 0;
+}
+.detailBeenContainer form > div p{
+    line-height: 26px; border-bottom: 1px solid var(--gs10); padding: 0 3.1% 20px;
+}
+.detailBeenContainer form > div p span{
+    margin-bottom: 17px;
+}
+.beenInf div > *{
+    color: var(--gs1);
+}
+/* todo detail Fin */
+.loginContainer,
+[class^='findID'],
+[class^='forgotPassword']{
+    background-image: url('../images/login_bg.jpg'); background-size: cover; background-position: center;
+}
+.loginContainer div > fieldset{
+    display:none;
+}
+.loginContainer div > fieldset.active{
+    display: block;
+}
+.loginContainer > div,
+[class^='findID'] > div,
+[class^='forgotPassword'] > div{
+    background-color: rgb(0,0,0,0.8); margin: 0 auto; color: var(--gs1);
+}
+.loginContainer > div .loginTab input.active{
+    color: var(--pcRed);
+}
+.loginContainer > div .loginTab input,
+.loginContainer > div .loginTab input.active{
+    background-color: transparent; border: none;
+}
+.loginContainer > div .loginTab input:last-of-type{
+    margin-left: 11.5%;
+}
+.loginContainer > div [id$='LoginTab'] form [class*='compField'] > input:not(input[type='button']){
+    background-color: transparent; width: 100%; border: 1px solid var(--gs1); opacity: 0.6; 
+}
+.loginContainer #lastLoginTab form .belowField input,
+.loginContainer #lastLoginTab form > input[type='password'],
+.findIDContainer > div form fieldset .belowField input,
+[class*=forgotPassword] > div form div label+input{
+    background-color: transparent;  border: 1px solid var(--gs1); opacity: 0.6; 
+}
+.loginContainer #lastLoginTab form .belowField > label+input:focus,
+.findIDContainer > div form fieldset .belowField > label+input:focus,
+[class*=forgotPassword] > div form div label+input:focus,
+.loginContainer #lastLoginTab form > input[type='password']:focus,
+.loginContainer > div [id$='LoginTab'] form [class*='compField'] > input:not(input[type='button']):focus,
+.loginContainer > div #lastLoginTab form .belowField > select:focus{
+    opacity: 1; background-color: rgba(255, 255, 255, 0.2);
+}
+.loginContainer #lastLoginTab form > input[type='password']::placeholder,
+.loginContainer > div [id$='LoginTab'] form [class*='compField'] > input::placeholder,
+.loginContainer #lastLoginTab form .belowField > label+input::placeholder,
+.loginContainer > div #lastLoginTab form .belowField > input::placeholder,
+.loginContainer > div #lastLoginTab form .belowField > select,
+.findIDContainer > div form fieldset .belowField input::placeholder,
+[class*=forgotPassword] > div form div label+input::placeholder{
+    color: var(--gs4);
+}
+.loginContainer > div .loginTab input,
+.loginContainer > div #firstLoginTab form [class*='compField'] > input,
+.loginContainer > div #firstLoginTab form [class*='compField'] input:hover::placeholder,
+.loginContainer > div #firstLoginTab > div:last-of-type > a,
+.loginContainer > div #lastLoginTab form input:not(input[type='submit'],input[type='reset']),
+.loginContainer > div #lastLoginTab form input:not(input[type='submit'],input[type='reset']):hover::placeholder,
+.loginContainer > div #lastLoginTab form .belowField > select:hover,
+.findIDContainer > div form fieldset .belowField input,
+.findIDContainer > div form fieldset .belowField input:hover::placeholder,
+[class*=forgotPassword] > div form div label+input,
+[class*=forgotPassword] > div form div label+input:hover::placeholder{
+    color: var(--gs1);
+}
+.loginContainer > div [id$='LoginTab'] form [class*='userID'] > input{
+    background-image: url('../images/icon_loginPeople.svg');
+}
+.loginContainer > div [id$='LoginTab'] form [class*='user'] > input{
+    background-repeat: no-repeat; background-position: 4% center;
+}
+.loginContainer > div [id$='LoginTab'] form [class*='userID'],
+.loginContainer > div [id$='LoginTab'] form [class*='userPW']{
+    position: relative;
+}
+.loginContainer > div [id$='LoginTab'] form [class*='userID']::after,
+.loginContainer > div [id$='LoginTab'] form [class*='userPW']::after{
+    content: ''; display: block; line-height: 28px; width: 1px; background-color: rgba(255, 255, 255, 0.6); position: absolute;  left: 16%;
+}
+.loginContainer > div [id$='LoginTab'] form [class*='userPW'] input[type='button']{
+    cursor: pointer; right: 6%; position: absolute; background-color: transparent; border: none;
+}
+.loginContainer > div #firstLoginTab form .customChk,
+.loginContainer > div #lastLoginTab form > div:nth-of-type(7) .customChk,
+.loginContainer > div #lastLoginTab form > div:last-of-type .customChk{
+    background-image: url('../images/btn_checkBox_off.svg'); transition: background 0.3s ease-in-out;
+}
+.loginContainer > div #firstLoginTab form input[type='checkbox']:checked+ .customChk,
+.loginContainer > div #lastLoginTab form > div:nth-of-type(7) input[type='checkbox']:checked +.customChk,
+.loginContainer > div #lastLoginTab form > div:last-of-type input[type='checkbox']:checked +.customChk{
+    background-image: url('../images/btn_checkBox_on.svg');
+}
+.loginContainer > div #firstLoginTab > div{
+    margin-top: 30px;
+}
+.loginContainer > div #firstLoginTab > div > a:last-of-type{
+    float: right;
+}
+.loginContainer > div #firstLoginTab div > a:hover,
+.loginContainer > div #lastLoginTab form > div:nth-of-type(7) > *:not(label):hover,
+.loginContainer > div #lastLoginTab form > div:last-of-type > *:not(label):hover{
+    color: var(--pcRed);
+}
+.loginContainer > div #lastLoginTab form .belowField > label,
+.findIDContainer > div form fieldset div > *:not(:last-child){
+    margin-bottom: 20px;
+}
+.loginContainer > div #lastLoginTab form .belowField > select{
+    background-color: transparent; border: 1px solid var(--gs1); opacity: 0.6; display: inline-block;
+}
+
+.loginContainer > div #lastLoginTab form > div:nth-of-type(7) > *:not(label),
+.loginContainer > div #lastLoginTab form > div:last-of-type > *:not(label){
+    margin-left: 2%; color: var(--gs5);
+}
+.findIDCkContainer > div p,
+[class*='forgotPassword'] > div form div label{
+    line-height: 24px; 
+}
+[class*='my'] h2{
+    padding: 0 0 20px; border-bottom: 1px solid var(--gs4); margin-bottom: 20px;
+}
+[class*='my'] .myPageNav,
+[class*='my'] .myPageNav ul > li ol li:not(:last-of-type){
+    margin-bottom: 40px;
+}
+[class*='my'] .myPageNav ul li:hover span{
+    color: var(--prs3);
+}
+[class*='my'] .myPageNav ul > li{
+    border-bottom: 1px solid var(--gs4);
+}
+[class*='my'] .myPageNav ul > li ol li{
+    word-break: break-all; line-height: 24px;
+}
+[class*='my'] .myPageNav ul > li ol li a{
+    font-size: 0; height: 0; color: var(--gs10);
+}
+[class*='my'] .myPageNav ul:hover > li ol li a{
+    font-size: 16px; min-height: 46px;
+}
+[class*='my'] .myPageNav ul > li ol li a:hover{
+    color: var(--prs3);
+}
+.myNoticeContainer > div:first-of-type{
+    background-color: var(--gs3); padding: 40px 5%; margin-bottom: 40px;
+}
+.myNoticeContainer > div:first-of-type form > input[type="text"]{
+    border: 1px solid var(--gs5); line-height: 40px; padding: 0 3%;
+}
+.myNoticeContainer > div:first-of-type form > input[type="text"]::placeholder{
+    color: var(--gs5);
+}
+.myNoticeContainer > p{
+    margin-bottom: 40px; color: var(--gs7);
+}
+.myNoticeContainer > ul{
+    border-top: 1px solid var(--gs4); display: flex; flex-direction: column; align-items: center;
+}
+.myNoticeContainer > ul li{
+    border-bottom: 1px solid var(--gs4); width: 100%; 
+}
+.myNoticeContainer > ul li:nth-of-type(n+2) a{
+    color: var(--gs10);
+}
+.myNoticeContainer > ul li:nth-of-type(n+2) a:hover{
+    color: var(--pcRed);
+}
+.myNoticeDetailContainer figure{
+    margin-bottom: 80px;
+}
+/* todo Notice */
+[class*='news'] h2{
+    color: var(--pcRed); margin-bottom: 80px;
+}
+[class*='newsPr'] > ul li{
+    border-bottom: 1px solid var(--gs4); padding-bottom: 40px;
+}
+.newsEventContainer ul{
+    margin-bottom: 80px;
+}
+.newsEventContainer ul li {
+    border-bottom: 1px solid var(--gs4); padding-bottom: 40px;
+}
+.newsEventContainer ul li figure figcaption:nth-of-type(2){
+    line-height: 24px;
+}
+.newsEventContainer > input[type="button"]{
+    background-color: var(--gs1); border: 1px solid var(--gs4); margin: 0 auto; width: 25%; line-height: 55px;
+}
+[class*='eventDetail'] h2{
+    padding-bottom: 40px; margin-bottom: 80px; border-bottom: 1px solid var(--gs4);
+}
+[class*='eventDetail'] img{
+    width: 100%;
+}
+/* todo Event */
+.newsTalkContainer h2{
+    padding: 155px 17.5% 0;
+}
+.newsTalkContainer > ul,
+.newsTalkContainer > div h3{
+    margin-bottom: 40px;
+}
+.newsTalkContainer > ul li{
+    display: inline-block; width: 30px; line-height: 30px;
+}
+.newsTalkContainer > ul li a{background-repeat: no-repeat; background-position: center;}
+.newsTalkContainer > ul li:nth-of-type(1) a{background-image: url('../images/ico_all.png');}
+.newsTalkContainer > ul li:nth-of-type(2) a{background-image: url('../images/ico_blog.png');}
+.newsTalkContainer > ul li:nth-of-type(3) a{background-image: url('../images/ico_facebook.png');}
+.newsTalkContainer > ul li:nth-of-type(4) a{background-image: url('../images/ico_instar.png');}
+.newsTalkContainer > div ul li figure figcaption{
+    background-color: var(--gs1); padding: 25px 6.5%;
+}
+.newsTalkContainer > div ul li figure figcaption p{
+    line-height: 24px;
+}
+.newsTalkContainer > div > ul li figure figcaption a{
+    position: absolute; top: 0; right: 0; width: 100%; height: 100%;
+}
+.newsTalkContainer > div > input{
+    border: none; background-color: var(--gs3);
+}
+.newsTalkContainer > div > input:hover{
+    color: var(--pcRed);
+}
+/* todo Talk  */
+[class*='newsPr'] > div:first-of-type{
+    margin-bottom: 40px;
+}
+[class*='newsPr'] > div:first-of-type a{
+    line-height: 55px;
+}
+.newsPrCenterContainer > div:nth-of-type(2){
+    position: relative; background: url('../images/socialMain_01.jpg') no-repeat center / cover; color: var(--gs1); margin-bottom: 80px;
+}   
+[class*='newsPr'] > ul li figure figcaption h3{
+    margin-bottom: 8px; line-height: 24px;
+}
+[class*='newsPr'] > ul li figure figcaption p{
+    line-height: 24px; margin-bottom: 28px;
+}
+[class*='newsPr'] > ul li figure figcaption a{
+    float: right; color: var(--gs10);
+}
+[class*='newsPr'] > ul li figure figcaption a:hover{
+    color: var(--prs3);
+}
+[class*='newsPr'] > input{
+    width: 30%; line-height: 55px; margin: 0 auto;
+}
+.newsPrCenterDetailContainer > p,
+.newsPressDetailContainer > p{
+    line-height: 40px;
+}
+.newsPrCenterDetailContainer > p,
+.newsPrCenterDetailContainer > article h3,
+.newsPrCenterDetailContainer > div:nth-of-type(3) span,
+.newsPrCenterDetailContainer > div:nth-of-type(4) cite,
+.newsPressDetailContainer p{
+    margin-bottom: 40px;
+}
+[class*='newsPr'] > ul,
+.newsPrCenterDetailContainer > div:nth-of-type(3),
+.newsPrCenterDetailContainer > article,
+.newsPrCenterDetailContainer > article ul li:not(:last-of-type),
+.newsPrCenterDetailContainer > div:nth-of-type(4),
+.newsPressDetailContainer article h3,
+.newsPressDetailContainer article ul{
+    margin-bottom: 80px;
+}
+.newsPrCenterDetailContainer > div:nth-of-type(3),
+.newsPrCenterDetailContainer > article,
+.newsPrCenterDetailContainer > article ul li:not(:last-of-type){
+    padding-bottom: 80px;
+}
+.newsPrCenterDetailContainer > div:nth-of-type(3),
+.newsPrCenterDetailContainer > article,
+.newsPrCenterDetailContainer > article ul li:not(:last-of-type){
+    border-bottom: 1px solid var(--gs4);
+}
+.newsPrCenterDetailContainer > div:nth-of-type(3) span{
+    background: url('../images/social_title.png') no-repeat top center; padding-top: 170px; color: var(--gs6);
+}
+.newsPrCenterDetailContainer > div:nth-of-type(3) p{
+    line-height: 24px; margin-bottom: 65px;
+}
+.newsPrCenterDetailContainer > div:nth-of-type(3) p mark{
+    color: var(--prs6); margin-bottom: 16px; display: inline-block; font-weight: inherit;
+}
+.newsPrCenterDetailContainer > div:nth-of-type(3) img{
+    width: 100%; max-width: 855px;
+}
+.newsPrCenterDetailContainer > article ul li{
+    color: var(--gs8);
+}
+.newsPrCenterDetailContainer > article ul li img{
+    margin-bottom: 35px; width: 100%; max-width: 940px;
+}
+.newsPrCenterDetailContainer > article ul li:last-of-type{
+    margin-bottom: 50px;
+}
+.newsPrCenterDetailContainer > article > p{
+    color: var(--gs5); line-height: 24px;
+}
+.newsPrCenterDetailContainer > div:nth-of-type(4) cite{
+    padding-top: 100px; background: url('../images/social_foot.png') no-repeat top center;
+}
+.newsPrCenterDetailContainer > div:nth-of-type(4) p{
+    position: relative; border: 1px solid var(--gs4); line-height: 24px;
+}
+.newsPrCenterDetailContainer > div:nth-of-type(4) span{
+    position: absolute; top: -15px; left: 0; width: 100%;
+}
+.newsPrCenterDetailContainer > div:nth-of-type(4) span mark{
+    display: inline-block; padding: 5px; background-color: var(--gs1);
+}
+.newsPrCenterDetailContainer > div:last-of-type,
+.newsPressDetailContainer article div:last-of-type{
+    border-width: 1px 0; border-style: solid; line-height: 55px; border-color: var(--gs5); position: relative;
+}
+.newsPrCenterDetailContainer > div:last-of-type a,
+.newsPressDetailContainer article div:last-of-type a{
+    color: var(--gs10); 
+}
+.newsPrCenterDetailContainer > div:last-of-type a:hover,
+.newsPressDetailContainer article div:last-of-type a:hover{
+    color: var(--pcRed);
+}
+.newsPrCenterDetailContainer > div:last-of-type a:nth-of-type(1),
+.newsPressDetailContainer article div:last-of-type a:nth-of-type(1){
+    left: 0; border-right: 1px solid var(--gs4);
+}
+.newsPrCenterDetailContainer > div:last-of-type a:nth-of-type(2),
+.newsPressDetailContainer article div:last-of-type a:nth-of-type(2){
+    right: 0; border-left: 1px solid var(--gs4);
+}
+.newsPrCenterDetailContainer > div:last-of-type a:nth-of-type(3),
+.newsPressDetailContainer article div:last-of-type a:nth-of-type(3){
+    margin: 0 auto; background: url('../images/icon_menu.svg') no-repeat left 17px / 20px;
+}
+.newsPressDetailContainer article h3{
+    line-height: 48px;
+}
+.newsPressDetailContainer article img{
+    max-width: 980px;
+}
+.newsPressDetailContainer article ul li{
+    line-height: 30px;
+}
+.newsPressDetailContainer article ul li:not(:last-of-type){
+    margin-bottom: 25px;
+}
+/* todo news */
+.storeInformationContainer{
+    height: 100vh;
+}
+.storeInformationContainer,
+.storeInformationContainer aside div fieldset{
+    position: relative;
+}
+.storeInformationContainer > input[type='button'],
+.storeInformationContainer aside div > h2 input,
+.storeInformationContainer aside div form fieldset input[type='search'],
+.storeInformationContainer aside div form fieldset input[type='submit']{
+    position: absolute;
+}
+.storeInformationContainer > input[type='button']{
+    bottom: 0; left: 50%; width: 75px; height: 75px; z-index: 9; transform: translate(-50%,0); background: url('../images/icon_arrowTop.svg') no-repeat center / cover; background-color: var(--pcRed); border: none; border-radius: 20px 20px 0 0; cursor: pointer; transition: all 0.25s ease-in-out;
+}
+.storeInformationContainer aside{
+    position: fixed; right: 50%; bottom: 0; transform: translate(50%,0); z-index: 99; border-radius: 50px 50px 0 0; background-color: var(--gs1); box-shadow: 0 0 25px 5px rgba(0, 0, 0, 0.3); transition: display 0.25s ease-in-out;
+}
+.storeInformationContainer aside.active{
+    display: block;
+}
+.storeInformationContainer aside > div{
+    background-color: var(--gs8); padding: 35px 4.2%;
+}
+.storeInformationContainer aside div > h2{
+    color: var(--prs4); line-height: 52px; margin-bottom: 40px;
+}
+.storeInformationContainer aside div > h2 input{
+    font-size: 40px; background-color: transparent; border: none; cursor: pointer;
+}
+.storeInformationContainer aside div form label{
+    color: var(--gs1); margin-bottom: 80px;
+}
+.storeInformationContainer aside div form fieldset{
+    min-height: 52px;
+}
+.storeInformationContainer aside div form fieldset input{
+    line-height: 50px; border-radius: 50px;
+}
+.storeInformationContainer aside div form fieldset input[type='search']{
+    width: 100%; border: 1px solid var(--gs4); padding: 0 9% 0 5%;
+}
+.storeInformationContainer aside div form fieldset input[type='search']::placeholder{
+    color: var(--gs4);
+}
+.storeInformationContainer aside div form fieldset input[type='submit']{
+    right: 0; background:transparent url('../images/icon_search.svg') no-repeat center / 20px; border: none;
+}
+.storeInformationContainer aside ul{
+    padding: 40px 8.4%;
+}
+.storeInformationContainer aside ul li{
+    border-bottom: 1px solid var(--gs4); padding-bottom: 20px; margin-bottom: 20px;
+}
+.storeInformationContainer aside ul li address{
+    line-height: 18px; font-style: normal;
+}
+.storeInformationContainer aside ul li address p{
+    margin-bottom: 30px;
+}
+
+.myPartnershipContainer > div:first-of-type{
+    background: url('../images/BG_happy.png') no-repeat center / cover; padding: 80px 0; margin-bottom: 50px;
+}
+.myPartnershipContainer > div:first-of-type h3{
+    margin-bottom: 20px;
+}
+.myPartnershipContainer > div:first-of-type > p{
+    margin-bottom: 40px;
+}
+.myPartnershipContainer > div:first-of-type div > p mark{
+    color: var(--pcRed); font-weight: inherit;
+}
+.myPartnershipContainer > div:first-of-type div > p:not(:last-of-type){
+    margin-bottom:30px;
+}
+.myPartnershipContainer > div:nth-of-type(2) h3,
+.myPartnershipContainer > div:nth-of-type(3) h3{
+    margin-bottom: 20px;
+}
+.myPartnershipContainer > div:nth-of-type(2) > mark,
+.myPartnershipContainer > div:nth-of-type(2) > p mark,
+.myPartnershipContainer > div:nth-of-type(3) > mark,
+.myPartnershipContainer > div:last-of-type mark{
+    color: var(--pcRed); font-weight: inherit;
+}
+.myPartnershipContainer > div:nth-of-type(2) > mark,
+.myPartnershipContainer > div:nth-of-type(3) > mark{
+    margin-bottom: 40px;
+}
+.myPartnershipContainer > div:nth-of-type(2) > p,
+.myPartnershipContainer > div:nth-of-type(3) > p{
+    margin-bottom: 80px; line-height: 24px;
+}
+.myPartnershipContainer > div:nth-of-type(2) ul,
+.myPartnershipContainer > div:nth-of-type(3) ul{
+    border-bottom: 1px solid var(--gs5); padding-bottom: 60px; margin-bottom: 40px;
+}
+.myPartnershipContainer > div:nth-of-type(2) ul li figure figcaption dl dt,
+.myPartnershipContainer > div:nth-of-type(3) ul li figure figcaption dl dt{
+    line-height: 24px; margin-bottom: 8px;
+}
+.myPartnershipContainer > div:nth-of-type(2) ul li figure figcaption dl dd,
+.myPartnershipContainer > div:nth-of-type(3) ul li figure figcaption dl dd{
+    line-height: 24px;
+}
+.myPartnershipContainer > div:nth-of-type(2) ul li figure figcaption dl dd p,
+.myPartnershipContainer > div:nth-of-type(3) > p,
+.myPartnershipContainer > div:nth-of-type(3) ul li figure figcaption dl dd p{
+    color: var(--gs5);
+}
+.myPartnershipContainer > div:last-of-type mark{
+    background: url('../images/icon_partner.png') no-repeat left; line-height: 18px; font-weight: inherit;
+}
+.myPartnershipContainer > div:last-of-type ul li:not(:last-of-type){
+    margin-bottom: 5px;
+}
+.myPartnershipContainer > div:last-of-type ul li{
+    color: var(--gs8); line-height: 20px;
+}
+/* todo partner Fin */
+.myAskedContainer,
+.myAskedContainer > div:first-of-type{
+    margin-bottom: 40px;
+}
+.myAskedContainer div:first-of-type form input[type='text']{
+    line-height: 43px; padding: 0 3%; border: 1px solid var(--gs4);
+}
+.myAskedContainer div:first-of-type form input[type='text']::placeholder{
+    color: var(--gs5);
+}
+.myAskedContainer div:first-of-type form input[type='submit']{
+    width: 24%; height: 45px; min-width: 120px; 
+}
+.myAskedContainer div:first-of-type ul{
+    margin-top:30px;
+}
+.myAskedContainer div:first-of-type ul li input{
+    width: 100%; line-height: 40px; color: var(--gs5); background-color: var(--gs1); border: 1px solid var(--gs4);
+}
+.myAskedContainer div:first-of-type ul li.active input{
+    color: var(--gs8); border: 1px solid var(--gs8); background-color: var(--gs4);
+}
+.myAskedContainer > p,
+.myAskedContainer > ul li{
+    border-bottom: 1px solid var(--gs4); padding-bottom: 20px; margin-bottom: 20px;
+}
+.myAskedContainer > p{
+    color: var(--gs7);
+}
+.myAskedContainer > ul li span{
+    display: inline-block;
+}
+.myAskedContainer > ul li:not(:first-of-type) p:first-of-type::after{
+    content: ''; display: block; position: absolute; right: 0; top: 0; width: 20px; height: 20px; background: url('../images/icon_arrow.svg') no-repeat center / 20px; transition-duration: 0.35s;
+}
+.myAskedContainer > ul li:not(:first-of-type) p:first-of-type{
+    position: relative; display: inline-block; padding-right: 3%; transition-duration: 0.35s;
+}
+.myAskedContainer > ul li:not(:first-of-type):hover p:first-of-type{
+    color: var(--pcRed);
+}
+.myAskedContainer > ul li:not(:first-of-type).active p:first-of-type{
+    margin-bottom: 20px;
+}
+.myAskedContainer > ul li:not(:first-of-type).active p:first-of-type::after{
+    transform: rotate(-180deg);
+}
+.myAskedContainer > ul li:not(:first-of-type) p:last-of-type{
+    height: 0; opacity: 0; font-size: 0; background-color: var(--gs3); border-top: 1px solid var(--gs4); transition-property: background, padding-top, height, opacity, font-size; transition-duration: 0.35s, 0.35s, 0.35s, 0.35s, 0s; transition-timing-function: ease-in-out; 
+}
+.myAskedContainer > ul li:not(:first-of-type).active p:last-of-type{
+    opacity: 1; font-size: 16px; line-height: 24px;
+}
+.myAskedContainer > ul li:nth-of-type(8) p a{
+    word-break: break-all;
+}
+/* todo Asked Fin */
+[class*='myInquiry'] > div:first-of-type{
+    background-color: var(--gs3); margin-bottom: 40px;
+}
+[class*='myInquiry'] > div:first-of-type input{
+    background-color: var(--gs1); border: 1px solid var(--gs4); color: var(--gs7); min-width: 100px;
+}
+[class*='myInquiry'] > div:first-of-type input.active{
+    color: var(--gs8); border:  1px solid var(--gs8);background-color: var(--gs4);
+}
+[class*='myInquiry'] > div:first-of-type select{
+    margin-top: 20px; width: 100%; padding: 10px 0; border: 1px solid var(--gs5); color: var(--gs5); clear: both;
+}
+[class*='myInquiry'] > div:first-of-type input:last-of-type.active{
+    margin-bottom: 20px;
+}
+[class*='myInquiry'] > div:first-of-type input:last-of-type.active+select{
+    display: block;
+}
+[class*='myInquiry'] > p{
+    color: var(--gs5); border-bottom: 1px solid var(--gs5); padding: 0 1.6% 20px;  margin-bottom: 40px;
+}
+.myInquiryContainer > ul{
+    margin-bottom: 40px;
+}
+.myInquiryContainer > ul li h3 mark{
+    background-color: var(--pcRed); color: var(--gs1); padding: 5px 1%;
+}
+.myInquiryContainer > ul li p{
+    line-height: 20px; margin-bottom: 20px;
+}
+/* todo INquiry */
+.myConsultationContainer > ul{
+    background-color: var(--gs3); padding: 20px 1.6%; margin-bottom: 40px; list-style-position: inside;
+}
+.myConsultationContainer > ul li:not(a){
+    color: var(--gs5);
+}
+.myConsultationContainer > ul li a{
+    color: var(--gs10); text-decoration: underline;
+}
+.myConsultationContainer > ul li a:hover{
+    color: var(--prs4);
+}
+.myConsultationContainer form fieldset div:not(:nth-of-type(6)){
+    margin-bottom: 20px;
+}
+.myConsultationContainer form fieldset div:first-of-type select,
+.myConsultationContainer form fieldset div:nth-of-type(1) input,
+.myConsultationContainer form fieldset div:nth-of-type(2) input,
+.myConsultationContainer form fieldset div:nth-of-type(3) textarea,
+.myConsultationContainer form fieldset div:nth-of-type(4) label{
+    width: 100%; padding: 10px 2%; border: 1px solid var(--gs4);
+}
+.myConsultationContainer form fieldset div:nth-of-type(1) label,
+.myConsultationContainer form fieldset div:nth-of-type(2) label,
+.myConsultationContainer form fieldset div:nth-of-type(3) label{
+    margin-bottom: 10px;
+}
+.myConsultationContainer form fieldset div:first-of-type select,
+.myConsultationContainer form fieldset div input::placeholder,
+.myConsultationContainer form fieldset div:nth-of-type(5),
+.myConsultationContainer form fieldset div:nth-of-type(6){
+    color: var(--gs5);
+}
+.myConsultationContainer form fieldset div:nth-of-type(3) textarea{
+    min-height: 400px; resize: none; font-size: inherit; font-family: inherit; font-weight: inherit;
+}
+.myConsultationContainer form fieldset div:nth-of-type(4) label{
+    background: var(--gs4);
+}
+.myConsultationContainer form fieldset div:nth-of-type(4) label::before{
+    content: ''; display: inline-block; background: url('../images/icon_camera.svg') no-repeat  0 / 22px; width: 30px; height: 16px;
+}
+.myConsultationContainer form fieldset div:nth-of-type(4) label:hover{
+    background-color: var(--gs7);
+}
+.myConsultationContainer form fieldset div:nth-of-type(6){
+    margin-bottom: 40px;
+}
+.myConsultationContainer form fieldset div:nth-of-type(5) .customChk,
+.myConsultationContainer form fieldset div:nth-of-type(6) .customChk{
+    line-height: 20px; background: url('../images/btn_checkBox_off.svg') no-repeat left / 25px; transition: background 0.3s ease-in-out;
+}
+.myConsultationContainer form fieldset div:nth-of-type(5) input:checked+.customChk,
+.myConsultationContainer form fieldset div:nth-of-type(6) input:checked+.customChk{
+    background: url('../images/btn_checkBox_on.svg') no-repeat left / 25px;
+}
+.myConsultationContainer form fieldset div:nth-of-type(6) label span{
+    margin-top: 10px;
+}
+/* todo myConsultation Fin*/
+.myPageContainer > div:first-of-type,
+.myPageContainer > div:nth-of-type(2),
+.myPageContainer > ul{
+    border-bottom: 1px solid var(--gs4);
+}
+.myPageContainer > div:first-of-type h3 span mark{
+    color: var(--pcRed); font-weight: inherit;
+}
+.myPageContainer > div:first-of-type ul li{
+    float: left; background-color: var(--gs3); display: flex; justify-content: center; align-items: center; 
+}
+.myPageContainer > div:first-of-type ul li:nth-of-type(1),
+.myPageContainer > div:first-of-type ul li:nth-of-type(2){
+    border-bottom: 1px solid var(--gs1);
+}
+.myPageContainer > div:first-of-type ul li:nth-of-type(1),
+.myPageContainer > div:first-of-type ul li:nth-of-type(3){
+    border-right: 1px solid var(--gs1);
+}
+.myPageContainer > div:first-of-type ul li a{
+    color: var(--gs10);
+}
+.myPageContainer > div:first-of-type ul li span mark,
+.myPageContainer > div:first-of-type ul li a mark{
+    margin-top: 30px; color: var(--pcRed);
+}
+.myPageContainer > div:nth-of-type(2),
+.myPageContainer > ul{
+    margin-bottom: 40px;
+}
+.myPageContainer > div:nth-of-type(2),
+.myPageContainer > ul,
+.myPageContainer div:nth-of-type(3){
+    padding: 0 1.6% 40px;
+}
+.myPageContainer > div:nth-of-type(2) h3{
+    margin-bottom: 80px;
+}
+.myPageContainer > div:nth-of-type(2) ol li span{
+    margin-bottom: 20px;
+}
+.myPageContainer > ul li div time{
+    color: var(--gs5);
+}
+.myPageContainer > ul li div mark{
+    font-weight: inherit; color: var(--pcRed);
+}
+.myPageContainer div:nth-of-type(3) h3{
+    margin-bottom: 25px;
+}
+.myPageContainer div:nth-of-type(3) ul li figure img{
+    width: 100%;
+}
+.myPageContainer div:nth-of-type(3) ul li figure figcaption dl dd mark{
+    margin-left: 6%; color: var(--pcRed);
+}
+.myPageContainer div:nth-of-type(3) ul li figure figcaption dl dd del{
+    color: var(--gs5);
+}
+/* todo myPage Fin */
+[class*=myInquiryOrder] > ol{
+    border-bottom: 1px solid var(--gs4); margin-bottom: 40px;
+}
+[class*=myInquiryOrder] > ol li span{
+    margin-bottom: 20px;
+}
+.myInquiryOrderContainer > ul{
+    margin-bottom: 40px;
+}
+.myInquiryOrderContainer > ul li{
+    border: 1px solid var(--gs4);
+}
+.myInquiryOrderContainer > ul li div{
+    background-color: var(--gs3); padding: 20px 2%;
+}
+.myInquiryOrderContainer > ul li div time{
+    margin-left: 2%; padding-left: 2%; border-left: 1px solid var(--gs4);
+}
+.myInquiryOrderContainer > ul li mark{
+    color: var(--gs6); border-width: 0 1px 0 1px; border-style: solid; border-color: var(--gs4);
+}
+.myInquiryOrderContainer > ul li span:last-of-type input{
+    background-color: var(--gs1); border: 1px solid var(--gs4); color: var(--gs7); width: 100%; min-width: 150px;
+}
+.myInquiryOrderContainer .paging{
+    margin-bottom: 40px;
+}
+.myInquiryOrderContainer > div:last-of-type,
+.myInquiryOrderEmptyContainer > div:last-of-type{
+    background-color: var(--gs3); border: 1px solid var(--gs4); padding: 20px 1.6%;
+}
+.myInquiryOrderEmptyContainer > div:nth-of-type(2){
+    padding-top: 100px; margin-bottom: 40px; background: url('../images/icon_noneList.png') no-repeat center top;
+}
+.myInquiryOrderCancelContainer > ul{
+    margin-bottom: 40px;
+}
+.myInquiryOrderCancelContainer > ul li{
+    border: 1px solid var(--gs4);
+}
+.myInquiryOrderCancelContainer > ul li div{
+    background-color: var(--gs3); padding: 20px 2%;
+}
+/* todo Order Fin */
+.myCouponContainer > div:first-of-type{
+    padding: 0 3.2%;
+}
+.myCouponContainer > div:first-of-type,
+.myCouponContainer > div:nth-of-type(2){
+    border-bottom: 1px solid var(--gs5); margin-bottom: 40px;
+}
+.myCouponContainer > div:first-of-type *:not(:nth-child(2)){
+    line-height: 24px;
+}
+.myCouponContainer > div:first-of-type a{
+    min-width: 220px;
+}
+.myCouponContainer > div:first-of-type span{
+    color: var(--gs5);
+}
+.myCouponContainer > div:first-of-type span mark{
+    color: var(--pcRed); margin-top: 20px;
+}
+.myCouponContainer > div:nth-of-type(2) form input[type='search']{
+    display: inline-block; padding: 10px 2%;
+}
+.myCouponContainer > div:nth-of-type(2) form input[type='submit']{
+    background-color: var(--gs3); border: 1px solid var(--gs4); color: var(--gs7); line-height: 40px; min-width: 180px;
+}
+.myCouponContainer > div:nth-of-type(2) form input[type='search'],
+.myCouponContainer > div:nth-of-type(2) form input[type='submit']{
+    font-size: inherit; font-weight: inherit; font-family: inherit;
+}
+.myCouponContainer > ul li{
+    margin-bottom: 30px; background-color: var(--gs3); 
+}
+.myCouponContainer > ul li > *{
+    margin-bottom: 20px;
+}
+.myCouponContainer > ul li span{
+    color: var(--gs5);
+}
+.myCouponContainer > ul li span:first-of-type small:last-of-type{
+    float: right;
+}
+.myCouponContainer > ul li p:first-of-type,
+.myCouponContainer > ul li p:last-of-type{
+    line-height: 20px;
+}
+/* todo cuupon Fin */
+[class*='myManagement'] div:first-of-type ul li input[type='text'],
+[class*='myManagement'] div:first-of-type ul li input[type='email'],
+[class*='myManagement'] div:first-of-type ul li input[type='tel']{
+    padding: 12px 2%; border: 1px solid var(--gs4);
+}
+[class*='myManagement'] div:first-of-type ul li:nth-of-type(3) span .customRdio{
+    display: inline-block; line-height: 22px; background: url('../images/btn_radio_off.svg') no-repeat left / 26px;
+}
+[class*='myManagement'] div:first-of-type ul li:nth-of-type(6) > input{
+    width: 100%;
+}
+[class*='myManagement'] div:first-of-type ul li:nth-of-type(1) input:last-of-type,
+[class*='myManagement'] div:first-of-type ul li:nth-of-type(6) div a{
+    min-width: 140px;
+}
+[class*='myManagement'] div:first-of-type ul li:nth-of-type(7){
+    justify-content: center; margin-bottom: 40px;
+}
+[class*='myManagement'] div:first-of-type ul li:nth-of-type(8){
+    margin-bottom: 10px;
+}
+[class*='myManagement'] div:first-of-type ul li:nth-of-type(8) input:checked+.customChk,
+[class*='myManagement'] div:first-of-type ul li:nth-of-type(9) input:checked+.customChk{
+    background-image: url('../images/btn_checkBox_on.svg');
+}
+[class*='myManagement'] div:first-of-type ul li:nth-of-type(8) a,
+[class*='myManagement'] div:first-of-type ul li:nth-of-type(9) a{
+    margin-left: 1%; color: var(--gs5);
+}
+[class*='myManagement'] div:first-of-type ul li:nth-of-type(8) a:hover,
+[class*='myManagement'] div:first-of-type ul li:nth-of-type(9) a:hover{
+    color: var(--pcRed);
+}
+.myManagementContainer > div:last-of-type h3{
+    margin-bottom: 40px;
+}
+.myManagementContainer > div:last-of-type li h4,
+.myManagementContainer > div:last-of-type li address,
+.myManagementContainer > div:last-of-type li p{
+    margin-bottom: 30px;
+}
+.myManagementContainer > div:last-of-type li h4 span,
+.myManagementContainer > div:last-of-type li address,
+.myManagementContainer > div:last-of-type li p{
+    color: var(--gs5);
+}
+.myManagementContainer > div:last-of-type li h4 mark{
+    background-color: var(--pcRed); color: var(--gs1);
+}
+.myManagementContainer > div:last-of-type li input,
+.myManagementContainer > div:last-of-type li a{
+    border: 1px solid var(--gs4); background-color: var(--gs1); padding: 4px 4%; color: var(--gs7);
+}
+.myManagementEmptyContainer div:last-of-type h3{
+    margin-bottom: 40px;
+}
+#cancelPopup,
+#pwChangePopup,
+#delAddress,
+#clearAddress,
+#addAddressPopup{
+    position: fixed; top: 50%; z-index: 9999; background-color: var(--gs1); box-shadow: 0 0 25px 5px rgba(0, 0, 0, 0.3);
+}
+#cancelPopup.active,
+#cancelPopup div:first-of-type.active,
+#cancelPopup div:last-of-type.active,
+#pwChangePopup.active,
+#delAddress.active,
+#clearAddress.active,
+#addAddressPopup.active{
+    display: block;
+}
+#cancelPopup{
+    padding: 40px 2%;
+}
+#cancelPopup div:first-of-type p,
+#cancelPopup div:last-of-type p{
+    line-height: 20px;
+    margin-bottom: 40px;
+}
+#cancelPopup div:last-of-type a{
+    width: 100%;
+}
+#pwChangePopup h2,
+#addAddressPopup h2{
+    border-bottom: 1px solid var(--gs5); padding-bottom: 20px; margin-bottom: 40px;
+}
+#pwChangePopup{
+    padding: 20px 1%; 
+}
+#pwChangePopup > input[type='button'],
+#addAddressPopup > input[type='button']{
+    position: absolute; width: 24px; line-height: 24px; border: none; background: transparent url('../images/btn_closed.svg') no-repeat center / 100%;
+}
+#pwChangePopup form fieldset > div:not(:last-of-type){
+    margin-bottom: 20px;
+}
+#pwChangePopup form fieldset > * > input{
+    padding: 14px 2%; border: 1px solid var(--gs4);
+}
+#pwChangePopup form fieldset > * > input::placeholder{
+    color: var(--gs5);
+}
+#pwChangePopup form fieldset > div:last-of-type,
+#delAddress p{
+    margin-bottom: 40px;
+}
+#pwChangePopup form fieldset p{
+    margin-bottom: 80px;
+}
+#pwChangePopup form fieldset p,
+#delAddress p{
+    text-align: left; line-height: 20px;
+}
+#pwChangePopup form fieldset > input{
+    width: 60%;
+}
+#delAddress,
+#clearAddress{
+    padding: 40px 3.2%;
+}
+#delAddress input{
+    width: 49%; min-width: 120px;
+}
+#clearAddress p{
+    margin-bottom: 40px;
+}
+#addAddressPopup form fieldset div,
+#addAddressPopup form fieldset div label,
+#addAddressPopup form fieldset div:last-of-type input:first-of-type,
+#addAddressPopup form fieldset div:last-of-type input[type='button'],
+#addAddressPopup form fieldset div:last-of-type input:nth-of-type(3){
+    margin-bottom: 20px;
+}
+#addAddressPopup form fieldset div input:not(input[type='button']){
+    padding: 14px 2%; border: 1px solid var(--gs4);
+}
+#addAddressPopup form fieldset div:last-of-type input:first-of-type,
+#addAddressPopup form fieldset div:last-of-type input[type='button']{
+    float: left;
+}
+#addAddressPopup form fieldset div:last-of-type input:first-of-type{
+    background-color: var(--gs3); width: 45%;
+}
+#addAddressPopup form fieldset div:last-of-type input[type='button']{
+    width: 50%; padding: 12px 2%; margin-left: 5%; background-color: var(--gs1); border: 1px solid var(--gs4);
+}
+#addAddressPopup form fieldset > a{
+    margin: 0 auto;
+}
+[class*=Address] div{
+    padding: 0 1.6%;
+}
+.myAddressContainer div ul,
+[class*=Address] div > p:first-of-type{
+    margin-bottom: 40px;
+}
+.myAddressContainer div ul li h4,
+.myAddressContainer div ul li address,
+.myAddressContainer div ul li p{
+    margin-bottom: 30px;
+}
+.myAddressContainer div ul li h4 span,
+.myAddressContainer div ul li address,
+.myAddressContainer div ul li p{
+    color: var(--gs5);
+}
+.myAddressContainer div ul li h4 span{
+    margin-left: 1%;
+}
+.myAddressContainer div ul li address{
+    font-style: normal;
+}
+.myAddressContainer div ul li input,
+.myAddressContainer div ul li a{
+    border: 1px solid var(--gs4); background-color: var(--gs1); color: var(--gs7);
+}
+.myAddressEmptyContainer p:last-of-type{
+    color: var(--gs4); padding-top: 16%; background: url('../images/icon_delivery.png') no-repeat top center / 14%; margin-bottom: 40px;
+}
+/* todo address Fin */
+[class*='shoppingBag'] form ul{
+    margin-bottom: 40px;
+}
+[class*='shoppingBag'] form ul li:not(:last-of-type){
+    margin-bottom: 30px;
+}
+[class*='shoppingBag'] form ul li:first-of-type{
+    margin-bottom: 20px; padding: 0 1.6% 20px; border-bottom: 1px solid var(--gs4);
+}
+[class*='shoppingBag'] form ul li:first-of-type > *{
+    float: left;
+}
+[class*='shoppingBag'] form ul li:first-of-type span:first-of-type .customChk{
+    line-height: 18px; background: url('../images/btn_checkBox_off.svg') no-repeat left / 26px;
+}
+[class*='shoppingBag'] form ul li:first-of-type span:first-of-type input:checked+.customChk{
+    background-image: url('../images/btn_checkBox_on.svg');
+}
+.myshoppingBagContainer form ul li:not(:first-of-type){
+    padding: 0 1.6% 30px; border-bottom: 1px solid var(--gs4);
+}
+.myshoppingBagContainer form ul li:not(:first-of-type) span:first-of-type .customChk{
+    line-height: 130px; background: url('../images/btn_checkBox_off.svg') no-repeat left / 26px;
+}
+.myshoppingBagContainer form ul li:not(:first-of-type) span:first-of-type input:checked+.customChk{
+    background-image: url('../images/btn_checkBox_on.svg');
+}
+.myshoppingBagContainer form ul li:not(:first-of-type) span:nth-of-type(2) img{
+    max-width: 110px; width: 100%;
+}
+.myshoppingBagContainer form ul li:not(:first-of-type) span:nth-of-type(2) b{
+    font-weight: inherit; line-height: 24px;
+}
+.myshoppingBagContainer form ul li:not(:first-of-type) .qtyComponent input[type='button']{
+    background-repeat: no-repeat;  background-position: center; background-size: 26px; background-color: var(--gs7); min-width: 30px; line-height: 45px; border: none;
+}
+.myshoppingBagContainer form ul li:not(:first-of-type) .qtyComponent input[type='button']:hover{
+    background-color: var(--frs4);
+}
+.myshoppingBagContainer form ul li:not(:first-of-type) .qtyComponent input[type='button']:first-of-type{
+    background-image: url('../images/icon_basket_min.svg');
+}
+.myshoppingBagContainer form ul li:not(:first-of-type) .qtyComponent input[type='button']:last-of-type{
+    background-image: url('../images/icon_basket_plus.svg'); 
+}
+.myshoppingBagContainer form ul li:not(:first-of-type) .qtyComponent input[type='number']{
+    background-color: var(--gs4); border: none; color: var(--gs1); line-height: 45px; width: 40%; padding: 0 9%;
+}
+.myshoppingBagContainer form > div:first-of-type span > strong{
+     font-weight: inherit;
+}    
+.myshoppingBagContainer form > div:first-of-type span:not(:first-of-type){
+    position: relative; background-repeat: no-repeat; background-size: 40px;
+}
+.myshoppingBagContainer form > div:first-of-type span:nth-of-type(2){
+    background-image: url('../images/icon_basket_plus01.svg');
+}
+.myshoppingBagContainer form > div:first-of-type span:nth-of-type(3){
+    background-image: url('../images/icon_basket_01.svg');
+}
+.myshoppingBagEmptyContainer form ul li:nth-of-type(2){
+    padding-top: 16%; background: url('../images/icon_noneList.png') no-repeat center / 8%;
+}
+/* todo shopping Fin */
+.mypaymentContainer form > div:first-of-type,
+.mypaymentContainer form > div:nth-of-type(2){
+    margin-bottom: 50px; border-bottom: 1px solid var(--gs4);
+}
+.mypaymentContainer form > div:first-of-type{
+    padding: 0 1.6% 20px;
+}
+.mypaymentContainer form > div:nth-of-type(2){
+    padding: 0 1.6% 40px;
+}
+.mypaymentContainer form > div:first-of-type h3 span::after{
+    content: ''; width: 24px; height: 24px; position: absolute; top: 0; right: 0; background: url('../images/icon_arrow.svg'); transform: rotate(0deg); transition: transform 0.45s ease-in-out;
+}
+.mypaymentContainer form > div:first-of-type h3.active{
+    margin-bottom: 20px;
+}
+.mypaymentContainer form > div:first-of-type h3.active+ul{
+    display: block;
+}
+.mypaymentContainer form > div:first-of-type h3.active span::after{
+    transform: rotate(-180deg);
+}
+.mypaymentContainer form div:first-of-type ul li:not(:last-of-type){
+    margin-bottom: 20px;
+}
+.mypaymentContainer form div:first-of-type ul li input,
+.mypaymentContainer form div:nth-of-type(2) ul li:nth-of-type(1) input,
+.mypaymentContainer form div:nth-of-type(2) ul li:nth-of-type(2) input,
+.mypaymentContainer form div:nth-of-type(2) ul li:nth-of-type(3) input,
+.mypaymentContainer form div:nth-of-type(2) ul li:last-of-type input:nth-of-type(3),
+.mypaymentContainer form div:nth-of-type(2) ul li:last-of-type input:first-of-type,
+.mypaymentContainer form div:nth-of-type(2) ul li:last-of-type input:last-of-type{
+    padding: 10px 2%; border: 1px solid var(--gs4);
+}
+.mypaymentContainer form div:first-of-type ul li input::placeholder{
+    color: var(--gs4);
+}
+.mypaymentContainer form div:nth-of-type(2) ul li:not(:last-of-type){
+    margin-bottom: 20px;
+}
+.mypaymentContainer form div:nth-of-type(2) ul li:last-of-type input:nth-of-type(3){
+    margin-bottom: 20px;
+}
+.mypaymentContainer form div:nth-of-type(3){
+    background-color: var(--gs3); padding: 40px 1.6%; margin-bottom: 40px;
+}
+.mypaymentContainer form div:nth-of-type(3) label{
+    margin-bottom: 20px; 
+}
+.mypaymentContainer form div:nth-of-type(3) input{
+    padding: 10px 2%; border: 1px solid var(--gs4);
+}
+.mypaymentContainer form div:nth-of-type(3) input::placeholder{
+    color: var(--gs4);
+}
+.mypaymentContainer form div:nth-of-type(4){
+    border-top: 1px solid var(--gs4); padding-top: 40px;
+}
+.mypaymentContainer form div:nth-of-type(4) h3,
+.mypaymentContainer form div:nth-of-type(4) ul,
+.mypaymentContainer form div:nth-of-type(4) p{
+    margin-bottom: 40px;
+}
+.mypaymentContainer form div:nth-of-type(4) p,
+.mypaymentContainer form div:nth-of-type(4) ul{
+    padding: 0 1.6%;
+}
+.mypaymentContainer form div:nth-of-type(4) ul li{
+    padding-bottom: 40px; border-bottom: 1px solid var(--gs4);
+}
+.mypaymentContainer form div:nth-of-type(5),
+.mypaymentContainer form div:nth-of-type(6){
+    border-bottom: 1px solid var(--gs4); padding-bottom: 40px; margin-bottom: 40px;
+}
+.mypaymentContainer form div:nth-of-type(5) h3{
+    margin-bottom: 40px;
+}
+.mypaymentContainer form div:nth-of-type(5) span label{
+    margin-bottom: 20px;
+}
+.mypaymentContainer form div:nth-of-type(5) span label strong{
+    margin-left: 0.6%; font-weight: inherit; 
+}
+.mypaymentContainer form div:nth-of-type(5) span input[type='text']{
+    border: 1px solid var(--gs4); line-height: 40px; 
+}
+.mypaymentContainer form div:nth-of-type(6) h3{
+    padding: 0 1.6%; margin-bottom: 40px;
+}
+.mypaymentContainer form div:nth-of-type(6) h3 strong{
+    float: right;
+}
+.mypaymentContainer form div:nth-of-type(6) ul{
+    margin-bottom: 40px;
+}
+.mypaymentContainer form div:nth-of-type(6) ul li{
+    float: left; padding: 20px 0; border: 1px solid var(--gs4);
+}
+.mypaymentContainer form div:nth-of-type(6) span{
+    padding:0 1.6%;
+}
+.mypaymentContainer form div:nth-of-type(6) span input:checked+label,
+.mypaymentContainer form div:nth-of-type(7) span input:checked+label{
+    background-image: url('../images/btn_checkBox_on.svg');
+}
+.mypaymentContainer form div:nth-of-type(7){
+    border: 1px solid var(--gs4); padding: 40px 0; margin-bottom: 40px;
+}
+.mypaymentContainer form div:nth-of-type(7) > div{
+    margin-bottom: 20px; padding-bottom: 31px; border-bottom: 1px solid var(--gs4);
+}
+.mypaymentContainer form div:nth-of-type(7) > div span{
+    padding: 0 1.6%;
+}
+.mypaymentContainer form div:nth-of-type(7) > div span label{
+    line-height: 22px;
+}
+.mypaymentContainer form div:nth-of-type(7) span label strong{
+    font-weight: inherit; margin-left: 1%; color: var(--prs6);
+}
+.mypaymentContainer form div:nth-of-type(7) ol{
+    list-style: outside; list-style-position: inside; color: var(--gs5); padding: 0 1.6%; line-height:24px;
+}
+.mypaymentContainer form > div:last-of-type{
+    border-top: 1px solid var(--gs4); padding-top: 40px;
+}
+.mypaymentContainer form > div:last-of-type *{
+    font-weight: inherit;
+}
+.mypaymentContainer form > div:last-of-type h3{
+    margin-bottom: 40px;
+}
+.mypaymentContainer form > div:last-of-type div strong:nth-of-type(2) mark{
+    color: var(--pcRed);
+}
+.mypaymentContainer form > div:last-of-type input[type='submit']{
+    line-height: 55px;
+}
+/* todo pay Fin */
+.orderCompletedContainer > h2{
+    color: var(--prs4);margin-bottom: 80px;
+}
+.orderCompletedContainer > p,
+.orderCompletedContainer div:nth-of-type(2){
+    padding-bottom: 50px; margin-bottom: 40px; border-bottom: 1px solid var(--gs4);
+}
+.orderCompletedContainer > div:first-of-type,
+.orderCompletedContainer > div:first-of-type h3,
+.orderCompletedContainer div:nth-of-type(2) h3{
+    margin-bottom: 40px;
+}
+.orderCompletedContainer > div:first-of-type h3 > span{
+    float: right;
+}
+.orderCompletedContainer > div:first-of-type ul{
+    padding: 0 1.6%;
+}
+.orderCompletedContainer > div:first-of-type ul li{
+    padding-bottom: 40px; border-bottom: 1px solid var(--gs4);
+}
+.orderCompletedContainer div:nth-of-type(2) address p{
+    line-height: 24px;
+}
+.orderCompletedContainer div:nth-of-type(2) address p:not(:last-of-type){
+    margin-bottom: 28px;
+}
+.orderCompletedContainer div:nth-of-type(2) > p{
+    background-color: var(--gs3); color: var(--gs6); 
+}
+.orderCompletedContainer div:nth-of-type(3){
+    border: 1px solid var(--gs4); margin-bottom: 30px;
+}
+.orderCompletedContainer div:nth-of-type(3) strong:nth-of-type(2) mark{
+    color: var(--pcRed); 
+}
+ /* todo 결제완료 Fin */
+[class^='long'] h2{
+    padding-bottom: 20px; margin-bottom: 40px; border-bottom: 1px solid var(--gs4);
+}
+[class^='long'] ol > li{
+    line-height: 24px; margin-bottom: 40px;
+}
+.longPrivacyPolicyContainer ol li:first-of-type,
+[class^='long'] ol li *:not(strong){
+    color: var(--gs6);
+}
+[class^='long'] ol > li > strong,
+.longPrivacyPolicyContainer ol > li p{
+    margin-bottom: 40px;
+}
+[class^='long'] ol > li ul > *,
+[class^='long'] ol > li ol > *{
+    margin-bottom: 8px;
+}
+.longPrivacyPolicyContainer ol > li:nth-of-type(2) ul{
+    background-color: var(--gs3); padding: 20px 1.6%;
+}
+.longPrivacyPolicyContainer ol > li:nth-of-type(2) ul li{
+    line-height: 24px; margin-bottom: 8px;
+}
+.longPrivacyPolicyContainer ol > li table,
+.longMemberTermsandConditionsContainer ol > li ul li table{
+    padding: 0 1.6%; border-bottom: 1px solid var(--gs4); margin-bottom: 40px;
+}
+.longPrivacyPolicyContainer ol > li table *,
+.longMemberTermsandConditionsContainer ol > li ul li table *{
+    vertical-align: middle;
+}
+.longPrivacyPolicyContainer ol > li table thead,
+.longMemberTermsandConditionsContainer ol > li ul li table thead{
+    background-color: var(--gs3);
+}
+.longPrivacyPolicyContainer ol > li table thead tr th,
+.longMemberTermsandConditionsContainer ol > li ul li table thead tr th{
+    padding: 20px 1.6%; border-width: 1px 0 1px; border-color: var(--gs4); border-style: solid;
+}
+.longPrivacyPolicyContainer ol > li table thead tr th:not(:first-of-type),
+.longMemberTermsandConditionsContainer ol > li ul li table thead tr th:not(:first-of-type){
+    border-left: 1px solid var(--gs4);
+}
+.longPrivacyPolicyContainer ol > li table tbody *,
+.longMemberTermsandConditionsContainer ol > li ul li table tbody *{
+    padding: 20px 1.6%;
+}
+.longPrivacyPolicyContainer ol > li table tbody tr td:first-of-type,
+.longMemberTermsandConditionsContainer ol > li ul li table tbody tr td:first-of-type{
+    border-bottom: 1px solid var(--gs4);
+}
+.longPrivacyPolicyContainer ol > li table tbody tr td:not(:first-of-type),
+.longMemberTermsandConditionsContainer ol > li ul li table tbody tr td:not(:first-of-type){
+    border-width: 0 0 1px 1px; border-style: solid; border-color: var(--gs4);
+}
+.longPrivacyPolicyContainer ol > li:nth-of-type(3) table *,
+.longPrivacyPolicyContainer ol > li:nth-of-type(9) table *,
+.longMemberTermsandConditionsContainer ol > li:nth-of-type(6) ul li:nth-of-type(2) table *{
+    width: 50%;
+}
+.longPrivacyPolicyContainer ol > li ul,
+.longPrivacyPolicyContainer ol > li ol,
+.longMemberTermsandConditionsContainer ol > li ul li{
+    padding: 0 1.6%;
+}
+.longMemberTermsandConditionsContainer ol > li ul li{
+    margin-bottom: 20px;
+}
+.longMemberTermsandConditionsContainer ol > li:nth-of-type(6) ul li:nth-of-type(6) table thead tr td:first-of-type,
+.longMemberTermsandConditionsContainer ol > li:nth-of-type(6) ul li:nth-of-type(6) table tbody tr td:first-of-type{
+    width: 10%;
+}
+@media screen and (max-width:767px){
+    .bx-wrapper .bx-pager{
+        bottom: 170px; right: 6px;
+    }
+    .mainSlider li > div h3{
+        font-size: 8.5vw; text-shadow: 5px 1px 5px rgba(0, 0, 0, 1);
+    }
+    .mainSlider li > div p{
+        font-size: 4.2vw; text-shadow: 5px 1px 5px rgba(0, 0, 0, 1);
+    }
+    .mainSlider [class*='slider']:not(.slider04) > div h3,
+    .mainSlider [class*='slider']:not(.slider04) > div p{
+        margin-bottom: 20px;
+    }
+    .mainSlider [class*='slider']:not(.slider04) > div p{
+        line-height: 6.4vw;
+    }
+    .mainSlider .slider01 > div p,
+    .mainSlider .slider02 > div p{
+        max-width: 67vw;
+    }
+    .mainSlider .slider03 > div p{
+        max-width: 62vw;
+    }
+    .mainSlider .slider04 figure{
+        width: 80%;
+    }
+    /* todo main */
+    .aboutBrandContainer ul li:first-of-type{
+        padding: 80px 9.8% 0 9.8%; background-image: url('../images/BG_brand01.png'); background-repeat: no-repeat; background-position: center;
+    }
+    .aboutBrandContainer ul li:nth-of-type(2){
+        background-position: center 80px; padding: 0 9.8% 180px 9.8%;
+    }
+    .aboutBrandContainer ul li:not(:nth-of-type(1),:nth-of-type(2)){
+        padding: 100px 9.8%; background-size: 300%;
+    }
+    .aboutBrandContainer ul li:nth-of-type(3){
+        background-position: -130px 130px;
+    }
+    .aboutBrandContainer ul li:nth-of-type(4){
+        background-position: -610px 250px;
+    }
+    .aboutBrandContainer ul li:nth-of-type(5){
+        background-position: -130px -120px;
+    }
+    .aboutBrandContainer ul li p{
+        line-height: 18px; color: var(--gs8);
+    }
+    .aboutBrandContainer ul li p b{
+        line-height: 24px;
+    }
+    .aboutBrandContainer > div *:not(:last-child){
+        margin-bottom: 30px;
+    }
+    .aboutBrandContainer > div dl dd{
+        line-height: 20px;
+    }
+    /* todo brand store */
+    [class^='about']:not([class*='Brand']) ul{
+        padding: 40px 0;
+    }
+    [class^='about']:not([class*='Brand']) ul > li:not(:last-child){
+        margin-bottom: 80px;
+    }
+    [class^='about']:not([class*='Brand']) ul > li div p b{
+        display: block; line-height: 24px;
+    }
+    /* todo it,kr store */
+    .listContainer ol{
+        text-align: center; margin-bottom: 50px;
+    }
+    .listContainer ol li{
+        display: block; margin-bottom: 40px;
+    }
+    .listContainer ol li:hover a,
+    .listContainer ol li.active a{
+        color: var(--pcRed);
+    }
+    .listContainer ul li figure figcaption > a{
+        line-height: 24px;
+    }
+    /* todo list Fin */
+    .detailDrinkContainer > div p + div span:first-of-type{
+        display: block; margin-bottom: 20px;
+    }
+    .detailDrinkContainer > div div:nth-of-type(2) ul:first-of-type{
+        padding: 30px 3.1% 0 3.1%; margin-bottom: 30px;
+    }
+    .detailDrinkContainer > div div:nth-of-type(2) ul:last-of-type{
+        padding: 0 3.1% 30px 3.1%;
+    }
+    .detailDrinkContainer > div div:nth-of-type(2) ul > *:not(li:last-of-type){
+        margin-bottom: 30px;
+    }
+    .detailDrinkContainer > div div:nth-of-type(2) ul li span:last-of-type{
+        position: absolute;
+    }
+    .detailMdContainer form > div h3,
+    .detailBeenContainer form > div h3{
+        padding: 0px 3.1% 20px 3.1%;
+    }
+    .detailMdContainer form > div h3,
+    .detailMdContainer form > div div:nth-of-type(2),
+    .detailMdContainer form > div div:nth-of-type(2) ul > *:not(:last-child){
+        margin-bottom: 20px;
+    }
+    .detailMdContainer form > div h3 strong{
+        display: block; margin-top: 20px;
+    }
+    .detailMdContainer form > div div:first-of-type span:first-of-type{
+        display: block; margin-bottom: 20px;
+    }
+    .detailMdContainer form > div div:nth-of-type(2) ul:first-of-type{
+        padding: 30px 3.1% 0 3.1%; margin-bottom: 30px;
+    }
+    .detailMdContainer form > div div:nth-of-type(2) ul:last-of-type{
+        padding: 0 3.1% 30px 3.1%;
+    }
+    .detailMdContainer form > div div:nth-of-type(2) ul:first-of-type li:nth-of-type(2) span:last-of-type{
+        margin-left: 35%;
+    }
+    .detailMdContainer form > div:last-of-type span,
+    .detailBeenContainer form > div > span{
+        position: absolute; left: 0; width: 48%;
+    }
+    .detailMdContainer form > div:last-of-type > input,
+    .detailBeenContainer form > div:last-of-type > input{
+        line-height: 48px; min-width: 120px; width: 48%;
+    }
+    .detailBeenContainer form > div h3{
+        line-height: 24px; border-bottom: 1px solid var(--gs10);
+    }
+    .detailBeenContainer form > div h3 strong{
+        color: var(--pcRed); display: block; margin-top: 8px;
+    }
+    .beenInf{
+        background-color: var(--gs6); padding: 20px 7.2%;
+    }
+    .beenInf div > img{
+        margin: 0 auto; width: 100%;
+    }
+    .beenInf div ul li > *{
+        display: block; line-height: 20px;
+    }
+    /* todo detail */
+    .loginContainer > div,
+    [class^='findID'] > div,
+    [class^='forgotPassword'] > div{
+        width: 100%; box-sizing: border-box;
+    }
+    .loginContainer #lastLoginTab form .belowField input,
+    .loginContainer #lastLoginTab form > input[type='password'],
+    .findIDContainer > div form fieldset .belowField input,
+    [class*=forgotPassword] > div form div label+input{
+        padding: 11px 5%;
+    }
+    .loginContainer > div [id$='LoginTab'] form [class*='compField'] > input:not(input[type='button']){
+        padding: 11px 1% 11px 26%; margin-bottom: 20px; background-size: 20px;
+    }
+    .loginContainer > div [id$='LoginTab'] form [class*='userPW'] > input:first-of-type{
+        background-image: url('../images/icon_PW.svg');
+    }
+    .loginContainer > div [id$='LoginTab'] form [class*='userID']::after,
+    .loginContainer > div [id$='LoginTab'] form [class*='userPW']::after{
+        height: 20px; top: 10px;
+    }
+    .loginContainer > div [id$='LoginTab'] form [class*='userPW'] input[type='button']{
+        top: 8px;
+    }
+    .loginContainer > div .loginTab,
+    .findIDContainer > div p,
+    .findIDCkContainer > div h2,
+    [class*='forgotPassword'] > div h2,
+    .loginContainer > div #firstLoginTab form input[type='submit'],
+    .loginContainer > div #lastLoginTab form > input,
+    .loginContainer > div #lastLoginTab form .belowField,
+    .loginContainer > div #lastLoginTab form .belowField > select:not(:last-of-type),
+    .loginContainer > div #lastLoginTab form > div:nth-of-type(7),
+    .findIDContainer > div form fieldset div,
+    .findIDContainer > div form fieldset input[type='submit'],
+    .findIDCkContainer > div p,
+    .forgotPasswordContainer form > .belowField,
+    .forgotPasswordCkContainer form > .belowField,
+    [class*='forgotPassword'] > div form > input,
+    [class*='forgotPassword'] > div form div label{
+        margin-bottom: 20px;
+    }
+    .loginContainer > div #firstLoginTab form .customChk,
+    .loginContainer > div #lastLoginTab form > div:nth-of-type(7) .customChk,
+    .loginContainer > div #lastLoginTab form > div:last-of-type .customChk{
+        padding-left: 14%;
+    }
+    .loginContainer > div #firstLoginTab form .customChk,
+    .loginContainer > div #firstLoginTab form input[type='checkbox']:checked+ .customChk,
+    .loginContainer > div #lastLoginTab form > div:nth-of-type(7) .customChk,
+    .loginContainer > div #lastLoginTab form > div:last-of-type .customChk,
+    .loginContainer > div #lastLoginTab form > div:nth-of-type(7) input[type='checkbox']:checked +.customChk,
+    .loginContainer > div #lastLoginTab form > div:last-of-type input[type='checkbox']:checked +.customChk{
+        background-repeat: no-repeat; background-position: left center; background-size: 22px;
+    }
+    .loginContainer > div #lastLoginTab form .belowField > select{
+        padding: 10px 2%;
+    }
+    .loginContainer > div #firstLoginTab form input[type='submit'],
+    .loginContainer > div [id$='LoginTab'] form > input[type='submit'],
+    .loginContainer > div #lastLoginTab form > input[type='reset'],
+    .findIDContainer > div form fieldset > input[type='submit'],
+    .findIDContainer > div form fieldset > a,
+    .findIDCkContainer > div a,
+    [class*='forgotPassword'] > div form > input,
+    [class*='forgotPassword'] > div form > a{
+        line-height: 40px;
+    }
+    .loginContainer div #lastLoginTab form div:nth-of-type(7) .customChk+a,
+    .loginContainer div #lastLoginTab form div:nth-of-type(8) .customChk+a{
+        float: right;
+    }
+    /* todo  Login*/
+    [class*='my'] h2{
+    line-height: 28px;
+    }
+    [class*='my'] .myPageNav ul > li span{
+        display: block; position: relative; padding: 20px 0;
+    }
+    [class*='my'] .myPageNav ul > li span::before{
+        content: ''; display: block; background: url('../images/icon_arrow.svg') no-repeat center / 100%; position: absolute; right: 0; width: 20px; height: 20px;
+    }
+    [class*='my'] .myPageNav ul > li span::after{
+        content:''; display: block;  position: absolute; bottom: 0; width: 0; height: 2px; background-color: var(--prs3); transition-duration: 0.5s;
+    }
+    [class*='my'] .myPageNav ul > li span.active::before{
+        transform: rotate(180deg);
+    }
+    [class*='my'] .myPageNav ul > li span:hover::after{
+        width: 100%;
+    }
+    [class*='my'] .myPageNav ul > li ol{
+        background-color: var(--gs3); padding: 30px 11.5%; margin-bottom: 0; display: none;
+    }
+    [class*='my'] .myPageNav ul > li span.active+ol{
+        display: block;
+    }
+    .myNoticeContainer > div:first-of-type form > input[type="text"]{
+        margin-bottom: 20px; width: 100%;
+    }
+    .myNoticeContainer > div:first-of-type form > input[type="submit"]{
+        width: 100%; min-width: 100px;
+    }
+    .myNoticeContainer > ul li:first-of-type{
+        text-align: center;
+    }
+    .myNoticeContainer > ul li{
+        padding: 20px 3.2%;
+    }
+    .myNoticeContainer > ul li > *{
+        line-height: 24px;
+    }
+    .myNoticeContainer > ul li > *:nth-child(1),
+    .myNoticeContainer > ul li > *:nth-child(3),
+    .myNoticeContainer > ul li > *:nth-child(4){
+        display: none;
+    }
+    .myNoticeDetailContainer h2{
+        text-align: center; margin-bottom: 80px;
+    }
+    /* todo Notice */
+    .newsEventContainer ul li:not(:last-of-type),
+    .newsEventContainer ul li figure > img,
+    .newsEventContainer ul li figure figcaption > h3,
+    .newsEventContainer ul li figure figcaption > p,
+    .newsEventContainer ul li figure figcaption > span{
+        margin-bottom: 20px;
+    }
+    .newsEventContainer ul li figure figcaption > span{
+        display: block;
+    }
+    .newsEventContainer ul li figure figcaption:nth-of-type(1){
+        line-height: 28px;
+    }
+    .newsEventContainer ul li figure figcaption a{
+        width: 100%;
+    }
+    [class*='eventDetail'] img{
+        margin-bottom: 40px;
+    }
+    [class*='eventDetail'] > a{
+        display: block; width: 100%;
+    }
+    /* todo Event */
+    .newsTalkContainer > p{
+        line-height: 22px; color: var(--gs6);
+    }
+    .newsTalkContainer > ul li:not(:first-of-type){
+        margin-left: 10%;
+    }
+    .newsTalkContainer > div{
+        background-color: var(--gs3); padding: 80px 3.3%;
+    }
+    .newsTalkContainer > div ul li{
+        position: relative; margin-bottom: 50px;
+    }
+    .newsTalkContainer > div ul li > img{
+        position: absolute; top: 15px; left: 15px; width: 12%;
+    }
+    .newsTalkContainer > div ul li figure figcaption{
+        height: 100%;
+    }
+    .newsTalkContainer > div > input{
+        width: 100%;
+    }
+    .newsTalkContainer > div > input:hover{
+        color: var(--pcRed);
+    }
+    /* todo Talk */
+    [class*='newsPr'] > div:first-of-type a{
+        width: 100%;
+    }
+    [class*='newsPr'] > div:first-of-type a:first-of-type{
+        margin-bottom: 20px;
+    }
+    .newsPrCenterContainer > div:nth-of-type(2){
+        padding: 155px 7.7% 20px 7.7%;
+    }   
+    .newsPrCenterContainer > div:nth-of-type(2) p:first-of-type{
+        line-height: 28px; margin-bottom: 20px;
+    }
+    [class*='newsPr'] > ul li{
+        border-bottom: 1px solid var(--gs4); padding-bottom: 40px;
+    }
+    [class*='newsPr'] > ul li:not(:last-of-type){
+        margin-bottom: 40px;
+    }
+    [class*='newsPr'] > ul li figure img{
+        width: 100%;
+    }
+    .newsPrCenterDetailContainer > article ul li{
+        text-align: center;
+    }
+    .newsPrCenterDetailContainer > article ul li:not(:last-of-type) p:first-of-type{
+        margin-bottom: 30px; line-height: 32px;
+    }
+    .newsPrCenterDetailContainer > article ul li p:last-of-type{
+        line-height: 22px;
+    }
+    .newsPrCenterDetailContainer > div:last-of-type a:first-of-type,
+    .newsPressDetailContainer article div:last-of-type a:first-of-type{
+        padding: 0 4%;
+    }
+    .newsPrCenterDetailContainer > div:last-of-type a:nth-of-type(2),
+    .newsPressDetailContainer article div:last-of-type a:nth-of-type(2){
+        padding: 0 9.3%;
+    }
+    .newsPrCenterDetailContainer > div:last-of-type a:nth-of-type(3),
+    .newsPressDetailContainer article div:last-of-type a:nth-of-type(3){
+        width: 22%; padding-left: 5%; box-sizing: border-box;
+    }
+    .newsPressDetailContainer article img{
+        margin-bottom: 80px;
+    }
+    .newsPressDetailContainer article ul li{
+        line-height: 30px;
+    }
+    .newsPressDetailContainer article ul li:not(:last-of-type){
+        margin-bottom: 25px;
+    }
+    /* todo news */
+    .storeInformationContainer aside{
+        width: 100%; height: 93.9vh;
+    }
+    .storeInformationContainer aside div > h2 input{
+        top: 10px; right: 0;
+    }
+    .storeInformationContainer aside div form fieldset input[type='search']::placeholder{
+        color: var(--gs4);
+    }
+    .storeInformationContainer aside div form fieldset input[type='submit']{
+        width: 9%;
+    }
+    .myPartnershipContainer > *:not(h2, div:first-of-type){
+        padding: 0 3.6% 0;
+    }
+    .myPartnershipContainer h2{
+        margin: 0 3.6% 20px; padding-top: 155px;
+    }
+    .myPartnershipContainer > div:first-of-type{
+        background: url('../images/BG_happy.png') no-repeat -400px 0/ cover;
+    }
+    .myPartnershipContainer > div:first-of-type div{
+        background: url('../images/card_01.png') no-repeat top / 90%; padding: 260px 7.2% 0;
+    }
+    .myPartnershipContainer > div:first-of-type a{
+        width: 90%;
+    }
+    .myPartnershipContainer > div:first-of-type div > p{
+        line-height: 24px;
+    }
+    .myPartnershipContainer > div:nth-of-type(2) ul li figure img,
+    .myPartnershipContainer > div:nth-of-type(3) ul li figure img{
+        margin-bottom: 30px; width: 100%;
+    }
+    .myPartnershipContainer > div:last-of-type mark{
+        display: block; padding-left: 12%; margin-bottom: 20px;
+    }
+    .myPartnershipContainer > div:last-of-type ul{
+        margin-left: 8%; list-style-position: outside;
+    }
+    /* todo partner Fin */
+    .myAskedContainer > div:first-of-type{
+        background-color: var(--gs3); padding: 40px 6.5%;
+    }
+    .myAskedContainer div:first-of-type form input[type='text']{
+        width: 100%; margin-bottom: 20px;
+    }
+    .myAskedContainer div:first-of-type form input[type='submit']{
+        width: 100%;
+    }
+    .myAskedContainer div:first-of-type ul li{
+        width: 100%; margin-bottom: 20px;
+    }
+    .myAskedContainer > ul li:not(:first-of-type).active{
+        padding-bottom: 0;
+    }
+    .myAskedContainer > ul li{
+        padding: 3.3%;
+    }
+    .myAskedContainer > ul li:first-of-type,
+    .myAskedContainer > ul li span:not(:nth-of-type(2)){
+        display: none;
+    }
+    .myAskedContainer > ul li span:nth-of-type(2){
+        display: block; margin-bottom: 20px;
+    }
+    .myAskedContainer > ul li p:first-of-type{
+        width: 100%; line-height: 22px;
+    }
+    .myAskedContainer > ul li:not(:first-of-type).active p:last-of-type{
+        min-height: 429px; padding: 40px 7%;
+    }
+    /* todo Asked Fin */
+    [class*='myInquiry'] > div:first-of-type{
+        padding: 40px 3.9%;
+    }
+    [class*='myInquiry'] > div:first-of-type input{
+        width: 100%;
+    }
+    [class*='myInquiry'] > div:first-of-type input:not(:last-of-type){
+        margin-bottom: 20px;
+    }
+    .myInquiryContainer > ul li{
+        border: 1px solid var(--gs4); padding: 20px 7.7%;
+    }
+    .myInquiryContainer > ul li h3{
+        color: var(--gs5); margin-bottom: 20px;
+    }
+    .myInquiryContainer > ul li h3 mark{
+        display: block; text-align: center; width: 46%; margin-top: 20px;
+    }
+    .myInquiryContainer > a{
+        display: block; width: 100%; margin-bottom: 80px;
+    }
+    /* todo INquiry */
+    .myConsultationContainer > ul li{
+        line-height: 18px;
+    }
+    .myConsultationContainer > ul li:not(:last-of-type){
+        margin-bottom: 11px;
+    }
+    .myConsultationContainer form fieldset div:nth-of-type(5) .customChk,
+    .myConsultationContainer form fieldset div:nth-of-type(6) .customChk{
+        padding-left: 12%;
+    }
+    .myConsultationContainer form fieldset div:last-of-type > *{
+        width: 100%;
+    }
+    .myConsultationContainer form fieldset div:last-of-type input:first-of-type{
+        margin-bottom: 20px;
+    }
+    /* todo myConsultation Fin*/
+    .myPageContainer > div:first-of-type{
+        padding-bottom: 40px; margin-bottom: 40px;
+    }
+    .myPageContainer > div:first-of-type h3{
+        line-height:34px; padding-left: 34%; font-size: 16px; background: url('../images/mypageMain_icon.png') no-repeat 20px center / 60px; margin-bottom: 40px;
+    }
+    .myPageContainer > div:first-of-type h3 span{
+        display: block;
+    }
+    .myPageContainer > div:first-of-type ul li{
+        width: 50%; min-height: 46vw;
+    }
+    .myPageContainer > div:nth-of-type(2) ol{
+        text-align: center;
+    }
+    .myPageContainer > div:nth-of-type(2) ol li:not(:last-of-type){
+        padding-bottom: 50px; margin-bottom: 20px; box-sizing: border-box; background: url('../images/icon_arrow.svg') no-repeat center bottom / 40px;
+    }
+    .myPageContainer > ul li{
+        justify-content: space-between;
+    }
+    .myPageContainer > ul li *:not(span){
+        display: block; width: 100%; text-align: center;
+    }
+    .myPageContainer > ul li *:not(:last-child){
+        margin-bottom: 12px;
+    }
+    .myPageContainer > ul li a img{
+        width: 70%; margin: 0 auto;
+    }
+    .myPageContainer > ul li a span{
+        text-align: center; line-height: 24px; color: var(--gs10);
+    }
+    .myPageContainer > ul li div time,
+    .myPageContainer > ul li div mark{
+        line-height: 26px;
+    }
+    .myPageContainer > ul li div > span:not(:first-of-type,:nth-of-type(2)){
+        margin-left: 10%;
+    }
+    .myPageContainer div:nth-of-type(3) ul li{
+        margin-bottom: 40px;
+    }
+    .myPageContainer div:nth-of-type(3) ul li figure figcaption{
+        text-align: center;
+    }
+    .myPageContainer div:nth-of-type(3) ul li figure figcaption dl > *:not(:last-child){
+        margin-bottom: 20px;
+    }
+    .myPageContainer div:nth-of-type(3) ul li figure figcaption dl dd{
+        width: 49%; display: inline-block;
+    }
+    .myPageContainer div:nth-of-type(3) ul li figure figcaption dl dd del{
+        color: var(--gs5);
+    }
+    .myPageContainer div:nth-of-type(3) ul li figure figcaption dl dd mark{
+        margin-left: 6%; color: var(--pcRed);
+    }
+    /* todo myPage Fin */
+    [class*=myInquiryOrder] > ol li{
+        margin-bottom: 40px;
+    }
+    [class*=myInquiryOrder] > ol li:not(:last-of-type){
+        padding-bottom: 60px; box-sizing: border-box; background: url('../images/icon_arrow.svg') no-repeat center bottom / 40px;
+    }
+    .myInquiryOrderContainer > ul li span,
+    .myInquiryOrderContainer > ul li mark{
+        display: block; margin-bottom: 20px;
+    }
+    .myInquiryOrderContainer > ul li span:first-of-type{
+        width: 100%; text-align: center; padding-top: 220px; background: url('../images/details_172.jpg') no-repeat center top / contain;
+    }
+    .myInquiryOrderContainer > ul li span:nth-of-type(2),
+    .myInquiryOrderContainer > ul li mark,
+    .myInquiryOrderContainer > ul li span:last-of-type{
+        text-align: center;
+    }
+    .myInquiryOrderContainer > ul li span:last-of-type{
+        padding: 11px 4%; box-sizing: border-box;
+    }
+    [class*=myInquiryOrder] > div:last-of-type h3,
+    [class*=myInquiryOrder] > div:last-of-type ul *:not(:last-of-type){
+        margin-bottom: 8px;
+    }
+    [class*=myInquiryOrder] > div:last-of-type ul{
+        list-style: none; color: var(--gs6);
+    }
+    [class*=myInquiryOrder] > div:last-of-type ul li{
+        line-height: 24px;
+    }
+    .myInquiryOrderCancelContainer > ul li span:first-of-type,
+    .myInquiryOrderCancelContainer > ul li span:nth-of-type(2),
+    .myInquiryOrderCancelContainer > ul li span:last-of-type{
+        box-sizing: border-box; display: block;
+    }
+    .myInquiryOrderCancelContainer > ul li span:first-of-type{
+        width: 100%; text-align: center; padding-top: 210px; background: url('../images/details_172.jpg') no-repeat center top / contain;
+    }
+    .myInquiryOrderCancelContainer > ul li span:nth-of-type(2),
+    .myInquiryOrderCancelContainer > ul li span:last-of-type{
+        width: 100%; padding: 20px 0; text-align: center;
+    }
+    .myInquiryOrderCancelContainer > ul li span:last-of-type{
+        color: var(--gs4);
+    }
+    /* todo Order Fin */
+    .myCouponContainer > div:first-of-type{
+        margin-bottom: 20px;
+    }
+    .myCouponContainer > div:first-of-type > *{
+        display: block; text-align: center; width: 100%;
+    }
+    .myCouponContainer > div:first-of-type > *:not(span:last-of-type){
+        margin-bottom: 20px;
+    }
+    .myCouponContainer > div:first-of-type,
+    .myCouponContainer > div:nth-of-type(2){
+        padding-bottom: 20px;
+    }
+    .myCouponContainer > div:nth-of-type(2){
+        text-align: center;
+    }
+    .myCouponContainer > div:nth-of-type(2) form input[type='search']{
+        width: 66%;
+    }
+    .myCouponContainer > div:nth-of-type(2) form input[type='search'],
+    .myCouponContainer > div:nth-of-type(2) form input[type='submit']{
+        width: 100%; margin-bottom: 20px;
+    }
+    .myCouponContainer > ul li{
+        width: 100%; padding: 30px 7.7%;
+    }
+    .myCouponContainer > ul li:not(:nth-of-type(3n+1)){
+        margin-left: 3.3%;
+    }
+    /* todo cuupon Fin */
+    [class*='myManagement'] > div:first-of-type{
+        padding-bottom: 20px; border-bottom: 1px solid var(--gs4);
+    }
+    [class*='myManagement'] > div:first-of-type,
+    [class*='myManagement'] div:first-of-type h3,
+    [class*='myManagement'] div:first-of-type ul li > label,
+    [class*='myManagement'] div:first-of-type ul li:not(:last-of-type),
+    [class*='myManagement'] div:first-of-type ul li:first-of-type input[type='text'],
+    [class*='myManagement'] div:first-of-type ul li:nth-of-type(3) input,
+    [class*='myManagement'] div:first-of-type ul li:nth-of-type(6) label,
+    [class*='myManagement'] div:first-of-type ul li:nth-of-type(6) div,
+    [class*='myManagement'] div:first-of-type ul li:nth-of-type(6) div *:not(:last-child),
+    [class*='myManagement'] div:first-of-type ul li:nth-of-type(6) > input:not(:last-child){
+        margin-bottom: 20px;
+    }
+    [class*='myManagement'] div:first-of-type ul li:not(:nth-of-type(8),:nth-of-type(9)) > label,
+    [class*='myManagement'] div:first-of-type ul li:nth-of-type(6) label{
+        display: block;
+    }
+    [class*='myManagement'] div:first-of-type ul li input{
+        width: 100%;
+    }
+    [class*='myManagement'] div:first-of-type ul li:nth-of-type(3) span{
+        width: 49%; text-align: center; display: inline-block;
+    }
+    [class*='myManagement'] div:first-of-type ul li:nth-of-type(3) span .customRdio{
+        padding-left: 25%; box-sizing: border-box;
+    }
+    [class*='myManagement'] div:first-of-type ul li:nth-of-type(3) span input:checked+.customRdio{
+        background-image: url('../images/btn_radio_on.svg');
+    }
+    [class*='myManagement'] div:first-of-type ul li:nth-of-type(1) input:last-of-type,
+    [class*='myManagement'] div:first-of-type ul li:nth-of-type(6) div a{
+        width: 100%;
+    }
+    [class*='myManagement'] div:first-of-type ul li:nth-of-type(8) .customChk,
+    [class*='myManagement'] div:first-of-type ul li:nth-of-type(9) .customChk{
+        padding-left:10%; line-height: 22px; background: url('../images/btn_checkBox_off.svg') no-repeat left / 20px;
+    }
+    [class*='myManagement'] div:first-of-type ul li:nth-of-type(8) a,
+    [class*='myManagement'] div:first-of-type ul li:nth-of-type(9) a{
+        margin-left: 1%; color: var(--gs5);
+    }
+    .myManagementContainer > div:last-of-type li{
+        padding: 20px 7.7%; border: 1px solid var(--gs4);
+    }
+    .myManagementContainer > div:last-of-type li h4 span{
+        margin-left: 1%; float: right;
+    }
+    .myManagementContainer > div:last-of-type li h4 mark{
+        padding:4px 2%; display: block; width: 26%; text-align: center; margin-top: 20px;
+    }
+    .myManagementEmptyContainer div:last-of-type h3 a{
+        display: block; width: 100%; margin-top:20px;
+    }
+    #cancelPopup,
+    #pwChangePopup,
+    #delAddress,
+    #clearAddress,
+    #addAddressPopup{
+        transform: translate(-2.5%,-50%); left: 5%;
+    }
+    #cancelPopup{
+        width: 90%; text-align: center; 
+    }
+    #cancelPopup div:first-of-type > input{
+        width: 100%; min-width: 120px;
+    }
+    #cancelPopup div:first-of-type > input:first-of-type{
+        margin-bottom: 20px;
+    }
+    #pwChangePopup,
+    #delAddress,
+    #clearAddress,
+    #addAddressPopup{
+        width: 90%;
+    }
+    #pwChangePopup > input[type='button']{
+        top: 20px; right: 20px;
+    }
+    #addAddressPopup{
+        padding: 20px 2.6%;
+    }
+    #addAddressPopup > input[type='button']{
+        top: 20px; right: 10px;
+    }
+    .myAddressContainer div ul li{
+        border: 1px solid var(--gs4); padding: 20px 7.7%;
+    }
+    .myAddressContainer div ul li h4 span,
+    .myAddressContainer div ul li address,
+    .myAddressContainer div ul li p{
+        color: var(--gs5);
+    }
+    .myAddressContainer div ul li h4 span{
+        float: right;
+    }
+    .myAddressContainer div ul li h4 mark{
+        background-color: var(--pcRed); color: var(--gs1); padding: 4px 4%;  display: block; width: 26%; text-align: center; margin-top: 20px;
+    }
+    .myAddressContainer div ul li input,
+    .myAddressContainer div ul li a{
+        padding: 4px 4%;
+    }
+    [class*=Address] div > input{
+        display: block; width: 100%;
+    }
+    /* todo address Fin */
+    [class*='shoppingBag'] form ul li:first-of-type span:first-of-type,
+    .myshoppingBagContainer form ul li:not(:first-of-type) span:first-of-type{
+        width: 10%;
+    }
+    [class*='shoppingBag'] form ul li:first-of-type span:first-of-type input{
+        display: none;
+    }
+    [class*='shoppingBag'] form ul li:first-of-type span:nth-of-type(2){
+        width: 90%; text-align: center;
+    }
+    [class*='shoppingBag'] form ul li:first-of-type span:nth-of-type(3),
+    [class*='shoppingBag'] form ul li:first-of-type span:nth-of-type(4),
+    [class*='shoppingBag'] form ul li:first-of-type span:last-of-type{
+        display: none;
+    }
+    .myshoppingBagContainer form ul li:not(:first-of-type) > *:not(.qtyComponent){
+        float: left;
+    }
+    .myshoppingBagContainer form ul li:not(:first-of-type) span:first-of-type input,
+    .myshoppingBagContainer form ul li:not(:first-of-type) span:nth-of-type(3),
+    .myshoppingBagContainer form ul li:not(:first-of-type) strong{
+        display: none;
+    }
+    .myshoppingBagContainer form ul li:not(:first-of-type) span:nth-of-type(2){
+        display: block; width: 90%; margin-bottom: 20px;
+    }
+    .myshoppingBagContainer form ul li:not(:first-of-type) span:nth-of-type(2) img{
+        display: block; margin: 0 auto;
+    }
+    .myshoppingBagContainer form ul li:not(:first-of-type) span:nth-of-type(2) b{
+        display: block; text-align: center;
+    }
+    .myshoppingBagContainer form ul li:not(:first-of-type) .qtyComponent{
+        display: block; max-width: 150px; margin: 0 auto; padding-left: 10%;
+    }
+    .myshoppingBagContainer form ul li:not(:first-of-type) .qtyComponent > *{
+        float: left;
+    }
+    .myshoppingBagContainer form ul li:not(:first-of-type) .qtyComponent input[type='button']{
+        width: 30%;
+    }
+    .myshoppingBagContainer form > div:first-of-type{
+        border: 1px solid var(--gs4); padding: 40px 7.7%; margin-bottom: 40px;
+    }
+    .myshoppingBagContainer form > div:first-of-type span{
+        display: block; text-align: center;
+    }
+    .myshoppingBagContainer form > div:first-of-type span:not(:last-of-type){
+        margin-bottom: 20px;
+    }
+    .myshoppingBagContainer form > div:first-of-type span:not(:first-of-type){
+        background-position: center bottom; padding-bottom: 80px;
+    }
+    .myshoppingBagContainer form div:last-of-type > a:first-of-type{
+        display: block; width: 100%; margin-bottom: 20px;
+    }
+    .myshoppingBagContainer form div:last-of-type span > *{
+        display: block; width: 100%;
+    }
+    .myshoppingBagContainer form div:last-of-type span a{
+        margin-bottom: 20px;
+    }
+    /* todo shopping Fin */
+    .mypaymentContainer form > div:first-of-type h3 span{
+        display: block; text-align: right; padding-right: 10%; position: relative; margin-top: 40px; line-height: 22px;
+    }
+    .mypaymentContainer form > div:first-of-type ul li > *,
+    .mypaymentContainer form div:nth-of-type(2) ul li > *{
+        display: block;
+    }
+    .mypaymentContainer form div:nth-of-type(2) ul li:last-of-type input:first-of-type{
+        margin-bottom: 20px;
+    }
+    .mypaymentContainer form div:first-of-type ul li label,
+    .mypaymentContainer form div:nth-of-type(2) ul li > label{
+        line-height: 38px;
+    }
+    .mypaymentContainer form div:first-of-type ul li input,
+    .mypaymentContainer form div:nth-of-type(2) ul li:nth-of-type(1) input,
+    .mypaymentContainer form div:nth-of-type(2) ul li:nth-of-type(2) input,
+    .mypaymentContainer form div:nth-of-type(2) ul li:nth-of-type(3) input,
+    .mypaymentContainer form div:nth-of-type(2) ul li:last-of-type input:nth-of-type(3),
+    .mypaymentContainer form div:nth-of-type(2) ul li:last-of-type input:last-of-type,
+    .mypaymentContainer form div:nth-of-type(2) ul li:last-of-type input:first-of-type{
+        width: 100%;
+    }
+    .mypaymentContainer form div:nth-of-type(2) h3{
+        margin-bottom: 40px;
+    }
+    .mypaymentContainer form div:nth-of-type(2) h3 input{
+        width: 100%; margin-top:20px;
+    }
+    .mypaymentContainer form div:nth-of-type(2) ul li:last-of-type input:nth-of-type(2){
+        width: 100%; margin-bottom: 20px;
+    }
+    .mypaymentContainer form div:nth-of-type(4) ul li > *{
+        display: block; width: 100%; text-align: center;
+    }
+    .mypaymentContainer form div:nth-of-type(4) ul li > *:not(:last-child){
+        margin-bottom: 20px;
+    }
+    .mypaymentContainer form div:nth-of-type(4) ul li img{
+        max-width: 310px; margin: 0 auto;
+    }
+    .mypaymentContainer form div:nth-of-type(4) ul li strong{
+        font-weight: inherit;
+    }
+    .mypaymentContainer form div:nth-of-type(5) span{
+        background-color: var(--gs3); padding: 40px 7.7%;
+    }
+    .mypaymentContainer form div:nth-of-type(5) span input[type='text']{
+        width: 100%; margin-bottom: 20px;
+    }
+    .mypaymentContainer form div:nth-of-type(5) span input[type='button']{
+        display: block; width: 100%;
+    }
+    .mypaymentContainer form div:nth-of-type(6) h3 strong{
+        margin-top: 20px;
+    }
+    .mypaymentContainer form div:nth-of-type(6) ul li{
+        width: 50%;
+    }
+    .mypaymentContainer form div:nth-of-type(6) ul li img{
+        width: 70%;
+    }
+    .mypaymentContainer form div:nth-of-type(6) span label,
+    .mypaymentContainer form div:nth-of-type(7) span label{
+        background:url('../images/btn_checkBox_off.svg') no-repeat left / 24px; padding-left: 12%; line-height: 24px;
+    }
+    .mypaymentContainer form > div:last-of-type div{
+        border: 1px solid var(--gs4); padding: 40px 7.7%;
+    }
+    .mypaymentContainer form > div:last-of-type div *{
+        display: block;
+    }
+    .mypaymentContainer form > div:last-of-type div strong:not(:last-of-type){
+        padding-bottom: 20px; margin-bottom: 40px; border-bottom: 1px solid var(--gs4);
+    }
+    .mypaymentContainer form > div:last-of-type div strong > *{
+        text-align: right; margin-top: 20px;
+    }
+    /* todo pay Fin */
+    .orderCompletedContainer > p{
+        text-align: center;
+    }
+    .orderCompletedContainer > p span{
+        margin-left: 10%;
+    }
+    .orderCompletedContainer > div:first-of-type ul li > *{
+        display: block; width: 100%; text-align: center;
+    }
+    .orderCompletedContainer > div:first-of-type ul li{
+        max-width: 310px; margin: 0 auto;
+    }
+    .orderCompletedContainer > div:first-of-type ul li span,
+    .orderCompletedContainer div:nth-of-type(2) > p{
+        line-height: 24px;
+    }
+    .orderCompletedContainer > div:first-of-type ul li strong{
+        font-weight: inherit;
+    }
+    .orderCompletedContainer div:nth-of-type(2) address,
+    .orderCompletedContainer div:nth-of-type(2) address span{
+        margin-bottom: 20px; font-style: normal;
+    }
+    .orderCompletedContainer div:nth-of-type(2) address span{
+        color: var(--gs6);
+    }
+    .orderCompletedContainer div:nth-of-type(2) > p,
+    .orderCompletedContainer div:nth-of-type(3){
+        padding: 20px 7.7%;
+    }
+    .orderCompletedContainer div:nth-of-type(3) *{
+        display: block;
+    }
+    .orderCompletedContainer div:nth-of-type(3) strong{
+        font-weight: inherit; margin-bottom: 20px;
+    }
+    .orderCompletedContainer div:nth-of-type(3) strong:nth-of-type(1),
+    .orderCompletedContainer div:nth-of-type(3) strong:nth-of-type(2){
+        border-bottom: 1px solid var(--gs4); padding-bottom: 20px;
+    }
+    .orderCompletedContainer div:nth-of-type(3) strong *{
+        text-align: right; margin-top: 20px;
+    }
+    .orderCompletedContainer div:nth-of-type(3) strong mark{
+        font-weight: inherit;
+    }
+    .orderCompletedContainer div:last-of-type > *{
+        display: block; width: 100%;
+    }
+    .orderCompletedContainer div:last-of-type a:first-of-type{
+        margin-bottom: 20px;
+    }
+    /* todo 결제완료 Fin */
+}
+@media screen and (min-width:768px){
+    .bx-wrapper .bx-pager{
+        right: 24px;
+    }
+    .bx-wrapper .bx-pager.bx-default-pager a:hover,
+    .bx-wrapper .bx-pager.bx-default-pager a.active{
+        background-color: transparent; border: 2px solid var(--gs4); box-sizing: border-box; width: 20px; height: 20px; border-radius: 10px; box-shadow: 5px 3px 5px rgba(0, 0,0,0.2);
+    }
+    .mainSlider [class*='slider']:not(.slider04) > div h3,
+    .mainSlider [class*='slider']:not(.slider04) > div p{
+        margin-bottom: 40px;
+    }
+    .mainSlider .slider03 > div p{
+        max-width: 35vw;
+    }
+    /* todo main */
+    .aboutBrandContainer ul li:first-of-type{
+        background-image: url('../images/BG_brand01.png'), url('../images/BG_brand02.png'); background-repeat: no-repeat; background-position: left top, right top;
+    }
+    .aboutBrandContainer ul li:nth-of-type(2){
+        background-position: center bottom;
+    }
+    .aboutBrandContainer ul li:nth-of-type(3){
+        background-position: center top;
+    }
+    .aboutBrandContainer ul li:nth-of-type(4){
+        background-position: center -200px;
+    }
+    .aboutBrandContainer ul li:nth-of-type(5){
+        background-position: center;
+    }
+    .aboutBrandContainer ul li p{
+        line-height: 24px; color: var(--gs8);
+    }
+    .aboutBrandContainer ul li p b{
+        max-width: 500px; margin: 0 auto; line-height: 30px;
+    }
+    .aboutBrandContainer > div{
+        float: left; width: 50%;
+    }
+    .aboutBrandContainer > div *:not(:last-child){
+        margin-bottom: 40px;
+    }
+    /* todo brand store */
+    [class^='about']:not([class*='Brand']) ul > li:not(:last-child){
+        margin-bottom: 400px;
+    }
+
+    [class^='about']:not([class*='Brand']) ul > li div p b{
+        display: block; line-height: 30px;
+    }
+    /* todo it,kr store */
+    .listContainer ol{
+        display: flex; margin-bottom: 50px; justify-content: center; line-height: 24px;
+    }
+    .listContainer ol li{
+        display: inline-block;
+    }
+    .listContainer ul li{
+        float: left;
+    }
+    /* todo list Fin */
+    .detailDrinkContainer > div p + div span:last-of-type,
+    .detailDrinkContainer > div div:nth-of-type(2) ul li span:last-of-type{
+        position: absolute;
+    }
+    .detailDrinkContainer > div p + div span:last-of-type{
+        right: 2.1%;
+    }
+    .detailDrinkContainer > div div:nth-of-type(2) ul{
+        float: left; width: 50%; padding: 30px 3.1%;
+    }
+    .detailDrinkContainer > div div:nth-of-type(2) ul > *:not(li:last-of-type){
+        margin-bottom: 30px;
+    }
+    .detailDrinkContainer > div div:nth-of-type(2) ul:first-of-type{
+        border-right: 1px solid var(--gs8);
+    }
+    .detailMdContainer form > div h3,
+    .detailBeenContainer form > div h3{
+        padding: 0px 25% 20px 3.1%;
+    }
+    .detailMdContainer form > div h3,
+    .detailMdContainer form > div div:first-of-type{
+        position: relative;
+    }
+    .detailMdContainer form > div h3,
+    .detailMdContainer form > div div:nth-of-type(2),
+    .detailMdContainer form > div div:nth-of-type(2) ul > *:not(:last-child){
+        margin-bottom: 20px;
+    }
+    .detailMdContainer form > div h3 strong,
+    .detailMdContainer form > div div:first-of-type span:last-of-type{
+        position: absolute;
+    }
+    .detailMdContainer form > div h3 strong,
+    .detailMdContainer form > div div:first-of-type span:last-of-type{
+        right: 3.7%;
+    }
+    .detailMdContainer form > div div:nth-of-type(2) ul{
+        float: left; padding: 30px 3.1%; width: 50%;
+    }
+    .detailMdContainer form > div div:nth-of-type(2) ul:last-of-type{
+        border-left: 1px solid var(--gs6);
+    }
+    .detailMdContainer form > div:last-of-type span,
+    .detailBeenContainer form > div > span{
+        position: absolute; right: 215px; max-width: 200px; width: 35%;
+    }
+    .detailMdContainer form > div:last-of-type > input,
+    .detailBeenContainer form > div:last-of-type > input{
+        line-height: 48px; max-width: 200px;
+    }
+    .detailBeenContainer form > div h3{
+        position: relative; border-bottom: 1px solid var(--gs10);
+    }
+    .detailBeenContainer form > div h3 strong{
+        position: absolute; top: 0; right: 3.1%; color: var(--pcRed);
+    }
+    .beenInf div ul{
+        display: flex; flex-direction: row; flex-wrap: wrap;
+    }
+    .beenInf div ul li:not(:last-of-type){
+        width: 45%;
+    }
+    .beenInf div ul li:nth-of-type(2n+2){
+        margin-left: 4%;
+    }
+    .beenInf div ul li > *{
+        display: block; line-height: 20px;
+    }
+    /* todo detail */
+    .loginContainer > div,
+    [class^='findID'] > div,
+    [class^='forgotPassword'] > div{
+        width: 28%; min-width: 410px;
+    }
+    .loginContainer > div .loginTab,
+    .findIDContainer > div p,
+    .findIDCkContainer > div h2,
+    [class*='forgotPassword'] > div h2{
+        margin-bottom: 50px;
+    }
+    .loginContainer > div [id$='LoginTab'] form [class*='compField'] > input:not(input[type='button']){
+        margin-bottom: 30px;
+    }
+    .loginContainer > div [id$='LoginTab'] form [class*='userPW'] > input{
+        background-image: url('../images/icon_PW.svg');
+    }
+    .loginContainer > div [id$='LoginTab'] form [class*='user'] > input{
+        background-size: 8%;
+    }
+    .loginContainer > div [id$='LoginTab'] form [class*='user'] input::after{
+        /* height:30px; */
+        top: 14px;
+    }
+    .loginContainer > div #firstLoginTab form input[type='submit'],
+    .loginContainer > div #lastLoginTab form > input,
+    .loginContainer > div #lastLoginTab form .belowField,
+    .loginContainer > div #lastLoginTab form > div:nth-of-type(7),
+    .findIDContainer > div form fieldset div,
+    .findIDContainer > div form fieldset input[type='submit'],
+    .findIDCkContainer > div p,
+    .forgotPasswordContainer form > .belowField,
+    .forgotPasswordCkContainer form > .belowField,
+    [class*='forgotPassword'] > div form > input,
+    [class*='forgotPassword'] > div form div label{
+        margin-bottom: 30px;
+    }
+    .loginContainer > div #firstLoginTab form .customChk,
+    .loginContainer > div #lastLoginTab form > div:nth-of-type(7) .customChk,
+    .loginContainer > div #lastLoginTab form > div:last-of-type .customChk{
+        padding-left: 8%;
+    }
+    .loginContainer > div #firstLoginTab form .customChk,
+    .loginContainer > div #firstLoginTab form input[type='checkbox']:checked+ .customChk,
+    .loginContainer > div #lastLoginTab form > div:nth-of-type(7) .customChk,
+    .loginContainer > div #lastLoginTab form > div:last-of-type .customChk,
+    .loginContainer > div #lastLoginTab form > div:nth-of-type(7) input[type='checkbox']:checked +.customChk,
+    .loginContainer > div #lastLoginTab form > div:last-of-type input[type='checkbox']:checked +.customChk{
+        background-repeat: no-repeat; background-position: left center; background-size: 25px;
+    }
+    .loginContainer > div #lastLoginTab form .belowField > select{
+        padding: 16px 2%; width: 24%;
+    }
+    /* todo  Login*/
+    [class*='my'] .myPageNav ul{
+        display: flex; justify-content: space-around; cursor: pointer;
+    }
+    [class*='my'] .myPageNav ul > li{
+        position: relative; width: 25%; padding-bottom: 20px; display: flex; align-items: center;
+    }
+    [class*='my'] .myPageNav ul > li::after{
+        content: ''; display: block;  position: absolute; bottom: 0; width: 0; height: 2px; background-color: var(--prs3); transition-duration: 0.5s;
+    }
+    [class*='my'] .myPageNav ul > li:hover::after{
+        width: 100%;
+    }
+    [class*='my'] .myPageNav ul > li span{
+        display: block;
+    }
+    [class*='my'] .myPageNav ul > li ol{
+        position: absolute; display: flex; flex-direction: column; align-items: center; background-color: var(--gs3); width: 100%;  top: 0; height: 0; opacity: 0; transition-property: height, font-size, opacity; transition-duration: 0.5s, 0s, 0.75s;
+    }
+    [class*='my'] .myPageNav ul > li ol li{
+        width: 90%;
+    }
+    .myNoticeContainer > div:first-of-type form > input[type="text"]{
+        width: 77%;
+    }
+    .myNoticeContainer > div:first-of-type form > input[type="submit"]{
+        width: 20%; min-width: 100px;
+    }
+    .myNoticeContainer > ul{
+        text-align: center;
+    }
+    .myNoticeContainer > ul li > *{
+        display: inline-block;
+    }
+    .myNoticeContainer > ul li > *:nth-child(1){
+        width: 10%;
+    }
+    .myNoticeDetailContainer h2{
+        text-align: center; margin-bottom: 40px;
+    }
+    /* todo Notice */
+    .newsEventContainer ul li:not(:last-of-type),
+    .newsEventContainer ul li figure figcaption > h3,
+    .newsEventContainer ul li figure figcaption > p{
+        margin-bottom: 40px;
+    }
+    .newsEventContainer ul li figure figcaption > span{
+        display: block; margin-bottom: 20px;
+    }
+    .newsEventContainer ul li figure figcaption:nth-of-type(1){
+        line-height: 35px;
+    }
+    [class*='eventDetail'] img{
+        margin: 0 auto 80px;
+    }
+    /* todo Event */
+    .newsTalkContainer > p{
+        line-height: 36px; color: var(--gs6);
+    }
+    .newsTalkContainer > div{
+        background-color: var(--gs3); padding: 80px 0;
+    }
+    .newsTalkContainer > div ul li{
+        float: left; position: relative;
+    }
+    .newsTalkContainer > div ul li > img{
+        position: absolute; top: 20px; left: 20px;
+    }
+    .newsTalkContainer > div > input{
+        margin: 0 auto;
+    }
+    /* todo Talk  */
+    .newsPrCenterContainer > div:nth-of-type(2){
+        padding: 155px 0 20px 1%;
+    }   
+    .newsPrCenterContainer > div:nth-of-type(2) p:first-of-type{
+        line-height: 40px; margin-bottom: 20px;
+    }
+    .newsPrCenterDetailContainer > article ul .leftPicture{
+        text-align: right;
+    }
+    .newsPrCenterDetailContainer > article ul li p{
+        clear: both;
+    }
+    .newsPrCenterDetailContainer > article ul li:not(:last-of-type) p:first-of-type{
+        margin-bottom: 30px; line-height: 40px;
+    }
+    .newsPrCenterDetailContainer > article ul li p:last-of-type{
+        line-height: 30px;
+    }
+    .newsPrCenterDetailContainer > div:last-of-type a:nth-of-type(3),
+    .newsPressDetailContainer article div:last-of-type a:nth-of-type(3){
+        width: 10%;
+    }
+    .newsPressDetailContainer article img{
+        margin: 0 auto 80px;
+    }
+    [class*='newsPr'] > ul li:not(:last-of-type){
+        margin-bottom: 40px;
+    }
+    /* todo news */
+    .storeInformationContainer aside > div{
+        border-radius: 20px 20px 0 0;
+    }
+    .storeInformationContainer aside div > h2 input{
+        top: 35px; right: 20px;
+    }
+    .storeInformationContainer aside div form fieldset input[type='submit']{
+        right: 0;
+    }
+    .myPartnershipContainer h2{
+        margin: 0 17.5% 20px; padding-top: 155px;
+    }
+    .myPartnershipContainer > div:first-of-type{
+        background: url('../images/BG_happy.png') no-repeat center / cover;
+    }
+    .myPartnershipContainer > div:first-of-type div > p{
+        text-align: left;
+    }
+    .myPartnershipContainer > div:last-of-type > *{
+        float: left;
+    }
+    .myPartnershipContainer > div:last-of-type mark{
+        padding-left: 3%; width: 10%;
+    }
+    /* todo partner Fin */
+    .myAskedContainer div:first-of-type form input[type='submit']{
+        width: 24%;
+    }
+    .myAskedContainer div:first-of-type ul li input{
+        cursor: pointer;
+    }
+    .myAskedContainer > ul li{
+        cursor: pointer;
+    }
+    /* todo Asked Fin */
+    [class*='myInquiry'] > div:first-of-type input{
+        width: 25%; float: left;
+    }
+    .myInquiryContainer > ul li{
+        border: 1px solid var(--gs4); padding: 20px 1.6%;
+    }
+    .myInquiryContainer > ul li h3{
+        color: var(--gs5); margin-bottom: 10px;
+    }
+    .myInquiryContainer > ul li h3 mark{
+        float: right;
+    }
+    .myInquiryContainer > ul li p{
+        width: 80%;
+    }
+    .myInquiryContainer > a{
+        display: block; width: 20%; margin: 0 auto 80px;
+    }
+    /* todo INquiry */
+    .myConsultationContainer form fieldset div:nth-of-type(4) label{
+        cursor: pointer;
+    }
+    /* todo myConsultation Fin*/
+
+    .myPageContainer > div:first-of-type h3{
+        line-height: 60px; background: url('../images/mypageMain_icon.png') no-repeat left;
+    }
+    .myPageContainer > div:first-of-type ul li{
+        min-height: 216px;
+    }
+    .myPageContainer > div:nth-of-type(2) ol li{
+        float: left; width: 20%;
+    }
+    .myPageContainer > ul li,
+    .myPageContainer > ul li a{
+        display: flex; align-items: center;
+    }
+    .myPageContainer > ul li div span:not(:first-of-type),
+    .myPageContainer > ul li div time,
+    .myPageContainer > ul li div mark{
+        display: inline-block; margin-left: 3%; line-height: 26px;
+    }
+    .myPageContainer div:nth-of-type(3) ul li figure figcaption dl > *:not(:last-child){
+        margin-bottom: 10px;
+    }
+    /* todo myPage Fin */
+    [class*=myInquiryOrder] > ol{
+        padding: 0 12% 40px;
+    }
+    [class*=myInquiryOrder] > ol li{
+        float: left;
+    }
+    .myInquiryOrderContainer > ul li span,
+    .myInquiryOrderContainer > ul li mark{
+        float: left;
+    }
+    .myInquiryOrderCancelContainer > ul li span:first-of-type,
+    .myInquiryOrderCancelContainer > ul li span:nth-of-type(2),
+    .myInquiryOrderCancelContainer > ul li span:last-of-type{
+        float: left; box-sizing: border-box;
+    }
+    /* todo Order Fin */
+    .myCouponContainer > div:first-of-type{
+        display: flex; align-items: center; justify-content: space-between;
+    }
+    .myCouponContainer > div:first-of-type,
+    .myCouponContainer > div:nth-of-type(2){
+        padding-bottom: 40px;
+    }
+    .myCouponContainer > div:nth-of-type(2){
+        text-align: center;
+    }
+    .myCouponContainer > ul li{
+        padding: 30px 2.5%;
+    }
+    /* todo cuupon Fin */
+    [class*='myManagement'] > div:first-of-type{
+        padding-bottom: 40px; border-bottom: 1px solid var(--gs4);
+    }
+    [class*='myManagement'] > div:first-of-type,
+    [class*='myManagement'] div:first-of-type h3{
+        margin-bottom: 40px;
+    }
+    [class*='myManagement'] div:first-of-type ul li:not(:nth-of-type(6),:nth-of-type(8),:nth-of-type(9)),
+    [class*='myManagement'] div:first-of-type ul li:nth-of-type(6) div{
+        margin-bottom: 20px; display: flex; align-items: center;
+    }
+    [class*='myManagement'] div:first-of-type ul li:nth-of-type(2) input:last-of-type,
+    [class*='myManagement'] div:first-of-type ul li:nth-of-type(4) input:last-of-type,
+    [class*='myManagement'] div:first-of-type ul li:nth-of-type(5) input:last-of-type{
+        width: 88%; 
+    }
+    [class*='myManagement'] div:first-of-type ul li:nth-of-type(3) span .customRdio{
+        padding-left: 50%;
+    }
+    [class*='myManagement'] div:first-of-type ul li:nth-of-type(3) span input:checked+.customRdio{
+        background-image: url('../images/btn_radio_on.svg');
+    }
+    [class*='myManagement'] div:first-of-type ul li:nth-of-type(6),
+    [class*='myManagement'] div:first-of-type ul li:nth-of-type(6) > input:first-of-type{
+        margin-bottom: 20px;
+    }
+    [class*='myManagement'] div:first-of-type ul li:nth-of-type(8),
+    [class*='myManagement'] div:first-of-type ul li:nth-of-type(9){
+        padding-left: 2.4%;
+    }
+    .myManagementContainer > div:last-of-type{
+        padding: 0 2.4%;
+    }
+    .myManagementContainer > div:last-of-type li{
+        padding: 40px 1.7%; border: 1px solid var(--gs4);
+    }
+    .myManagementContainer > div:last-of-type li h4 span{
+        margin-left: 1%;
+    }
+    .myManagementContainer > div:last-of-type li h4 mark{
+        padding: 3px 2%; float: right;
+    }
+    .myManagementContainer > div:last-of-type li input,
+    .myManagementContainer > div:last-of-type li a{
+        cursor: pointer;
+    }
+    .myManagementEmptyContainer div:last-of-type h3 a{
+        float:right;
+    }
+    /* Todo Member information management Fin */
+    #cancelPopup,
+    #pwChangePopup,
+    #delAddress,
+    #clearAddress,
+    #addAddressPopup{
+        transform: translate(-50%,-50%); left: 50%;
+    }
+    #cancelPopup div:first-of-type > input{
+        width: 49%; min-width: 120px;
+    }
+    #pwChangePopup > input[type='button'],
+    #addAddressPopup > input[type='button']{
+        cursor: pointer;
+    }
+    #pwChangePopup > input[type='button']{
+        top: 20px; right: 20px;
+    }
+    #addAddressPopup{
+        padding: 40px 2.6%;
+    }
+    #addAddressPopup > input[type='button']{
+        top: 40px; right: 40px;
+    }
+    .myAddressContainer div ul li{
+        border: 1px solid var(--gs4); padding: 40px 1.6%;
+    }
+    .myAddressContainer div ul li h4 mark{
+        background-color: var(--pcRed); color: var(--gs1); padding: 3px 2%; float: right;
+    }
+    .myAddressContainer div ul li input,
+    .myAddressContainer div ul li a{
+        padding: 4px 1%;
+    }
+    [class*=Address] div > input{
+        display: block; margin: 0 auto;
+    }
+    /* todo address Fin */
+    [class*='shoppingBag'] form ul li:not(:last-of-type){
+        margin-bottom: 30px;
+    }
+    [class*='shoppingBag'] form ul li:first-of-type span:first-of-type,
+    .myshoppingBagContainer form ul li:not(:first-of-type) span:first-of-type{
+        width: 5%;
+    }
+    [class*='shoppingBag'] form ul li:first-of-type span:first-of-type input{
+        display: none;
+    }
+    [class*='shoppingBag'] form ul li:first-of-type span:not(:first-of-type),
+    .myshoppingBagContainer form ul li:not(:first-of-type) > *:not(:nth-of-type(2)){
+        text-align: center;
+    }
+    .myshoppingBagContainer form ul li:not(:first-of-type) > *{
+        float: left;
+    }
+    .myshoppingBagContainer form ul li:not(:first-of-type) > *:not(:nth-of-type(2)){
+        display: block;
+    }
+    .myshoppingBagContainer form ul li:not(:first-of-type) span:first-of-type input{
+        display: none;
+    }
+    .myshoppingBagContainer form ul li:not(:first-of-type) span:nth-of-type(2){
+        display: flex; align-items: center;
+    }
+    .myshoppingBagContainer form ul li:not(:first-of-type) .qtyComponent > *{
+        float: left; display: block;
+    }
+    .myshoppingBagContainer form ul li:not(:first-of-type) .qtyComponent input[type='button']{
+        cursor: pointer;
+    }
+    .myshoppingBagContainer form ul li:not(:first-of-type) .qtyComponent input[type='number']{
+        background-color: var(--gs4); border: none; color: var(--gs1); text-align: center; line-height: 45px; padding: 0 9%; box-sizing: border-box;
+    }
+    .myshoppingBagContainer form > div:first-of-type{
+        border: 1px solid var(--gs4); margin-bottom: 40px;
+    }
+    .myshoppingBagContainer form > div:first-of-type span{
+        float: left; display: block;
+    }
+    .myshoppingBagContainer form > div:first-of-type span > strong{
+        margin-top: 20px;
+    }    
+    .myshoppingBagContainer form > div:first-of-type span:not(:first-of-type){
+        background-position: left; margin-left: 4%;
+    }
+    /* todo shopping Fin */
+    .mypaymentContainer form > div:first-of-type h3{
+        cursor: pointer;
+    }
+    .mypaymentContainer form > div:first-of-type h3 span{
+        float: right; padding-right: 3%; position: relative; line-height: 22px;
+    }
+    .mypaymentContainer form > div:first-of-type ul li > *,
+    .mypaymentContainer form div:nth-of-type(2) ul li:nth-of-type(1) > *,
+    .mypaymentContainer form div:nth-of-type(2) ul li:nth-of-type(2) > *,
+    .mypaymentContainer form div:nth-of-type(2) ul li:nth-of-type(3) > *,
+    .mypaymentContainer form div:nth-of-type(2) ul li:last-of-type label,
+    .mypaymentContainer form div:nth-of-type(2) ul li:last-of-type input:first-of-type,
+    .mypaymentContainer form div:nth-of-type(4) ul li > *{
+        display: block; float: left; 
+    }
+    .mypaymentContainer form div:nth-of-type(2) h3{
+        margin-bottom: 50px;
+    }
+    .mypaymentContainer form div:nth-of-type(2) h3 input{
+        float: right;
+    }
+    .mypaymentContainer form div:nth-of-type(2) ul li:last-of-type input:first-of-type{
+        box-sizing: border-box; padding: 10px 2%; border: 1px solid var(--gs4);
+    }
+    .mypaymentContainer form div:nth-of-type(2) ul li:last-of-type input:nth-of-type(2){
+        float: right; min-width: 130px; margin-bottom: 20px;
+    }
+    .mypaymentContainer form div:nth-of-type(2) ul li:last-of-type input:nth-of-type(3),
+    .mypaymentContainer form div:nth-of-type(2) ul li:last-of-type input:last-of-type{
+        float: right;
+    }
+    .mypaymentContainer form div:nth-of-type(4) ul li > *:not(:first-child){
+        margin-left: 5%;
+    }
+    .mypaymentContainer form div:nth-of-type(4) ul li strong{
+        text-align: right; font-weight: inherit;
+    }
+    .mypaymentContainer form div:nth-of-type(5) span{
+        background-color: var(--gs3); padding: 40px 1.6%;
+    }
+    .mypaymentContainer form div:nth-of-type(5) span input[type='button']{
+        float: right; min-width: 130px;
+    }
+    .mypaymentContainer form div:nth-of-type(6) ul li{
+        cursor: pointer; 
+    }
+    .mypaymentContainer form div:nth-of-type(6) ul li img{
+        width: 50%;
+    }
+    .mypaymentContainer form > div:last-of-type div{
+        border: 1px solid var(--gs4); padding: 40px 1.6%;
+    }
+    .mypaymentContainer form > div:last-of-type div strong *{
+        float: right;
+    }
+    .mypaymentContainer form > div:last-of-type div strong:not(:last-of-type){
+        display: block; margin-bottom: 40px;
+    }
+    .mypaymentContainer form > div:last-of-type div strong:nth-child(2){
+        border-bottom: 1px solid var(--gs4); padding-bottom: 40px;
+    }
+    /* todo pay Fin */
+    .orderCompletedContainer > p span{
+        margin-left: 1.6%;
+    }
+    .orderCompletedContainer > div:first-of-type ul li > *{
+        display: block; float: left;
+    }
+    .orderCompletedContainer > div:first-of-type ul li > *:not(:first-child){
+        margin-left: 5%;
+    }
+    .orderCompletedContainer > div:first-of-type ul li strong{
+        line-height: 115px; text-align: right; font-weight: inherit;
+    }
+    .orderCompletedContainer div:nth-of-type(2) address{
+        margin-bottom: 20px; font-style: normal;
+    }
+    .orderCompletedContainer div:nth-of-type(2) address > *{
+        float: left;
+    }
+    .orderCompletedContainer div:nth-of-type(2) address span{
+        width: 20%;
+    }
+    .orderCompletedContainer div:nth-of-type(2) address p{
+        width: 80%;
+    }
+    .orderCompletedContainer div:nth-of-type(2) > p{
+        padding: 20px 1.6%;
+    }
+    .orderCompletedContainer div:nth-of-type(3){
+        padding: 40px 1.6%;
+    }
+    .orderCompletedContainer div:nth-of-type(3) strong{
+        display: block; font-weight: inherit; 
+    }
+    .orderCompletedContainer div:nth-of-type(3) strong:not(:last-of-type){
+        margin-bottom: 40px; 
+    }
+    .orderCompletedContainer div:nth-of-type(3) strong > *{
+        float: right;
+    }
+    .orderCompletedContainer div:nth-of-type(3) strong:nth-of-type(2){
+        padding-bottom: 40px; border-bottom: 1px solid var(--gs4);
+    }
+    .orderCompletedContainer div:last-of-type{
+        text-align: center;
+    }
+    .orderCompletedContainer div:last-of-type a:last-of-type{
+        margin-left: 1.6%;
+    }
+    /* todo 결제완료 Fin */
+    .longPrivacyPolicyContainer ol > li:nth-of-type(2) ul{
+        display: flex; flex-wrap: wrap; flex-direction: row; align-items: center;
+    }
+    .longPrivacyPolicyContainer ol > li:nth-of-type(2) ul li:nth-of-type(2n+1){
+        width: 50%; 
+    }
+    .longPrivacyPolicyContainer ol > li:nth-of-type(2) ul li:nth-of-type(2n+2){
+        width: 48%; margin-left: 2%;
+    }
+    .longPrivacyPolicyContainer ol > li table,
+    .longMemberTermsandConditionsContainer ol > li ul li table{
+        padding: 0 1.6%; text-align: center; width: 100%; border-bottom: 1px solid var(--gs4); margin-bottom: 40px;
+    }
+    .longPrivacyPolicyContainer ol > li table thead,
+    .longMemberTermsandConditionsContainer ol > li ul li table thead{
+        background-color: var(--gs3);
+    }
+    .longPrivacyPolicyContainer ol > li table thead tr th,
+    .longMemberTermsandConditionsContainer ol > li ul li table thead tr th{
+        padding: 20px 1.6%; border-width: 1px 0 1px; border-color: var(--gs4); border-style: solid;
+    }
+}
+@media screen and (max-width:1279px){
+    .mainSlider .slider01 > div a,
+    .mainSlider .slider02 > div a,
+    .mainSlider .slider03 > div a{
+        float: right; display: block;
+    }
+    .mainSlider .slider04 > figure{
+        position: absolute; background-color: var(--gs1); text-align: center;
+    }
+    .mainSlider .slider04 figure figcaption dl{
+        min-height: 250px;
+    }
+    .mainSlider .slider04 figure:first-child,
+    .mainSlider .slider04 figure:last-of-type{
+        display: none;
+    }
+    .mainSlider .slider04 figure:nth-of-type(2){
+        top: 50%; left: 50%; transform: translate(-50%,-50%);
+    }
+    /* todo main */
+    [class^='about']:not([class*='Brand']) ul{
+        box-sizing: border-box; text-align: center;
+    }
+    [class^='about']:not([class*='Brand']) ul > li img{
+        display: none;
+    }
+    .aboutKoreaContainer ul > li div:last-of-type ol li{
+        margin-bottom: 8px; line-height: 24px;
+    }
+    /* todo it,kr store */
+    .listContainer{
+        background-color: var(--gs9); line-height: 0;
+    }
+    .listContainer ul li figure{
+        line-height: 24px;
+    }
+    /* todo list Fin */
+    .detailDrinkContainer img,
+    [class*='detail'] form > img{
+        width: 100%; display: block; max-width: 436px; margin: 0 auto 65px;
+    }
+    .detailBeenContainer form > div{
+        position: relative;
+    }
+    .detailBeenContainer form > div > *:not(span,input[type='submit']),
+    .beenInf div ul li{
+        margin-bottom: 30px;
+    }
+    .beenInf div > *:not(img:last-of-type){
+        margin-bottom: 50px;
+    }
+    .beenInf div ul li:nth-of-type(6) b{
+        margin-bottom: 8px;
+    }
+    .loginContainer > div,
+    [class^='findID'] > div,
+    [class^='forgotPassword'] > div{
+        padding: 50px 8.1%;
+    }
+    /* todo  Login*/
+    .newsEventContainer ul li figure > img{
+        width: 100%; display: block; 
+    }
+    /* todo Event */
+    .newsTalkContainer > p{
+        padding: 0 9.8%; margin-bottom: 40px;
+    }
+    /* todo Talk */
+    [class*='newsPr'] > ul li figure img{
+        display: block; margin: 0 auto 40px;
+    }
+    .newsPrCenterContainer > div:nth-of-type(2) p:last-of-type{
+        line-height: 24px; width: 95%;
+    }
+    .newsPrCenterDetailContainer > div:nth-of-type(4) p{
+        padding: 40px 40px;
+    }
+    .newsPrCenterDetailContainer > div:last-of-type a:not(:last-of-type),
+    .newsPressDetailContainer article div:last-of-type a:not(:last-of-type){
+        position: absolute;
+    }
+    /* todo news */
+    .storeInformationContainer > input[type='button']:hover{
+        background-color: var(--frs5);
+    }
+    .myPartnershipContainer > div:first-of-type div{
+        text-align: center; margin-bottom: 50px;
+    }
+    .myPartnershipContainer > div:nth-of-type(2) ul > li,
+    .myPartnershipContainer > div:nth-of-type(3) ul li{
+        margin-bottom: 50px;
+    }
+    .myPartnershipContainer > div:nth-of-type(2) ul li figure figcaption,
+    .myPartnershipContainer > div:nth-of-type(3) ul li figure figcaption{
+        margin: 0 auto;
+    }
+    .myPartnershipContainer > div:last-of-type{
+        margin-bottom: 80px;
+    }
+    /* todo partner Fin */
+}
+@media screen and (min-width:768px) and (max-width:1279px){
+    .main .bx-wrapper{
+        height: calc(100% - 321px);
+    }
+    .main footer{
+        position: fixed; bottom: 0; width: 100%;
+    }
+    .bx-wrapper .bx-pager{
+        bottom: 320px;
+    }
+    .mainSlider li > div h3{
+        font-size: 5.2vw;
+    }
+    .mainSlider li > div p{
+        font-size: 2.6vw;
+    }
+    .mainSlider .slider01 > div p,
+    .mainSlider .slider02 > div p,
+    .mainSlider .slider03 > div p{
+        line-height: 3.5vw;
+    }
+    .mainSlider .slider01 > div p,
+    .mainSlider .slider02 > div p{
+        max-width: 45vw;
+    }
+    /* todo main */
+    .aboutBrandContainer ul li:first-of-type{
+        padding: 400px 9.8% 0 9.8%;
+    }
+    .aboutBrandContainer ul li:nth-of-type(2){
+        padding: 0 9.8% 280px 9.8%;
+    }
+    .aboutBrandContainer ul li:not(:nth-of-type(1),:nth-of-type(2)){
+        padding: 500px 9.8%;
+    }
+    .aboutBrandContainer > div{
+        min-height: 340px;
+    }
+    .aboutBrandContainer > div dl dd{
+        line-height: 24px;
+    }
+    /* todo brand store */
+    [class^='about']:not([class*='Brand']) ul{
+        padding: 300px 0;
+    }
+    .aboutKoreaContainer ul > li:last-of-type div > *{
+        float: left; width: 45%;
+    }
+    .aboutKoreaContainer ul > li:last-of-type div > ol{
+        margin-left: 10%;
+    }
+    /* todo it,kr store */
+    .listContainer ol li{
+        display: inline-block;
+    }
+    .listContainer ol li:not(:first-child){
+        margin-left: 3%;
+    }
+    .listContainer ul li{
+        width: 46.8%;
+    }
+    .listContainer ul li:not(:nth-of-type(2n+1)){
+        margin-left: 3.2%;
+    }
+    /* todo list Fin */
+    .detailDrinkContainer > div div:nth-of-type(2) ul{
+        float: left; width: 50%; padding: 30px 3.1%;
+    }
+    .detailMdContainer form > div div:nth-of-type(2) ul:first-of-type li:nth-of-type(2) span:last-of-type{
+        margin-left: 35%;
+    }
+    .detailBeenContainer form > div h3{
+        position: relative; border-bottom: 1px solid var(--gs10);
+    }
+    .beenInf{
+        background-color: var(--gs6); padding: 50px 9.8%;
+    }
+    .beenInf div > img{
+        margin: 0 auto; max-width: 460px;
+    }
+    /* todo detail */
+    .loginContainer > div [id$='LoginTab'] form [class*='userID']::after,
+    .loginContainer > div [id$='LoginTab'] form [class*='userPW']::after{
+        height: 34px; top:17px;
+    }
+    .loginContainer > div [id$='LoginTab'] form [class*='compField'] > input:not(input[type='button']){
+        padding: 24px 1% 24px 20%;
+    }
+    .loginContainer #lastLoginTab form .belowField input,
+    .loginContainer #lastLoginTab form > input[type='password'],
+    .findIDContainer > div form fieldset .belowField input,
+    [class*=forgotPassword] > div form div label+input{
+        padding: 24px 5%;
+    }
+    .loginContainer > div [id$=LoginTab] form input[type='submit'],
+    .loginContainer > div #lastLoginTab form > input[type='reset'],
+    .findIDContainer > div form fieldset > input[type='submit'],
+    .findIDContainer > div form fieldset > a,
+    .findIDCkContainer > div a,
+    [class*='forgotPassword'] > div form > input,
+    [class*='forgotPassword'] > div form > a{
+        line-height: 68px;
+    }
+    .loginContainer > div [id$='LoginTab'] form [class*='userPW'] input[type='button']{
+        top: 22px;
+    }
+    /* todo  Login*/
+    [class*='my'] .myPageNav ul > li{
+        justify-content: center; text-align: center;
+    }
+    [class*='my'] .myPageNav ul > li ol{
+        padding: 30px 0; margin-top: 53px;
+    }
+    [class*='my'] .myPageNav ul:hover > li ol{
+        min-height: 219px; opacity: 1;
+    }
+    .myNoticeContainer > ul li{
+        padding: 20px 3.2%;
+    }
+    .myNoticeContainer > ul li > *:nth-child(2){
+        width: 61%;
+    }
+    .myNoticeContainer > ul li > *:nth-child(3),
+    .myNoticeContainer > ul li > *:nth-child(4){
+        width: 13%;
+    }
+    /* todo Notice */
+    .newsEventContainer ul li figure > img{
+        margin-bottom: 40px;
+    }
+    /* todo Event */
+    .newsTalkContainer > ul li:not(:first-of-type){
+        margin-left: 4%;
+    }
+    .newsTalkContainer > div ul li{
+        width: 43.5%; margin-bottom: 50px;
+    }
+    .newsTalkContainer > div ul li:not(:nth-of-type(2n+1)){
+        margin-left: 6.5%;
+    }
+    .newsTalkContainer > div ul li figure figcaption{
+        min-height: 120px;
+    }
+    /* todo Talk */
+    .newsPrCenterContainer > div:nth-of-type(2) p:first-of-type,
+    [class*='newsPr'] > ul li figure img{
+        width: 50%;
+    }
+    .newsPrCenterDetailContainer > div:last-of-type a:not(:last-of-type),
+    .newsPressDetailContainer article div:last-of-type a:not(:last-of-type){
+        padding: 0 4%;
+    }
+    .newsPrCenterDetailContainer > div:last-of-type a:nth-of-type(3),
+    .newsPressDetailContainer article div:last-of-type a:nth-of-type(3){
+        width: 14%;
+    }
+    /* todo news */
+    .storeInformationContainer aside{
+        height: 90vh; width: 80%;
+    }
+    .storeInformationContainer aside div form fieldset input[type='submit']{
+        width: 9%;
+    }
+    .myPartnershipContainer > *:not(h2, div:first-of-type){
+        padding: 0 9.7% 0;
+    }
+    .myPartnershipContainer > div:first-of-type div{
+        background: url('../images/card_01.png') no-repeat top / 352px; padding: 260px 28% 0;
+    }
+    .myPartnershipContainer > div:first-of-type a{
+        width: 30%;
+    }
+    .myPartnershipContainer > div:nth-of-type(2) ul li figure img,
+    .myPartnershipContainer > div:nth-of-type(3) ul li figure img{
+        margin-bottom:30px; width: 50%;
+    }
+    .myPartnershipContainer > div:nth-of-type(2) ul li figure figcaption,
+    .myPartnershipContainer > div:nth-of-type(3) ul li figure figcaption{
+        width: 50%;
+    }
+    .myPartnershipContainer > div:last-of-type mark{
+        padding-left: 5%;
+    }
+    .myPartnershipContainer > div:last-of-type ul{
+        margin-left: 8%; width: 77%; list-style-position: outside;
+    }
+    /* todo partner Fin */
+    .myAskedContainer > div:first-of-type{
+        background-color: var(--gs3); padding: 40px 6.5%;
+    }
+    .myAskedContainer div:first-of-type form input[type='text']{
+        width: 70%;
+    }
+    .myAskedContainer div:first-of-type form input[type='submit']{
+        width: 29%;
+    }
+    .myAskedContainer div:first-of-type ul li:first-of-type{
+        width: 100%; margin-bottom: 20px;
+    }
+    .myAskedContainer div:first-of-type ul li:not(:first-of-type){
+        margin-bottom: 20px; display: block; width: 46%; float: left;
+    }
+    .myAskedContainer div:first-of-type ul li:not(:first-of-type):nth-of-type(2n+1){
+        margin-left: 8%;
+    }
+    .myAskedContainer > ul li{
+        padding: 3.3%;
+    }
+    .myAskedContainer > ul li:first-of-type,
+    .myAskedContainer > ul li span:not(:nth-of-type(2)){
+        display: none;
+    }
+    .myAskedContainer > ul li span:nth-of-type(2){
+        display: block; margin-bottom: 20px;
+    }
+    .myAskedContainer > ul li p:first-of-type{
+        width: 100%; line-height: 22px;
+    }
+    .myAskedContainer > ul li:not(:first-of-type).active p:last-of-type{
+        min-height: 142px; padding: 40px 7%;
+    }
+    /* todo Asked Fin */
+    [class*='myInquiry'] > div:first-of-type{
+        padding: 40px 10%;
+    }
+    /* todo INquiry */
+    .myConsultationContainer > ul li{
+        line-height: 18px;
+    }
+    .myConsultationContainer > ul li:not(:last-of-type){
+        margin-bottom: 11px;
+    }
+    .myConsultationContainer form fieldset div:nth-of-type(5) .customChk,
+    .myConsultationContainer form fieldset div:nth-of-type(6) .customChk{
+        padding-left: 5.5%;
+    }
+    /* todo myConsultation Fin*/
+    .myPageContainer > div:first-of-type{
+        padding-bottom: 40px; margin-bottom: 40px;
+    }
+    .myPageContainer > div:first-of-type h3{
+        padding-left: 30%; margin-bottom: 80px;
+    }
+    .myPageContainer > div:first-of-type h3 span{
+        display: block; text-align: right;
+    }
+    .myPageContainer > div:first-of-type ul li{
+        width: 25%;
+    }
+    .myPageContainer > div:nth-of-type(2) ol{
+        text-align: center; padding: 0 10%;
+    }
+    .myPageContainer > div:nth-of-type(2) ol li:nth-of-type(1),
+    .myPageContainer > div:nth-of-type(2) ol li:nth-of-type(2),
+    .myPageContainer > div:nth-of-type(2) ol li:nth-of-type(3){
+        width: 33%; margin-bottom: 40px;
+    }
+    .myPageContainer > div:nth-of-type(2) ol li:nth-of-type(4),
+    .myPageContainer > div:nth-of-type(2) ol li:nth-of-type(5){
+        width: 50%; margin: 0 auto;
+    }
+    .myPageContainer > div:nth-of-type(2) ol li:not(:last-of-type){
+        padding-right: 5%; box-sizing: border-box; background: url('../images/icon_arrowLeft.svg') no-repeat center right / 40px;
+    }
+    .myPageContainer > ul li{
+        justify-content: space-between;
+    }
+    .myPageContainer > ul li a{
+        flex-direction: column; width: 40%;
+    }
+    .myPageContainer > ul li a img{
+        width: 70%;
+    }
+    .myPageContainer > ul li a span{
+        width: 50%; text-align: center; line-height: 24px; color: var(--gs10);
+    }
+    .myPageContainer > ul li div{
+        width: 50%;
+    }
+    .myPageContainer div:nth-of-type(3) ul li{
+        float: left; width: 25%;
+    }
+    /* todo myPage Fin */
+    [class*=myInquiryOrder] > ol li:nth-of-type(1),
+    [class*=myInquiryOrder] > ol li:nth-of-type(2),
+    [class*=myInquiryOrder] > ol li:nth-of-type(3){
+        width: 33%; margin-bottom: 40px;
+    }
+    [class*=myInquiryOrder] > ol li:nth-of-type(4),
+    [class*=myInquiryOrder] > ol li:nth-of-type(5){
+        width: 50%;
+    }
+    [class*=myInquiryOrder] > ol li:not(:last-of-type){
+        padding-right: 5%; box-sizing: border-box;background: url('../images/icon_arrowLeft.svg') no-repeat center right / 40px;
+    }
+    .myInquiryOrderContainer > ul li span:first-of-type{
+        width: 100%; padding: 100px 0 100px 30%; border-bottom: 1px solid var(--gs4); background: url('../images/details_172.jpg') no-repeat left center / 30%;
+    }
+    .myInquiryOrderContainer > ul li span:nth-of-type(2),
+    .myInquiryOrderContainer > ul li mark,
+    .myInquiryOrderContainer > ul li span:last-of-type{
+        width: 33%; text-align: center;
+    }
+    .myInquiryOrderContainer > ul li span:nth-of-type(2){
+        padding: 24px 0;
+    }
+    .myInquiryOrderContainer > ul li mark{
+        padding: 25px 2%;
+    }
+    .myInquiryOrderContainer > ul li span:last-of-type{
+        padding: 11px 4%; box-sizing: border-box;
+    }
+    [class*=myInquiryOrder] > div:last-of-type h3,
+    [class*=myInquiryOrder] > div:last-of-type ul *:not(:last-of-type){
+        margin-bottom: 8px;
+    }
+    [class*=myInquiryOrder] > div:last-of-type ul{
+        list-style: none; color: var(--gs6);
+    }
+    [class*=myInquiryOrder] > div:last-of-type ul li{
+        line-height: 24px;
+    }
+    .myInquiryOrderCancelContainer > ul li span:first-of-type{
+        width: 100%; padding : 100px 0  100px 30%;border-bottom: 1px solid var(--gs4);background: url('../images/details_172.jpg') no-repeat left center / 30%;
+    }
+    .myInquiryOrderCancelContainer > ul li span:nth-of-type(2){
+        width: 50%; padding: 19px 0 19px 4%;
+    }
+    .myInquiryOrderCancelContainer > ul li span:last-of-type{
+        width: 50%; color: var(--gs4); border-left: 1px solid var(--gs4); padding: 20px 0 20px 4%;
+    }
+    /* todo Order Fin */
+    .myCouponContainer > div:first-of-type{
+        flex-wrap: wrap;
+    }
+    .myCouponContainer > div:first-of-type b{
+        width: 45%;
+    }
+    .myCouponContainer > div:first-of-type a{
+        width: 36%;
+    }
+    .myCouponContainer > div:first-of-type span:nth-of-type(1),
+    .myCouponContainer > div:first-of-type span:nth-of-type(2){
+        width: 50%;
+    }
+    .myCouponContainer > div:first-of-type > *:not(span){
+        margin-bottom: 40px;
+    }
+    .myCouponContainer > div:nth-of-type(2) form input[type='search']{
+        width: 66%;
+    }
+    .myCouponContainer > ul{
+        padding: 0 14.5%;
+    }
+    .myCouponContainer > ul li{
+        width: 100%;
+    }
+    /* todo cuupon Fin */
+    [class*='myManagement'] div:first-of-type ul li:not(:nth-of-type(n+8)) > label,
+    [class*='myManagement'] div:first-of-type ul li:nth-of-type(6) div label{
+        width: 16%;
+    }
+    [class*='myManagement'] div:first-of-type ul li:nth-of-type(1) input:first-of-type,
+    [class*='myManagement'] div:first-of-type ul li:nth-of-type(3) input:first-of-type,
+    [class*='myManagement'] div:first-of-type ul li:nth-of-type(6) div input{
+        width: 58%;
+    }
+    [class*='myManagement'] div:first-of-type ul li:nth-of-type(1) input:last-of-type,
+    [class*='myManagement'] div:first-of-type ul li:nth-of-type(3) span,
+    [class*='myManagement'] div:first-of-type ul li:nth-of-type(6) div a{
+        margin-left: 4%;
+    }
+    [class*='myManagement'] div:first-of-type ul li:nth-of-type(3) span{
+        width: 10%;
+    }
+    [class*='myManagement'] div:first-of-type ul li:nth-of-type(1) input:last-of-type,
+    [class*='myManagement'] div:first-of-type ul li:nth-of-type(6) div a{
+        width: 26%;
+    }
+    [class*='myManagement'] div:first-of-type ul li:nth-of-type(8) .customChk,
+    [class*='myManagement'] div:first-of-type ul li:nth-of-type(9) .customChk{
+        padding-left: 5%; background: url('../images/btn_checkBox_off.svg') no-repeat left / 20px;
+    }
+    [class*='myManagement'] div:first-of-type ul li:nth-of-type(8) input:checked+.customChk,
+    [class*='myManagement'] div:first-of-type ul li:nth-of-type(9) input:checked+.customChk{
+        background-image: url('../images/btn_checkBox_on.svg');
+    }
+    /* Todo Member information management Fin */
+    #cancelPopup,
+    #pwChangePopup,
+    #delAddress,
+    #clearAddress,
+    #addAddressPopup{
+        width: 50%;
+    }
+    #pwChangePopup form fieldset p{
+        margin-bottom: 80px;
+    }
+    #pwChangePopup form fieldset p,
+    #delAddress p{
+        text-align: left; line-height: 20px;
+    }
+    #delAddress input{
+        width:49%; min-width:120px;
+    }
+    /* todo address Fin */
+    [class*='shoppingBag'] form ul li:first-of-type span:nth-of-type(2),
+    [class*='shoppingBag'] form ul li:first-of-type span:last-of-type,
+    [class*='shoppingBag'] form ul li:first-of-type span:nth-of-type(4){
+        width: 25%;
+    }
+    [class*='shoppingBag'] form ul li:first-of-type span:nth-of-type(3){
+        width: 20%;
+    }
+    [class*='shoppingBag'] form ul li:first-of-type span:nth-of-type(4){
+        max-width: 190px;
+    }
+    .myshoppingBagContainer form ul li:not(:first-of-type) span:nth-of-type(2){
+        flex-direction: column; width: 25%;
+    }
+    .myshoppingBagContainer form ul li:not(:first-of-type) span:nth-of-type(3){
+        width: 20%; line-height: 175px;
+    }
+    .myshoppingBagContainer form ul li:not(:first-of-type) .qtyComponent{
+        width: 25%; padding: 66px 0; max-width: 190px;
+    }
+    .myshoppingBagContainer form ul li:not(:first-of-type) .qtyComponent input[type='button']{
+        width: 30%;
+    }
+    .myshoppingBagContainer form ul li:not(:first-of-type) .qtyComponent input[type='number']{
+        width: 40%;
+    }
+    .myshoppingBagContainer form ul li:not(:first-of-type) strong{
+        width: 25%; line-height: 174px; font-weight: inherit;
+    }
+    .myshoppingBagContainer form > div:first-of-type{
+        padding: 40px 3.2%;
+    }
+    .myshoppingBagContainer form > div:first-of-type span:nth-of-type(1){
+        width: 36%;
+    }
+    .myshoppingBagContainer form > div:first-of-type span:nth-of-type(2),
+    .myshoppingBagContainer form > div:first-of-type span:nth-of-type(3){
+        width: 16%;
+    }
+    .myshoppingBagContainer form > div:first-of-type span:not(:first-of-type){
+        padding-left: 12%;
+    }
+    .myshoppingBagContainer form div:last-of-type > a:first-of-type{
+        display: block; width: 100%; margin-bottom: 20px;
+    }
+    .myshoppingBagContainer form div:last-of-type span{
+        display: block; text-align: center;
+    }
+    /* todo shopping Fin */
+    .mypaymentContainer form div:first-of-type ul li label,
+    .mypaymentContainer form div:nth-of-type(2) ul li:nth-of-type(1) label,
+    .mypaymentContainer form div:nth-of-type(2) ul li:nth-of-type(2) label,
+    .mypaymentContainer form div:nth-of-type(2) ul li:nth-of-type(3) label,
+    .mypaymentContainer form div:nth-of-type(2) ul li:last-of-type label{
+        width: 16%; line-height: 38px;
+    }
+    .mypaymentContainer form div:first-of-type ul li input,
+    .mypaymentContainer form div:nth-of-type(2) ul li:nth-of-type(1) input,
+    .mypaymentContainer form div:nth-of-type(2) ul li:nth-of-type(2) input,
+    .mypaymentContainer form div:nth-of-type(2) ul li:nth-of-type(3) input,
+    .mypaymentContainer form div:nth-of-type(2) ul li:last-of-type input:nth-of-type(3),
+    .mypaymentContainer form div:nth-of-type(2) ul li:last-of-type input:last-of-type{
+        width: 84%;
+    }
+    .mypaymentContainer form div:nth-of-type(2) ul li:last-of-type input:first-of-type{
+        width: 58%;
+    }
+    .mypaymentContainer form div:nth-of-type(4) ul li img{
+        width: 17%;
+    }
+    .mypaymentContainer form div:nth-of-type(4) ul li span{
+        padding: 31px 0; width: 40%; line-height: 24px;
+    }
+    .mypaymentContainer form div:nth-of-type(4) ul li strong{
+        line-height: 111px; width: 33%;
+    }
+    .mypaymentContainer form div:nth-of-type(5) span input[type='text']{
+        width: 76%;
+    }
+    .mypaymentContainer form div:nth-of-type(6) ul li{
+        width: 50%;
+    }
+    .mypaymentContainer form div:nth-of-type(6) span label,
+    .mypaymentContainer form div:nth-of-type(7) span label{
+        background:url('../images/btn_checkBox_off.svg') no-repeat left / 26px; padding-left: 6%; line-height: 24px;
+    }
+    /* todo pay Fin */
+    .orderCompletedContainer > div:first-of-type ul li img{
+        width: 20%;
+    }
+    .orderCompletedContainer > div:first-of-type ul li span{
+        padding: 41px 0; width: 37%; line-height: 24px;
+    }
+    .orderCompletedContainer > div:first-of-type ul li strong{
+        width: 33%; 
+    }
+    /* todo 결제완료 Fin */
+}
+@media screen and (min-width:1280px){
+    .main .bx-wrapper{
+        height: calc(100% - 161px);
+    }
+    .main footer{
+        position: fixed; bottom: 0; width: 100%;
+    }
+    .bx-wrapper .bx-pager{
+        bottom: 360px;
+    }
+    .mainSlider li > div h3{
+        font-size: 4.2vw;
+    }
+    .mainSlider li > div p{
+        font-size: 1vw;
+    }
+    .mainSlider .slider04 > figure{
+        position: absolute; background-color: var(--gs1);
+    }
+    .mainSlider [class*='slider']:not(.slider04) > div a{
+        float: right; display: block;
+    }
+    .mainSlider .slider02 > div p,
+    .mainSlider .slider03 > div p{
+        line-height: 1.5vw;
+    }
+    .mainSlider .slider02 > div p{
+        max-width: 26vw;
+    }
+    .mainSlider .slider04 figure{
+        width: 21%; text-align: center; 
+    }
+    .mainSlider .slider04 figure figcaption dl{
+        min-height: 200px;
+    }
+    .mainSlider .slider04 figure:first-child{
+        left: 18%; top: 20%;
+    }
+    .mainSlider .slider04 figure:nth-of-type(2){
+        left: 40%; top: 20%;
+    }
+    .mainSlider .slider04 figure:last-of-type{
+        left: 62%; top: 20%;
+    }
+    /* todo main */
+    .aboutBrandContainer ul li:first-of-type{
+        padding-top: 400px;
+    }
+    .aboutBrandContainer ul li:nth-of-type(2){
+        padding-bottom: 280px;
+    }
+    .aboutBrandContainer ul li:not(:nth-of-type(1),:nth-of-type(2)){
+        padding: 500px 0;
+    }
+    /* todo brand store */
+    [class^='about']:not([class*='Brand']) ul{
+        padding: 300px 3.1%; box-sizing: border-box;
+    }
+    [class^='about']:not([class*='Brand']) ul > li{
+        display: flex; align-items: center; justify-content: center;
+    }
+    [class^='about']:not([class*='Brand']) ul li:nth-of-type(2n+2){
+        text-align: right;
+    }
+    [class^='about']:not([class*='Brand']) ul > li:nth-of-type(2n+1) div,
+    [class^='about']:not([class*='Brand']) ul > li:nth-of-type(2n+2) img{
+        margin-left: 2.1%;
+    }
+    [class^='about']:not([class*='Brand']) ul > li img{
+        mix-blend-mode: color-burn;
+    }
+    .aboutKoreaContainer ul >li div:last-of-type ol li{
+        margin-bottom: 20px;
+    } 
+    .aboutItalianContainer ul li div{
+        width: 50%;
+    }
+    /* todo it,kr store */
+    .listContainer{
+        background-color: var(--gs9);
+    }
+    .listContainer ol li:not(:first-child){
+        margin-left: 1%;
+    }
+    .listContainer ul li{
+        width: 23.8%;
+    }
+    .listContainer ul li:not(:nth-of-type(4n+1)){
+        margin-left: 1.6%;
+    }
+    /* todo list Fin */
+    [class*='detail']{
+        padding: 155px 6% 80px 17.5%;
+    }
+    .detailDrinkContainer > *:not(h2){
+        float: left; display: block;
+    }
+    .detailDrinkContainer > img,
+    .detailMdContainer form img{
+        width: 30%;
+    }
+    .detailDrinkContainer > div{
+        width: 66%; margin-left: 4%;
+    }
+    .detailMdContainer form > *:not(div:last-of-type){
+        float: left; display: block;
+    }
+    .detailMdContainer form > div:first-of-type{
+        width:66%; margin-left: 4%;
+    }
+    .detailMdContainer form > div div:nth-of-type(2) ul:first-of-type li:nth-of-type(2) span:last-of-type{
+        margin-left: 23%;
+    }
+    .detailBeenContainer form > *{
+        float: left; display: block;
+    }
+    .detailBeenContainer form img{
+        width: 30%;
+    }
+    .detailBeenContainer form > div{
+        width: 66%; margin-left: 4%; position: relative;
+    }
+    .detailBeenContainer form > div > *:not(span,input[type='submit']),
+    .beenInf div ul li{
+        margin-bottom: 20px;
+    }
+    .beenInf{
+        background-color: var(--gs6); padding: 50px 6% 50px 2.6%;
+    }
+    .beenInf div > *{
+        float: left; width: 28%;
+    }
+    .beenInf div > *:not(ul){
+        margin-left: 8%;
+    }
+    /* todo detail */
+    .loginContainer > div,
+    [class^='findID'] > div,
+    [class^='forgotPassword'] > div{
+        background-color:rgb(0,0,0,0.8);
+        padding: 50px 2.4%;
+    }
+    .loginContainer > div [id$='LoginTab'] form [class*='userID']::after,
+    .loginContainer > div [id$='LoginTab'] form [class*='userPW']::after{
+        height: 30px; top:15px;
+    }
+    .loginContainer > div [id$='LoginTab'] form [class*='compField'] > input:not(input[type='button']){
+        padding: 20px 1% 20px 20%;
+    }
+    .loginContainer #lastLoginTab form .belowField input,
+    .loginContainer #lastLoginTab form > input[type='password'],
+    .findIDContainer > div form fieldset .belowField input,
+    [class*=forgotPassword] > div form div label+input{
+        padding: 20px 5%;
+    }
+    .loginContainer > div [id$=LoginTab] form input[type='submit'],
+    .loginContainer > div #lastLoginTab form > input[type='reset'],
+    .findIDContainer > div form fieldset > input[type='submit'],
+    .findIDContainer > div form fieldset > a,
+    .findIDCkContainer > div a,
+    [class*='forgotPassword'] > div form > input,
+    [class*='forgotPassword'] > div form > a{
+        line-height: 55px;
+    }
+    .loginContainer > div [id$='LoginTab'] form [class*='userPW'] input[type='button']{
+        top: 19px;
+    }
+    /* todo  Login*/
+    [class*='my'] .myPageNav ul > li{
+        flex-direction: column;
+    }
+    [class*='my'] .myPageNav ul > li ol{
+        padding-top: 30px; margin-top: 37px;
+    }
+    [class*='my'] .myPageNav ul:hover > li ol{
+        height: 218px; opacity: 1;
+    }
+    .myNoticeContainer > ul li{
+        padding: 20px 1.6%;
+    }
+    .myNoticeContainer > ul li > *:nth-child(2){
+        width: 68%;
+    }
+    .myNoticeContainer > ul li > *:nth-child(3),
+    .myNoticeContainer > ul li > *:nth-child(4){
+        width: 10%;
+    }
+    /* todo Notice */
+
+    .newsEventContainer ul li figure > *{
+        float: left;
+    }
+    .newsEventContainer ul li figure > img{
+        width: 50%;
+    }
+    .newsEventContainer ul li figure > figcaption{
+        width: 46%; margin-left: 4%;
+    }
+    /* todo Event */
+    .newsTalkContainer > p{
+        padding: 0 17.5%; margin-bottom: 20px;
+    }
+    .newsTalkContainer > ul li:not(:first-of-type){
+        margin-left: 1.3%;
+    }
+    .newsTalkContainer > div ul li{
+        width: 30.6%; margin-bottom: 40px;
+    }
+    .newsTalkContainer > div ul li:not(:nth-of-type(3n+1)){
+        margin-left: 4%;
+    }
+    .newsTalkContainer > div ul li figure figcaption{
+        min-height: 100px;
+    }
+    /* todo Talk  */
+    .newsPrCenterContainer > div:nth-of-type(2) p:first-of-type{
+        width: 40%;
+    }
+    .newsPrCenterContainer > div:nth-of-type(2) p:last-of-type{
+        line-height: 24px; width: 50%;
+    }
+    [class*='newsPr'] > ul li figure > *{
+        float: left;
+    }
+    [class*='newsPr'] > ul li figure img{
+        width: 28%;
+    }
+    [class*='newsPr'] > ul li figure figcaption{
+        width: 68.7%; margin-left: 3.3%;
+    }
+    .newsPrCenterDetailContainer > article ul .leftPicture img{
+        float: left;
+    }
+    .newsPrCenterDetailContainer > article ul .rightPicture img{
+        float: right;
+    }
+    .newsPrCenterDetailContainer > div:nth-of-type(4) p{
+        padding: 70px 40px;
+    }
+    .newsPrCenterDetailContainer > div:last-of-type a:not(:last-of-type),
+    .newsPressDetailContainer article div:last-of-type a:not(:last-of-type){
+        position: absolute; padding: 0 2%;
+    }
+    .newsPrCenterDetailContainer > div:last-of-type a:nth-of-type(3),
+    .newsPressDetailContainer article div:last-of-type a:nth-of-type(3){
+        width: 10%;
+    }
+    /* todo news */
+    .myConsultationContainer form fieldset div:nth-of-type(5) .customChk,
+    .myConsultationContainer form fieldset div:nth-of-type(6) .customChk{
+        padding-left: 3.5%;
+    }
+    /* todo myConsultation Fin*/
+    .storeInformationContainer > input[type='button']:hover{
+        background-color: var(--frs5);
+    }
+    .storeInformationContainer aside{
+        height: 92vh; width: 65%;
+    }
+    .storeInformationContainer aside div form fieldset input[type='submit']{
+        width: 6%;
+    }
+    .myPartnershipContainer > *:not(h2, div:first-of-type){
+        padding: 0 17.5% 0;
+    }
+    .myPartnershipContainer > div:first-of-type div{
+        background: url('../images/card_01.png') no-repeat left / 352px; margin: 0 auto 50px; width: 18%; padding: 50px 0 50px 392px;
+    }
+    .myPartnershipContainer > div:first-of-type a{
+        width: 20%;
+    }
+    .myPartnershipContainer > div:first-of-type div > p{
+        text-align: left;
+    }
+    .myPartnershipContainer > div:nth-of-type(2) ul > li,
+    .myPartnershipContainer > div:nth-of-type(3) ul li{
+        min-height: 490px; float: left; width: 25%; margin-bottom: 20px;
+    }
+    .myPartnershipContainer > div:nth-of-type(2) ul li:not(:nth-of-type(3n+1)),
+    .myPartnershipContainer > div:nth-of-type(3) ul li:not(:nth-of-type(3n+1)){
+        margin-left: 12%;
+    }
+    .myPartnershipContainer > div:nth-of-type(2) ul li figure img,
+    .myPartnershipContainer > div:nth-of-type(3) ul li figure img{
+        margin-bottom: 30px; width: 100%;
+    }
+    .myPartnershipContainer > div:last-of-type mark{
+        padding-left: 3%;
+    }
+    .myPartnershipContainer > div:last-of-type ul{
+        margin-left: 2%; width: 85%;
+    }
+    /* todo partner Fin */
+    .myAskedContainer > div:first-of-type{
+        background-color: var(--gs3); padding: 40px 16%;
+    }
+    .myAskedContainer div:first-of-type form input[type='text']{
+        width: 75%;
+    }
+    .myAskedContainer div:first-of-type form input[type='submit']{
+        width: 24%;
+    }
+    .myAskedContainer div:first-of-type ul li{
+        display: block; width: 14.2%; float: left;
+    }
+    .myAskedContainer > ul li span{
+        text-align: center;
+    }
+    .myAskedContainer > ul li span:nth-of-type(1),
+    .myAskedContainer > ul li span:nth-of-type(2){
+        width: 10%;
+    }
+    .myAskedContainer > ul li:first-of-type span:nth-of-type(3),
+    .myAskedContainer > ul li:not(:first-of-type) p:first-of-type{
+        width: 79%;
+    }
+    .myAskedContainer > ul li:not(:first-of-type).active p:last-of-type{
+        min-height: 118px; padding: 40px 2% 40px 12%;
+    }
+    .myAskedContainer > ul li:not(:first-of-type).active{
+        padding-bottom: 0;
+    }
+    /* todo Asked Fin */
+    [class*='myInquiry'] > div:first-of-type{
+        padding: 40px 20%;
+    }
+    /* todo INquiry */
+    .myConsultationContainer > ul li:not(:last-of-type){
+        margin-bottom: 20px;
+    }
+    /* todo myConsultation Fin*/
+    .myPageContainer > div:first-of-type{
+        padding: 0 0 40px 10%; margin-bottom: 40px; display: flex; align-items: center;
+    }
+    .myPageContainer > div:first-of-type h3{
+        padding-left: 20%; width: 50%;
+    }
+    .myPageContainer > div:first-of-type ul{
+        width: 35%; clear: both;
+    }
+    .myPageContainer > div:first-of-type ul li,
+    .myPageContainer > ul li > *{
+        width: 50%;
+    }
+    .myPageContainer > div:nth-of-type(2) ol{
+        text-align: center; padding: 0 12%;
+    }
+    .myPageContainer > div:nth-of-type(2) ol li{
+        width: 20%;
+    }
+    .myPageContainer > div:nth-of-type(2) ol li:not(:first-of-type){
+        padding-left: 5%; box-sizing: border-box; background: url('../images/icon_arrowLeft.svg') no-repeat center left / 40px;
+    }
+    .myPageContainer > ul li a img{
+        width: 30%;
+    }
+    .myPageContainer > ul li a span{
+        width: 70%; color: var(--gs10);
+    }
+    .myPageContainer div:nth-of-type(3) ul li{
+        float: left; width: 16.6%;
+    }
+    /* todo myPage Fin */
+    [class*=myInquiryOrder] > ol li{
+        width: 20%;
+    }
+    [class*=myInquiryOrder] > ol li:not(:first-of-type){
+        padding-left: 5%; box-sizing: border-box; background: url('../images/icon_arrowLeft.svg') no-repeat center left / 40px;
+    }
+    .myInquiryOrderContainer > ul li span:first-of-type{
+        width: 46%; padding: 100px 0 100px 15%; background: url('../images/details_172.jpg') no-repeat left center / 30%;
+    }
+    .myInquiryOrderContainer > ul li span:nth-of-type(2){
+        width: 10%; padding: 100px 0; margin-left: 2%;
+    }
+    .myInquiryOrderContainer > ul li mark{
+        width: 20%; padding: 105px 2%; margin-right: 2%; text-align: center;
+    }
+    .myInquiryOrderContainer > ul li span:last-of-type{
+        padding: 91px 2% 91px 0; width: 20%;
+    }
+    [class*=myInquiryOrder] > div:last-of-type h3,
+    [class*=myInquiryOrder] > div:last-of-type ul *:not(:last-of-type){
+        margin-bottom: 20px;
+    }
+    [class*=myInquiryOrder] > div:last-of-type ul{
+        list-style-position: inside; color: var(--gs6);
+    }
+    .myInquiryOrderCancelContainer > ul li span:first-of-type{
+        width: 60%; padding: 100px 0 100px 15%; background: url('../images/details_172.jpg') no-repeat left center / 22%;
+    }
+    .myInquiryOrderCancelContainer > ul li span:nth-of-type(2){
+        width: 18%; padding: 100px 0; text-align: right;
+    }
+    .myInquiryOrderCancelContainer > ul li span:last-of-type{
+        padding: 101px 0 101px 2%; margin-left: 2%; border-left: 1px solid var(--gs4); width: 18%; text-align: center;
+    }
+    /* todo Order Fin */
+    .myCouponContainer > div > *{
+        padding: 0 2%;
+    }
+    .myCouponContainer > div:nth-of-type(2) form input[type='search']{
+        width: 50%;
+    }
+    .myCouponContainer > ul{
+        padding: 0 1.6%;
+    }
+    .myCouponContainer > ul li{
+        float: left; width: 30%;
+    }
+    .myCouponContainer > ul li:not(:nth-of-type(3n+1)){
+        margin-left: 3.3%;
+    }
+    /* todo cuupon Fin */
+    [class*='myManagement'] div:first-of-type ul li:not(:nth-of-type(n+8)) > label,
+    [class*='myManagement'] div:first-of-type ul li:nth-of-type(6) div label{
+        width: 12%;
+    }
+    [class*='myManagement'] div:first-of-type ul li:nth-of-type(1) input:first-of-type,
+    [class*='myManagement'] div:first-of-type ul li:nth-of-type(3) input:first-of-type,
+    [class*='myManagement'] div:first-of-type ul li:nth-of-type(6) div input{
+        width: 70%;
+    }
+    [class*='myManagement'] div:first-of-type ul li:nth-of-type(1) input:last-of-type,
+    [class*='myManagement'] div:first-of-type ul li:nth-of-type(3) span,
+    [class*='myManagement'] div:first-of-type ul li:nth-of-type(6) div a{
+        margin-left: 1%;
+    }
+    [class*='myManagement'] div:first-of-type ul li:nth-of-type(3) span{
+        width: 8%;
+    }
+    [class*='myManagement'] div:first-of-type ul li:nth-of-type(1) input:last-of-type,
+    [class*='myManagement'] div:first-of-type ul li:nth-of-type(6) div a{
+        width: 17%;
+    }
+    [class*='myManagement'] div:first-of-type ul li:nth-of-type(8) .customChk,
+    [class*='myManagement'] div:first-of-type ul li:nth-of-type(9) .customChk{
+        padding-left: 3%; background: url('../images/btn_checkBox_off.svg') no-repeat left / 24px;
+    }
+    /* Todo Member information management Fin */
+    #cancelPopup{
+        width: 20%;
+    }
+    #pwChangePopup,
+    #delAddress,
+    #clearAddress,
+    #addAddressPopup{
+        width: 25%;
+    }
+    /* todo address Fin */
+    [class*='shoppingBag'] form ul li:first-of-type span:nth-of-type(2){
+        width: 40%;
+    }
+    [class*='shoppingBag'] form ul li:first-of-type span:nth-of-type(3){
+        width: 15%;
+    }
+    [class*='shoppingBag'] form ul li:first-of-type span:nth-of-type(4){
+        width: 16%; max-width: 190px;
+    }
+    [class*='shoppingBag'] form ul li:first-of-type span:last-of-type{
+        width: 24%;
+    }
+    .myshoppingBagContainer form ul li:not(:first-of-type) span:nth-of-type(2){
+        width: 40%;
+    }
+    .myshoppingBagContainer form ul li:not(:first-of-type) span:nth-of-type(3){
+        width: 15%; line-height: 120px;
+    }
+    .myshoppingBagContainer form ul li:not(:first-of-type) .qtyComponent{
+        width: 16%; padding: 40px 0; max-width: 190px;
+    }
+    .myshoppingBagContainer form ul li:not(:first-of-type) .qtyComponent input[type='button']{
+        width: 25%;
+    }
+    .myshoppingBagContainer form ul li:not(:first-of-type) .qtyComponent input[type='number']{
+        width: 50%;
+    }
+    .myshoppingBagContainer form ul li:not(:first-of-type) strong{
+        width: 24%; line-height: 120px; font-weight: inherit;
+    }
+    .myshoppingBagContainer form > div:first-of-type{
+        display: flex; justify-content: flex-end; text-align: right; padding: 40px 4.9%;
+    }
+    .myshoppingBagContainer form > div:first-of-type span:not(:first-of-type){
+        padding-left: 8%;
+    }
+    .myshoppingBagContainer form div:last-of-type span{
+        float: right;
+    }
+    /* todo shopping Fin */
+    .mypaymentContainer form div:first-of-type ul li label,
+    .mypaymentContainer form div:nth-of-type(2) ul li:nth-of-type(1) label,
+    .mypaymentContainer form div:nth-of-type(2) ul li:nth-of-type(2) label,
+    .mypaymentContainer form div:nth-of-type(2) ul li:nth-of-type(3) label,
+    .mypaymentContainer form div:nth-of-type(2) ul li:last-of-type label{
+        width: 14%; line-height: 38px;
+    }
+    .mypaymentContainer form div:first-of-type ul li input,
+    .mypaymentContainer form div:nth-of-type(2) ul li:nth-of-type(1) input,
+    .mypaymentContainer form div:nth-of-type(2) ul li:nth-of-type(2) input,
+    .mypaymentContainer form div:nth-of-type(2) ul li:nth-of-type(3) input,
+    .mypaymentContainer form div:nth-of-type(2) ul li:last-of-type input:nth-of-type(3),
+    .mypaymentContainer form div:nth-of-type(2) ul li:last-of-type input:last-of-type{
+        width: 86%;
+    }
+    .mypaymentContainer form div:nth-of-type(2) ul li:last-of-type input:first-of-type{
+        width: 66%;
+    }
+    .mypaymentContainer form div:nth-of-type(4) ul li img{
+        width: 8.8%;
+    }
+    .mypaymentContainer form div:nth-of-type(4) ul li span{
+        padding: 49.5px 0; width: 52%;
+    }
+    .mypaymentContainer form div:nth-of-type(4) ul li strong{
+        line-height: 115px; width: 25%; 
+    }
+    .mypaymentContainer form div:nth-of-type(5) span input[type='text']{
+        width: 83%;
+    }
+    .mypaymentContainer form div:nth-of-type(6) ul li{
+        width: 25%;
+    }
+    .mypaymentContainer form div:nth-of-type(6) span label,
+    .mypaymentContainer form div:nth-of-type(7) span label{
+        background: url('../images/btn_checkBox_off.svg') no-repeat top left / 20px; padding-left: 3%;
+    }
+    /* todo pay Fin */
+    .orderCompletedContainer > div:first-of-type ul li img{
+        width: 8.8%;
+    }
+    .orderCompletedContainer > div:first-of-type ul li span{
+        padding: 49.5px 0; width: 52%; 
+    }
+    .orderCompletedContainer > div:first-of-type ul li strong{
+        width: 25%; 
+    }
+    /* todo 결제완료 Fin */
+}
