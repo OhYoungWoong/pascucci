@@ -1,27 +1,3 @@
-
-/* 
-     class="boxSizing"
-*/
-.boxSizing,
-
-#addAddressPopup form fieldset div input:not(input[type='button']),
-#addAddressPopup form fieldset div:last-of-type input[type='button'],
-[class*='shoppingBag'] form ul li:first-of-type span:first-of-type .customChk,
-.myshoppingBagContainer form ul li:not(:first-of-type) .qtyComponent input[type='number'],
-.mypaymentContainer form div:first-of-type ul li input,
-.mypaymentContainer form div:nth-of-type(2) ul li:nth-of-type(1) input,
-.mypaymentContainer form div:nth-of-type(2) ul li:nth-of-type(2) input,
-.mypaymentContainer form div:nth-of-type(2) ul li:nth-of-type(3) input,
-.mypaymentContainer form div:nth-of-type(2) ul li:last-of-type input:nth-of-type(3),
-.mypaymentContainer form div:nth-of-type(2) ul li:last-of-type input:first-of-type,
-.mypaymentContainer form div:nth-of-type(2) ul li:last-of-type input:last-of-type,
-.mypaymentContainer form div:nth-of-type(3) input,
-.mypaymentContainer form div:nth-of-type(5) span input[type='text'],
-.mypaymentContainer form div:nth-of-type(6) ul li{
-    box-sizing: border-box;
-}
-
-
 :root{
     /* color */
 --pcRed: #da0037; --prs1: #FF1535; --prs2: #ED1331; --prs3: #C9102A; --prs4: #A10D21; --prs5: #8C0B1D; --prs6: #6B0816; --prs7: #45060E; --prs8: #170205; --frs1: #FF0040; --frs2: #ED003C; --frs3: #C90033; --frs4: #A10029; --frs5: #8C0023; --frs6: #6B001B; --frs7: #450011; --frs8: #170006; --gs1: #ffffff; --gs2: #fcfdff; --gs3: #ededed; --gs4: #c8c9ca; --gs5: #a0a0a0; --gs6: #8c8c8c; --gs7: #6a6a6a; --gs8: #444444; --gs9: #171717; --gs10: #000000;
@@ -96,6 +72,10 @@ font-size: 16px; font-weight: 400; font-family: 'Raleway'; text-align: center;  
 .noneBlock{
     display: none;
 }
+.boxSizing{
+    box-sizing: border-box;
+}
+
 input:not([type="button"],[type='submit']){
     font-family: inherit; font-weight: inherit; font-size: inherit;
 }

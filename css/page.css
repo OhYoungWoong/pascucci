@@ -2174,11 +2174,11 @@ html,.main,
     }
     [class*='myManagement'] div:first-of-type ul li:nth-of-type(8) .customChk,
     [class*='myManagement'] div:first-of-type ul li:nth-of-type(9) .customChk{
-        padding-left:10%; line-height: 22px; background: url('../images/btn_checkBox_off.svg') no-repeat left / 20px;
+        padding-left:10%; background: url('../images/btn_checkBox_off.svg') no-repeat left / 20px;
     }
     [class*='myManagement'] div:first-of-type ul li:nth-of-type(8) a,
     [class*='myManagement'] div:first-of-type ul li:nth-of-type(9) a{
-        margin-left: 1%; color: var(--gs5);
+        display: block;
     }
     .myManagementContainer > div:last-of-type li{
         padding: 20px 7.7%; border: 1px solid var(--gs4);
