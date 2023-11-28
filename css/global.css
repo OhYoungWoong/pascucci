@@ -1,3 +1,14 @@
+input:not([type="button"],[type='submit']){
+    font-family: inherit; font-weight: inherit; font-size: inherit;
+}
+mark{
+    background-color:transparent; font-style: normal;
+}
+a{text-decoration: none;}
+
+li:not(.myInquiryOrderContainer div:last-of-type ul li,.myConsultationContainer > ul li,.myPartnershipContainer div:last-of-type ul li){
+    list-style: none;
+}
 :root{
     /* color */
 --pcRed: #da0037; --prs1: #FF1535; --prs2: #ED1331; --prs3: #C9102A; --prs4: #A10D21; --prs5: #8C0B1D; --prs6: #6B0816; --prs7: #45060E; --prs8: #170205; --frs1: #FF0040; --frs2: #ED003C; --frs3: #C90033; --frs4: #A10029; --frs5: #8C0023; --frs6: #6B001B; --frs7: #450011; --frs8: #170006; --gs1: #ffffff; --gs2: #fcfdff; --gs3: #ededed; --gs4: #c8c9ca; --gs5: #a0a0a0; --gs6: #8c8c8c; --gs7: #6a6a6a; --gs8: #444444; --gs9: #171717; --gs10: #000000;
@@ -74,18 +85,6 @@ font-size: 16px; font-weight: 400; font-family: 'Raleway'; text-align: center;  
 }
 .boxSizing{
     box-sizing: border-box;
-}
-
-input:not([type="button"],[type='submit']){
-    font-family: inherit; font-weight: inherit; font-size: inherit;
-}
-mark{
-    background-color:transparent; font-style: normal;
-}
-a{text-decoration: none;}
-
-li:not(.myInquiryOrderContainer div:last-of-type ul li,.myConsultationContainer > ul li,.myPartnershipContainer div:last-of-type ul li){
-    list-style: none;
 }
 /* ? list style */
 header > aside ul li:nth-of-type(3) a,
