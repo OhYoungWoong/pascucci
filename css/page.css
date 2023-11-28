@@ -2302,7 +2302,7 @@ html,.main,
         margin-bottom: 20px;
     }
     .myshoppingBagContainer form > div:first-of-type span:not(:first-of-type){
-        background-position: center bottom; padding-bottom: 80px;
+        background-position: center top; padding-top: 80px;
     }
     .myshoppingBagContainer form div:last-of-type > a:first-of-type{
         display: block; width: 100%; margin-bottom: 20px;
