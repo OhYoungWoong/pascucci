@@ -1522,6 +1522,9 @@ html,.main,
 .longMemberTermsandConditionsContainer ol > li:nth-of-type(6) ul li:nth-of-type(6) table tbody tr td:first-of-type{
     width: 10%;
 }
+.longPrivacyPolicyContainer ul #privacyPolicymove_11 ul li:nth-of-type(2) ul li:nth-of-type(2) table{
+    width:100%;
+}
 @media screen and (max-width:767px){
     .bx-wrapper .bx-pager{
         bottom: 170px; right: 6px;
