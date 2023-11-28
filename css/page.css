@@ -2281,7 +2281,7 @@ html,.main,
         display: block; max-width: 150px; margin: 0 auto; padding-left: 10%;
     }
     .myshoppingBagContainer form ul li:not(:first-of-type) .qtyComponent > *{
-        float: left;
+        float: left; box-sizing: border-box;
     }
     .myshoppingBagContainer form ul li:not(:first-of-type) .qtyComponent input[type='button']{
         width: 30%;
