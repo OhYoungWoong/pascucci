@@ -1543,6 +1543,9 @@ html,.main,
     .mainSlider .slider02 > div p{
         max-width: 67vw;
     }
+    .mainSlider .slider02 > div p mark{
+        font-size: 5.8vw;
+    }
     .mainSlider .slider03 > div p{
         max-width: 62vw;
     }
@@ -1739,6 +1742,9 @@ html,.main,
     .loginContainer div #lastLoginTab form div:nth-of-type(7) .customChk+a,
     .loginContainer div #lastLoginTab form div:nth-of-type(8) .customChk+a{
         float: right;
+    }
+    .loginContainer > div #lastLoginTab form > div:last-of-type .customChk{
+        margin-bottom: 8px; display: block; line-height: 24px;
     }
     /* todo  Login*/
     [class*='my'] h2{
