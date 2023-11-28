@@ -1,5 +1,6 @@
 // ready() 대체방법
 $(document).ready(function(){
+    NProgress.start();
     scrollSlider();
     searchToggle();
     loginTab();
@@ -26,6 +27,7 @@ $(document).ready(function(){
     payImgSwap();
     addBookMark();
     checkboxAllCK();
+    NProgress.done();
 });
 
 function checkboxAllCK() {
@@ -42,7 +44,7 @@ function checkboxAllCK() {
 
         for(var i = 0; i < classChkbox.length; i++){
             var chkboxCount = classChkbox[i];
-            
+
             if(chkboxCount.checked){
                 selectedCount++;
             }
