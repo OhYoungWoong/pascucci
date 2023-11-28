@@ -26,17 +26,7 @@ $(document).ready(function(){
     payImgSwap();
     addBookMark();
     checkboxAllCK();
-
-
-
-
-
-
-    
 });
-
-
-
 
 function checkboxAllCK() {
 
@@ -47,19 +37,16 @@ function checkboxAllCK() {
     });
 
     $(".myshoppingBagContainer form ul li span .basketChk").click(function(){
-
         var classChkbox = document.getElementsByClassName("basketChk");
         var selectedCount = 0;
 
         for(var i = 0; i < classChkbox.length; i++){
-
             var chkboxCount = classChkbox[i];
-
+            
             if(chkboxCount.checked){
                 selectedCount++;
             }
         }
-
         if(selectedCount === classChkbox.length){
             $("#basketAllChk").prop("checked", true);
         }else{
@@ -102,7 +89,7 @@ function scrollSlider(){
         if($(this).attr("data-pageName") == "main"){
             $slider.goToSlide(0);
         }else{
-            $("html, body").animate({scrollTop : 0},750);
+            $("html, body").animate({scrollTop : 0},250);
         }
     });
 }
