@@ -223,7 +223,7 @@ footer > div div address ul li:nth-of-type(4){background: url('../images/footer_
     display: inline-block;
 }
 .paging ol li a{
-    width: 30px; line-height: 32px; border-radius: 25px; background-color: var(--gs3); color: var(--gs8);
+    width: 30px; line-height: 30px; border-radius: 25px; background-color: var(--gs3); color: var(--gs8);
 }
 .numberComponent input{
     background-color: transparent; border: none; color: var(--gs1); line-height: 50px;
@@ -295,7 +295,7 @@ input::-webkit-inner-spin-button{
         height: 40px;
     }
     header .muiBtn{
-        position: absolute; width: 24px; top: 10px; left: 10px;
+        position: absolute; width: 24px; top: 10px; left: 20px;
     }
     header .muiBtn span:not(last-child){
         margin-bottom: 5px;

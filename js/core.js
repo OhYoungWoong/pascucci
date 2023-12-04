@@ -274,8 +274,6 @@ function quantityComponent(target, minus, plus, price){
     });
 }
 
-
-
 function loginTab(){
     var activeTab = null;
     $(".loginContainer .loginTab input").click(function(){
@@ -336,12 +334,5 @@ function passwordToggle(){
             $(this).val("visibility_off");
             $(this).siblings().attr("type","password");
         }
-    });
-
-
-    
+    });   
 }
-    
-
-
-
