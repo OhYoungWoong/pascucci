@@ -75,7 +75,7 @@ html,.main,
     background-position: center bottom;
 }
 .aboutBrandContainer ul li p b{
-    color: var(--gs10); margin-bottom: 40px;
+    color: var(--gs10); 
 }
 .aboutBrandContainer > div{
     padding: 40px 2.1%; color: var(--gs1); background-repeat: no-repeat; background-position: center; background-size: cover;
@@ -2485,7 +2485,7 @@ html,.main,
         line-height: 24px; color: var(--gs8);
     }
     .aboutBrandContainer ul li p b{
-        max-width: 500px; margin: 0 auto; line-height: 30px;
+        max-width: 500px; margin: 0 auto 40px; line-height: 30px;
     }
     .aboutBrandContainer > div{
         float: left; width: 50%;

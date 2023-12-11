@@ -60,7 +60,6 @@ function checkboxAllCK() {
 function scrollSlider(){
     var slideDish,
         $slider = $('.mainSlider').eq(0);
-
         slideDish = $slider.bxSlider({
         mode: 'vertical',
         controls: false,
@@ -99,7 +98,6 @@ function scrollSlider(){
 function addBookMark(){
     $('#addBookMark').click(function(){
         alert("To bookmark the current page, press Ctrl + D (or Command + D on Mac). :)");
-
         // var url = window.location.href;
         // var title = document.title;
 
@@ -116,10 +114,8 @@ function addBookMark(){
         // }else{
         //     alert("To bookmark the current page, press Ctrl+D (or Command+D on Mac). :)");
         // }
-
     })
 }
-
 
 function mobileRside(){
     $('header aside > input:last-of-type').click(function(){
@@ -151,7 +147,6 @@ function payImgSwap(){
     };
 
     $(target).click(function(){
-
         var currentSrc = $(this).children("img").attr("src");
         for(var i = 0; i < $(target).length; i++){
             var recoverSrc = targetData[i];
@@ -195,6 +190,7 @@ function payImgSwap(){
 function ManagementPopup(){
     $('.myManagementContainer div:last-of-type .openBtn').click(function(){
         var thisName = $(this).attr('data-popname');
+
         $("#" + thisName).addClass('active');
     });
 
