@@ -92,10 +92,10 @@ html,.main,
     background-repeat: no-repeat; background-position: top center; background-attachment: fixed;
   }
   .aboutKoreaContainer{
-    background-image: url('../images/BG_korea.jpg'); background-size: cover;
+    background-image: url('../images/BG_korea.jpg');
 }
 .aboutItalianContainer{
-    background-image: url('../images/BG_italian.jpg'); background-size: cover;
+    background-image: url('../images/BG_italian.jpg');
 }
 [class^='about']:not([class*='Brand']) ul > li div p:not(:last-of-type){
     margin-bottom: 15px;
