@@ -42,7 +42,7 @@ function checkboxAllCK() {
         var classChkbox = document.getElementsByClassName("basketChk");
         var selectedCount = 0;
 
-        for(var i = 0; i < classChkbox.length; i++){
+        for(var i = 0; i < classChkbox.length; i++){ 
             var chkboxCount = classChkbox[i];
 
             if(chkboxCount.checked){
@@ -159,6 +159,7 @@ function payImgSwap(){
         }else{
             currentSrc = currentSrc.replace("_active.jpg","_active.jpg");
             $(this).children("img").attr("src",currentSrc);
+            // 그대로 유지
         }
     });
     
