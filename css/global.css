@@ -653,7 +653,7 @@ header > nav{
     position: absolute; left: 1.041%; top: 154px; background-color: var(--gs10); padding: 10px; width: 186px; min-width: 185px; transition-duration: 0.75s;
 }
 header > nav > ul{
-    padding: 10px; border: 1px solid var(--pcRed); box-sizing: border-box;
+    padding: 20px 10px; border: 1px solid var(--pcRed); box-sizing: border-box;
 }
 header > nav > ul > li:not(:last-of-type){
     margin-bottom: 20px;
