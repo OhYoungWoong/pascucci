@@ -662,7 +662,7 @@ header > nav > ul li span::after{
     right: 12%;
 }
 header > nav > ul li ol{
-    transition-duration: 0.5s; height: 0; opacity: 0; overflow-y: hidden;
+    transition-duration: 0.5s; height: 0; opacity: 0; overflow-y: hidden; padding: 0 10px;
 }
 header > nav > ul > li ol li:not(:last-of-type){
     margin-bottom: 20px;
