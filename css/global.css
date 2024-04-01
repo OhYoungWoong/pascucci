@@ -671,7 +671,7 @@ footer > div,
     transform: rotate(-315deg);
 }
 .main #hi p{
-    line-height: 38px; color: var(--gs1); text-shadow:1px 1px 2px var(--gs10);
+    line-height: 40px; color: var(--gs1); text-shadow:1px 1px 2px var(--gs10);
 }
 header .muiBtn{
     display: none;
