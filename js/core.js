@@ -2,6 +2,7 @@
 $(document).ready(function(){
     NProgress.start();
     scrollSlider();
+    hiPop();
     searchToggle();
     loginTab();
     passwordToggle();
@@ -93,6 +94,12 @@ function scrollSlider(){
             $("html, body").animate({scrollTop : 0},250);
         }
     });
+}
+
+function hiPop(){
+    $('.main #hi .closeBtn').click(function(){
+        $('.main #hi').removeClass('active');
+    })
 }
 
 function addBookMark(){
