@@ -486,6 +486,9 @@ input::-webkit-inner-spin-button{
     }
 }
 @media screen and (max-width: 1279px){
+    .main #hi{
+        display: none;
+    }
     header .muiBtn span{
         background-color: var(--gs1); display: block; height: 3px; transition-duration: 0.55s;
     }
@@ -571,9 +574,6 @@ input::-webkit-inner-spin-button{
     [class*='tw4_12']{font-size: 30px; font-weight: 300;}
     [class*='tw6_14']{font-size: 30px; font-weight: 300;}
     /*todo  global */
-    .main #hi{
-        display: none;
-    }
     header .muiBtn{
         position: absolute; width: 40px; top: 25px; left: 25px;
     }
